@@ -36,7 +36,7 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     background: url(../img/oakland-skyline-night-baybridge.jpg) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .intro-message {
@@ -83,6 +83,15 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+}
+
+.tinted:after {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+	background: rgba(255, 0, 0, 0.5);
 }
 
 .network-name {
