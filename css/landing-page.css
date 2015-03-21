@@ -177,3 +177,12 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.tab-content time {
+	float: right;
+	margin-right: 1.5rem;
+	padding: 0 1.5rem;
+	font-size: 1.6rem;
+	line-height: 4rem;
+}
+

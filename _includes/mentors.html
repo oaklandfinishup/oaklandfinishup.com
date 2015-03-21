@@ -1,0 +1,5 @@
+{{ site.collections.mentors.files }}
+
+{% for mentor in site.collections.mentors.docs %}
+{% include mentor.html %}
+{% endfor %}
