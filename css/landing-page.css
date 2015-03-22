@@ -186,3 +186,6 @@ p.copyright {
 	line-height: 4rem;
 }
 
+.thumbnail.sponsor > img {
+	height: 65px;
+}
