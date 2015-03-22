@@ -1,26 +1,50 @@
-{% for mentor in site.collections.mentors.docs %}
-<div class="col-sm-4 col-md-3 col-lg-3">
-	<div class="thumbnail">
-		<img src="/img/mentors/{{ mentor.photo }}">
-		<div class="caption">
-			<h3><a href="http://{{ mentor.link }}">{{ mentor.name }}</a></h3>
-			<h4><small>{{ mentor.role }}, <em>{{ mentor.company }}</em></small></h4>
-			<h4>{{ mentor.area }}</h4>
-			<div class="panel-group" id="accordion{{ forloop.index }}" role="tablist" aria-multiselectable="true">
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="mentor{{ forloop.index }}">
-						<h4 class="panel-title">
-							<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ forloop.index }}" href="#bio{{ forloop.index }}" aria-expanded="true" aria-controls="bio{{ forloop.index }}">Bio</a>
-						</h4>
-					</div><!--.panel-heading-->
-					<div id="bio{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ forloop.index }}">
-						<div class="panel-body">
-							{{ mentor.output }}
-						</div><!--.panel-body -->
-					</div><!--.panel-collapse-->
-				</div><!--.panel-->
-			</div><!--.panel-group-->
-		</div><!--.caption-->
-	</div><!--.thumbnail-->
-</div><!--.col-sm-4-->
-{% endfor %}
+<section class="content-section-b" id="mentors">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-12 col-sm-12">
+            	<hr class="section-heading-spacer">
+            	<div class="clearfix"></div>
+            	<h2 class="section-heading">Mentors</h2>
+            	<p class="lead">
+            	</p>
+        	</div>
+    	</div><!--.row-->
+
+
+
+		{% for mentor in site.collections.mentors.docs %}
+		{% assign remainder = forloop.index | modulo:4 %}
+		{% if remainder == 1 %}
+		<div class="row">
+		{% endif %}
+			<div class="col-sm-4 col-md-3 col-lg-3">
+				<div class="thumbnail">
+					<img src="/img/mentors/{{ mentor.photo }}">
+					<div class="caption">
+						<h3><a href="http://{{ mentor.link }}">{{ mentor.name }}</a></h3>
+						<h4><small>{{ mentor.role }}, <em>{{ mentor.company }}</em></small></h4>
+						<h4>{{ mentor.area }}</h4>
+						<div class="panel-group" id="accordion{{ forloop.index }}" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="mentor{{ forloop.index }}">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ forloop.index }}" href="#bio{{ forloop.index }}" aria-expanded="true" aria-controls="bio{{ forloop.index }}">Bio</a>
+									</h4>
+								</div><!--.panel-heading-->
+								<div id="bio{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ forloop.index }}">
+									<div class="panel-body">
+										{{ mentor.output }}
+									</div><!--.panel-body -->
+								</div><!--.panel-collapse-->
+							</div><!--.panel-->
+						</div><!--.panel-group-->
+					</div><!--.caption-->
+				</div><!--.thumbnail-->
+			</div><!--.col-sm-4-->
+		{% if remainder == 0 %}
+		</div><!--.row-->
+		{% endif %}
+		{% endfor %}
+		</div>
+	</div><!--.container-->
+</section><!--/#mentors-->
