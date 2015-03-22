@@ -189,3 +189,7 @@ p.copyright {
 .thumbnail.sponsor > img {
 	height: 65px;
 }
+
+.thumbnail.mentor > img {
+	height: 250px;
+}
