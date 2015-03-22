@@ -186,7 +186,7 @@ p.copyright {
 	line-height: 4rem;
 }
 
-.thumbnail.sponsor > img {
+.thumbnail.sponsor > a > img {
 	height: 65px;
 }
 
