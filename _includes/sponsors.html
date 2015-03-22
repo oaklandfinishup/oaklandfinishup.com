@@ -1,0 +1,25 @@
+<section class="content-section-a" id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Sponsors</h2>
+                <p class="lead">
+                    With generous support from
+                </p>
+            </div><!--.col-lg-5-->
+            {% for sponsor in site.data.sponsors %}
+			<div class="col-lg-7 col-sm-6">
+				<div class="thumbnail sponsor">
+					<img src="/img/sponsors/{{ sponsor.logo }}">
+				</div><!--.thumbnail-->
+			</div>
+			
+            {% endfor %}
+        </div><!--.row-->
+
+    </div><!--.container-->
+</section><!--/#sponsors-->
+
+
