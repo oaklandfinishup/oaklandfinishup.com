@@ -3,7 +3,7 @@ name: Joie Seldon
 role: Founder & Principal
 company: Joie Seldon, M.A.
 link: joieseldon.com
-area: Emotional Intelligence
+area: Crisis Management
 photo: joieseldon.jpg
 ---
 Joie coaches and empowers project managers, entrepreneurs, and company leaders to identify and quickly solve problems while reducing personal & team stress.
