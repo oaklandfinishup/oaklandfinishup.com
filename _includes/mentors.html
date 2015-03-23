@@ -10,8 +10,6 @@
         	</div>
     	</div><!--.row-->
 
-
-
 		{% for mentor in site.collections.mentors.docs %}
 		{% assign remainder = forloop.index | modulo:4 %}
 		{% if remainder == 1 %}
