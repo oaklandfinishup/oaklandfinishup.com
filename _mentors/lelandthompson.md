@@ -1,10 +1,12 @@
 ---
 name: Leland Thompson
-role: Founder
-company: Leland Thompson Consulting
-link: lelandthompsonconsulting.com
-area: Leadership & Development
 photo: leland.jpg
+area: Leadership & Development
+company: Leland Thompson Consulting
+role: Founder
+link: lelandthompsonconsulting.com
+linkedin: 
+twitter: leland1010
 ---
 
 During his career at Gap, Inc., Leland took on a number of diverse challenges, including merchandising, financial strategy and executive recruitment.
