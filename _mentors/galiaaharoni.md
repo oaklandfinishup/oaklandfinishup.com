@@ -4,7 +4,7 @@ photo: galia.jpg
 area: Legal & HR
 company: HG Business Law 
 link: hgbusinesslaw.com
-role: Co-Founder & Partner
+role: Co-Founder
 linkedin: www.linkedin.com/pub/galia-aharoni/17/a44/60a/en
 twitter: HGbusinesslaw
 ---
