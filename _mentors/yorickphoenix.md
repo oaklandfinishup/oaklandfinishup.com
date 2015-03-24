@@ -1,6 +1,6 @@
 ---
 name: Yorick Phoenix
-photo: yorick-sq.jpg
+photo: yorick-blue.jpg
 role: CTO
 company: ISSIO Solutions, Inc.
 link: about.me/yorickphoenix
