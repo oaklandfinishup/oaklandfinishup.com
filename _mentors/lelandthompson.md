@@ -5,7 +5,7 @@ area: Leadership & Development
 company: Leland Thompson Consulting
 role: Founder
 link: lelandthompsonconsulting.com
-linkedin: 
+linkedin: www.linkedin.com/in/lelandthompson/en
 twitter: leland1010
 ---
 

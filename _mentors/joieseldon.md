@@ -1,10 +1,12 @@
 ---
 name: Joie Seldon
+photo: joieseldon.jpg
 role: Founder & Principal
 company: Joie Seldon, M.A.
 link: joieseldon.com
 area: Crisis Management
-photo: joieseldon.jpg
+linkedin: www.linkedin.com/in/joieseldon/en
+twitter: JoieSeldon
 ---
 Joie coaches and empowers project managers, entrepreneurs, and company leaders to identify and quickly solve problems while reducing personal & team stress.
 

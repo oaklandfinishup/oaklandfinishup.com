@@ -1,10 +1,12 @@
 ---
 name: Liz Walls
+photo: lizwalls.jpg
+area: Problem Solving
 role: Co-Founder & Engineering
 company: Cancalia
 link: cancalia.com
-area: Problem Solving
-photo: lizwalls.jpg
+linkedin: www.linkedin.com/pub/elizabeth-walls/12/806/620/en
+twitter: cancalia
 ---
 Liz Walls has a passion for the outdoors.  Her educational and career focus has been around renewable & sustainable energy and specifically wind resources.  More specifically, on assessing and optimizing wind resource usage.
 
