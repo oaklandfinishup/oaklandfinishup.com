@@ -5,8 +5,11 @@ area: Product & Strategy
 company: Cookstream
 role: Business Development
 link: bit.ly/integrateit
-linkedin: linkedin.com/in/jfedorenko
-twitter: julfirefly
+social:
+  - name: twitter
+    link: twitter.com/julfirefly
+  - name: linkedin
+    link: linkedin.com/in/jfedorenko
 ---
 
 Julia started her career in retail, and found her niche in sales & marketing.  She has gravitated toward product marketing in the IT industry, but has experience in channel development, marketing communications and international marketing.

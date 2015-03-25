@@ -5,7 +5,9 @@ area: Business Strategy
 role: CEO
 company: American Ventures
 link: americanventuresllc.net
-linkedin: www.linkedin.com/pub/gary-rosenberg/20/2b1/195/en
+social: 
+  - name: linkedin
+    link: www.linkedin.com/pub/gary-rosenberg/20/2b1/195/en
 ---
 
 Gary has created success in a wide and diverse career, helping

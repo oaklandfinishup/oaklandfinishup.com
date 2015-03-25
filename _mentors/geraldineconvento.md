@@ -5,7 +5,10 @@ company: Meet Geraldine
 link: meetgeraldine.com
 area: Branding & Marketing
 photo: geraldine.jpg
-linkedin: www.linkedin.com/in/geraldineconventodigital/en
-twitter: tweetgeraldine
+social:
+  - name: twitter
+    link: twitter.com/tweetgeraldine
+  - name: linkedin
+    link: linkedin.com/in/geraldineconventodigital/en
 ---
 

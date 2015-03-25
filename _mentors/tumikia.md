@@ -5,7 +5,10 @@ area: Web & Graphics
 company: TWK Web & Print Design
 role: Owner
 link: twkwebandprintdesign.com
-linkedin: www.linkedin.com/in/tumikiawk/en
-twitter: Khuthaza
+social:
+  - name: linkedin
+    link: linkedin.com/in/tumikiawk/en
+  - name: twitter
+    link: twitter.com/Khuthaza
 ---
 

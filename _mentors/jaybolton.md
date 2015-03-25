@@ -5,7 +5,9 @@ company: CommitChange
 link: commitchange.com
 area: Software & Technology
 photo: jay.jpg
-linkedin: www.linkedin.com/in/jayrbolton/en
+social:
+  - name: linkedin
+    link: linkedin.com/in/jayrbolton/en
 ---
 
 A former EMT, film crew grip, and classics major, Jay found his passion in programming.

@@ -5,8 +5,11 @@ area: Technology & Business
 role: CTO
 company: ISSIO Solutions, Inc.
 link: about.me/yorickphoenix
-linkedin: www.linkedin.com/in/yorick/en
-twitter: scribblings
+social:
+  - name: twitter
+    link: twitter.com/scribblings
+  - name: linkedin
+    link: linkedin.com/in/yorick/en
 ---
 
 As an entrepreneur, Yorick has founded and sold companies.  As a technological lead and innovator, he has guided several startups toward success. Yorick's success has come from solving the unsolvable by going where no-one thinks to go.

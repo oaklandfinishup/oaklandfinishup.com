@@ -20,7 +20,7 @@
 					<img src="/img/mentors/{{ mentor.photo }}">
 					<div class="caption">
 						<h3><a href="http://{{ mentor.link }}">{{ mentor.name }}</a></h3>
-						<h4><small>{{ mentor.role }}, <em>{{ mentor.company }}</em></small></h4>
+						<h4 class="company"><small>{{ mentor.role }} <em>{{ mentor.company }}</em></small></h4>
 						<h4>{{ mentor.area }}</h4>
 						<div class="panel-group" id="accordion{{ forloop.index }}" role="tablist" aria-multiselectable="true">
 							<div class="panel panel-default">
@@ -35,6 +35,17 @@
 									</div><!--.panel-body -->
 								</div><!--.panel-collapse-->
 							</div><!--.panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="social{{ forloop.index }}">
+									<h4 class="panel-title">
+										{% for soc in mentor.social  %}
+										<a href="http://{{ soc.link }}">
+											<i class="fa fa-{{ soc.name }}"></i>
+										</a>
+										{% endfor %}
+									</h4>
+								</div>
+							</div>
 						</div><!--.panel-group-->
 					</div><!--.caption-->
 				</div><!--.thumbnail-->
