@@ -1,8 +1,8 @@
 ---
 name: Ben Delaney
 photo: bendelaney.jpg
-role: CTO
-company: CyberEdge
+role: CEO
+company: CyberEdge Information Services
 link: bendelaney.com
 area: Startups & Nonprofits
 social:
