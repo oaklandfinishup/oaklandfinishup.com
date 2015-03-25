@@ -1,0 +1,12 @@
+- name: Home
+  target: home
+- name: About
+  target: about
+- name: Schedule
+  target: schedule
+- name: Mentors
+  target: mentors
+- name: Sponsors
+  target: sponsors
+- name: Register
+  target: register

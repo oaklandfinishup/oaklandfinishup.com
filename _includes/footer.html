@@ -1,0 +1,18 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+				{% for nav in site.data.navigation %}
+                	<li> <a href="#{{ nav.target }}">{{ nav.name }}</a> </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+				{% endfor %}
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy;2015 Aurice Guyton &amp; Seemant Kulleen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

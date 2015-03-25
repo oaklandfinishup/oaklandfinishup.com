@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
+    <meta name="author" content="Seemant Kulleen">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Oakland Finish Up Weekend, aka Oakland F'Up Weekend">
 
-    <title>Oakland Finish Up</title>
+    <title>Oakland F'Up Weekend</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,281 +30,32 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#page-top">Oakland Finish Up</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#schedule">Schedule</a> </li>
-                    <li> <a href="#mentors">Mentors</a> </li>
-                    <li> <a href="#sponsors">Sponsors</a> </li>
-                    <li> <a href="#register">Register</a> </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
+	<!-- Navigation -->
+	{% include topnav.html %}
 
     <!-- Header -->
-    <section class="intro-header" id="page-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-						<h1>Oakland Finish Up</h1>
-						<div class="tinted">
-							<h2>50 Attendees</h2>
-							<h2>10 mentors</h2>
-							<h2>1 weekend</h2>
-							<h3>It's easy to start shit. Let's finish it.</h3>
-							<hr class="intro-divider">
-						</div><!--.tinted-->
-                        <a href="#register" class="btn btn-default btn-lg">
-							<i class="fa fa-ticket fa-fw"></i><span class="network-name">Oakland F'up Weekend</span>
-						</a>
-						<div class="clearfix"></div>
-						<div class="col-md-6 col-sm-12">
-							<h2><i class="fa fa-huge fa-map-marker"></i></h2>
-							<h3>The Port Workspaces</h3>
-							<h3><small>Jack London Square, Oakland, CA</small></h3>
-						</div><!--.col-md-6 col-sm-12-->
-						<div class="col-md-6 col-sm-12">
-							<h2><i class="fa fa-huge fa-calendar"></i></h2>
-							<h3>April 17 - 19, 2015</h3>
-						</div><!--.col-md-6 col-sm-12-->
-					</div>
-				</div>
-            </div><!--.row-->
-        </div><!-- /.container -->
-    </section><!--/#page-top-->
-    <!-- /.intro-header -->
+	{% include home.html %}
 
-    <!-- Page Content -->
-    <section class="content-section-b" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Finish Up</h2>
-                    <p class="lead">
-						Oakland F'Up Weekend brings mentors and industry experts to help you finish your project (be it a marketing plan, design document, feature spec, article, or the next New York Times bestseller).
-					</p>
-					<h5>Who Attends?</h5>
-					<ul class="lead">
-						<li>designers</li>
-						<li>marketers</li>
-						<li>lawyers</li>
-						<li>artists</li>
-						<li>copywriters &amp; editors</li>
-						<li>developers &amp; programmers</li>
-						<li>small businesses &amp; startups</li>
-					</ul>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/PortWorkers.jpg" alt="">
-                </div>
-            </div>
+	<!-- About -->
+	{% include about.html %}
 
-        </div>
-        <!-- /.container -->
-    </section><!--.content-section-b#about-->
+	<!-- Schedule -->
+	{% include schedule.html %}
 
-	<section class="content-section-a" id="schedule">
-		<div class="container">
-			<div class="row">
-                <div class="col-lg-5 col-sm-12">
-					<hr class="section-heading-spacer">
-					<div class="clearfix"></div>
-					<h2 clas="section-heading">Schedule</h2>
-					<p class="lead">Bring your piles of undone work or that big project you've been putting off.  We'll bring the mentors, experts, food, caffeine and a productive space to <strong>get shit done</strong>.
-					</p>
-                </div><!--left-half-->
+	<!-- Mentors -->
+	{% include mentors.html %}
 
-				<div class="col-lg-7 col-sm-12">
-					<div role="tabpanel">
-						<ul class="nav nav-tabs nav-justified" role="tablist">
-							<li role="presentation" class="active">
-								<a href="#friday" aria-controls="friday" role="tab" data-toggle="tab">
-									<span><time datetime="2015-04-17">Friday</time></span>
-								</a>
-							</li>
-							<li role="presentation">
-								<a href="#saturday" aria-controls="saturday" role="tab" data-toggle="tab">
-									<span><time datetime="2015-04-18">Saturday</time></span>
-								</a>
-							</li>
-							<li role="presentation">
-								<a href="#sunday" aria-controls="sunday" role="tab" data-toggle="tab">
-									<span><time datetime="2015-04-19">Sunday</time></span>
-								</a>
-							</li>
-						</ul>
+	<!-- Sponsors -->
+	{% include sponsors.html %}
 
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="friday">
-								<ul class="list-group">
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-17T18:30:00-08:00">6:00pm</time> <h4>Eat, Meet & Greet</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-17T19:30:00-08:00">7:30pm</time>
-										<h4>Tell &amp; Show</h4>
-									</li>
-								</ul>
-							</div><!--/#friday-->
-							<div role="tabpanel" class="tab-pane" id="saturday">
-								<ul class="list-group">
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T08:00:00-08:00">8:00am</time>
-										<h4>Breakfast</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T10:00:00-08:00">10:00am</time>
-										<h4>Mentoring & Roadmap</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T12:00:00-08:00">noon</time>
-										<h4>Lunch</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T13:30:00-08:00">1:30pm</time>
-										<h4><em>Sprint</em></h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T15:30:00-08:00">3:30pm</time>
-										<h4>Recess / Break</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T16:30:00-08:00">4:30pm</time>
-										<h4><em>Sprint</em></h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-18T18:30:00-08:00">6:30pm</time>
-										<h4>Work/Play (Your Own Flow)</h4>
-									</li>
-								</ul>
-							</div><!--/#saturday-->
-							<div role="tabpanel" class="tab-pane" id="sunday">
-								<ul class="list-group">
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-19T08:00:00-08:00">8:00am</time>
-										<h4><em>Sprint</em></h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-19T11:00:00-08:00">11:00am</time>
-										<h4>Brunch</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-19T14:30:00-08:00">2:30pm</time>
-										<h4>Show &amp; Tell</h4>
-									</li>
-									<li class="list-group-item">
-										<time class="bg-info" datetime="2015-04-19T16:00:00-08:00">4:00pm</time>
-										<h4>Happy Hour</h4>
-									</li>
-								</ul>
-							</div><!--/#sunday-->
-						</div><!--.tab-content-->
-					</div><!--.tabpanel-->
-				</div><!--right-half-->
-			</div><!--.row-->
-		</div><!--container-->
-	</section><!--.content-section-a-->
+	<!-- Register -->
+	{% include register.html %}
 
-{% include mentors.html %}
-{% include sponsors.html %}
+	<!-- Footnav -->
+	{% include footer.html %}
 
-    <section class="banner" id="register">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Register for</h2>
-					<h2>Oakland F'Up Weekend</h2>
-				</div><!--.col-lg-6-->
-				<div class="col-lg-6 text-right">
-					<h4><time datetime="2015-04-17T18:00:00-08:00">April 17th</time> - <time datetime="2015-04-19T18:00:00-08:00">19th</time></h4>
-					<div class="vcard">
-						<h4 class="fn org">The Port Workspaces</h4>
-						<h4 class="street-address">101 Broadway</h4>
-						<h4><span class="extended-address">Jack London Square</span>, <span class="locality">Oakland</span>, <span class="region">CA</span></h4>
-					</div><!--.vcard-->
-                </div><!--.col-lg-6-->
-			</div><!--.row-->
-
-			<div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-					<iframe
-						src="//eventbrite.com/tickets-external?eid=16176347892&ref=etckt"
-						frameborder="0"
-						height="100%" width="100%"
-						vspace="0" hspace="0"
-						marginheight="5" marginwidth="5"
-						scrolling="auto"
-						allowtransparency="true">
-					</iframe>
-					<div>
-						<a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">
-							Online event registration
-						</a>
-						<span style="color:#ddd;"> for </span>
-						<a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/oakland-finished-up-weekend-tickets-16176347892?ref=etckt">
-							Oakland Finish Up Weekend
-						</a>
-						<span style="color:#ddd;">powered by</span>
-						<a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">
-							Eventbrite
-						</a>
-					</div>
-                </div><!--.col-lg-6-->
-            </div><!--.row-->
-        </div><!--.container-->
-    </section>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li> <a href="#">Home</a> </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li> <a href="#about">About</a> </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                    	<li> <a href="#schedule">Schedule</a> </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                    	<li> <a href="#mentors">Mentors</a> </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li> <a href="#sponsors">Sponsors</a> </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                    	<li> <a href="#register">Register</a> </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy;2015 Seemant Kulleen &amp; Aurice Guyton. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+	<!-- JavaScripts -->
+	{% include javascripts.html %}
 </body>
 
 </html>
