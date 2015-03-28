@@ -26,7 +26,7 @@ html, body {
 }
 
 /* additional sections */
-.home, .about, .sponsors, .schedule {
+.home, .sponsors, .schedule {
 	color: #f8f8f8;
 }
 
@@ -39,6 +39,7 @@ html, body {
   background: url(/img/oakland-skyline-night-baybridge.jpg) no-repeat center center fixed; 
 }
 
+/*
 #about {
   background:
   	linear-gradient(
@@ -47,6 +48,7 @@ html, body {
 	),
     url(/img/jacklondon.jpg) no-repeat center center fixed;
 }
+*/
 
 #schedule {
   background-color: white;
