@@ -2,10 +2,10 @@
   target: home
 - name: About
   target: about
-- name: Schedule
-  target: schedule
 - name: Mentors
   target: mentors
+- name: Schedule
+  target: schedule
 - name: Sponsors
   target: sponsors
 - name: Register
