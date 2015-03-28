@@ -5,6 +5,10 @@ area: Leadership & Development
 company: Leland Thompson Consulting
 role: Founder
 link: lelandthompsonconsulting.com
+help:
+  - Develop a customer loyalty plan
+  - Improve your sales strategy
+  - Coach your sales team
 social:
   - name: twitter
     link: twitter.com/leland1010

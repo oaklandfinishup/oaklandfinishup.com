@@ -5,6 +5,10 @@ area: Product & Strategy
 company: Cookstream
 role: Business Development
 link: bit.ly/integrateit
+help:
+  - Develop your sales strategy
+  - Marketing your tech product
+  - Plan your Sales strategy
 social:
   - name: twitter
     link: twitter.com/julfirefly

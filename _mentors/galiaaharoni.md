@@ -5,6 +5,10 @@ area: Legal & HR
 company: HG Business Law 
 link: hgbusinesslaw.com
 role: Co-Founder
+help:
+  - Intellectual property protection
+  - Contracts & Agreements
+  - Legal setup for your business or startup
 social:
   - name: twitter
     link: twitter.com/HGbusinesslaw

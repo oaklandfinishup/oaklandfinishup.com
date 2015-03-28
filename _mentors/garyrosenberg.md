@@ -5,6 +5,10 @@ area: Business Strategy
 role: CEO
 company: American Ventures
 link: americanventuresllc.net
+help:
+  - Analyze & create strategic goals
+  - Develop your Business Plan
+  - Design your marketing campaign
 social: 
   - name: linkedin
     link: www.linkedin.com/pub/gary-rosenberg/20/2b1/195/en
