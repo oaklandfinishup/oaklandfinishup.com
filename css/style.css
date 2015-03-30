@@ -81,16 +81,12 @@ html, body {
 }
 
 
-#schedule li > time {
+.list-group-item > time {
 	float: right;
 	margin-right: 1.5rem;
 	padding: 0 1.5rem;
 	font-size: 1.6rem;
 	line-height: 4rem;
-}
-
-#information .panel {
-  opacity: 0.85;
 }
 
 #google_map {
