@@ -7,8 +7,8 @@ link: bendelaney.com
 area: Startups & Nonprofits
 help:
   - Setup 501(c)3 & Social Business
-  - Marketing your nonprofit
-  - Writing & bublishing your book
+  - Market your nonprofit
+  - Write & publish your book
 social:
   - name: twitter
     link: www.twitter.com/BenDelaneyNow
