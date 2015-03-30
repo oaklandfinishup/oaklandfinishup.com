@@ -36,7 +36,11 @@ html, body {
 }
 
 #home {
-  background: url(/img/oakland-skyline-night-baybridge.jpg) no-repeat center center fixed; 
+  background: url(/img/oakland-skyline-night-baybridge.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*
@@ -117,4 +121,8 @@ footer .glyphicon:hover {
 span > time {
 	font-weight: bold;
 	font-size: 2rem;
+}
+
+span.text-right {
+	float: right;
 }
