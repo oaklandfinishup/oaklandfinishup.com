@@ -15,4 +15,4 @@ social:
   - name: linkedin
     link: linkedin.com/in/geraldineconventodigital/en
 ---
-Geraldine's success has been corporate world and working within small organizations led to her understand the importance of structure, timelines and completing specific tasks to contribute to larger business objectives. All of which have informed her outlook of what’s possible in the realms of business. Anything.
+Geraldine is the principle of Meet Geraldine where she leads her team through through web development, graphic design and search engine optimization projects. Geraldine's success in the corporate world and working within small organizations led to her understanding of the importance of structure, timelines and completing specific tasks to contribute to larger business objectives. All of which have informed her outlook of what’s possible in the realms of business: anything
