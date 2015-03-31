@@ -5,7 +5,7 @@ $(document).ready(function (){
       , navOffset = $('#navbar').height()
 	;
 
-	console.log(target);
+	event.preventDefault();
 
     return $('html, body')
 		.animate(
