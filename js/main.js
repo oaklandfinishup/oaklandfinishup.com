@@ -1,20 +1,23 @@
 $(document).ready(function (){
   // smooth scrolling
-  $("#topnav li a[href^='#']").on('click', function(event) {
-    var target;
-    target = this.hash;
+  $(".smoothie").on('click', function(event) {
+    var target = $(this.hash)
+      , navOffset = $('#navbar').height()
+	;
 
-    event.preventDefault();
+	console.log(target);
 
-    var navOffset;
-    navOffset = $('#navbar').height();
-
-    return $('html, body').animate({
-      scrollTop: $(this.hash).offset().top - navOffset
-    }, 300, function() {
-      return window.history.pushState(null, null, target);
-    });
+    return $('html, body')
+		.animate(
+			{ scrollTop: target.offset().top - navOffset },
+			600,
+			function() {
+				return window.history.pushState(null, null, target.selector);
+			}
+		);
   });
+
+
   // create a LatLng object containing the coordinate for the center of the map
   var latlng = new google.maps.LatLng(37.795665,-122.276998);
 
@@ -44,7 +47,7 @@ $(document).ready(function (){
 
   // add information window
   var infowindow = new google.maps.InfoWindow({
-    content:  '<div class="info"><strong>The Port Workspaces</strong><br><br>101 Broadway<br> Jack London Square, Oakland, CA</div>'
+    content:  '<div class="info"><h3>F\'Up Here</h3><strong>The Port Workspaces</strong><br><br>101 Broadway<br> Jack London Square, Oakland, CA</div>'
   });  
 });
 
