@@ -6,9 +6,9 @@ company: Joie Seldon, M.A.
 link: joieseldon.com
 area: Crisis Management
 help:
-  - Prioritize and organize your project.
-  - Develop and practice your marketing pitch.
-  - Develop a team management protocol.
+  - Prioritize & organize your project.
+  - Develop & practise your marketing pitch.
+  - Create team management protocol.
 social:
   - name: twitter
     link: twitter.com/JoieSeldon
