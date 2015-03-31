@@ -47,17 +47,15 @@
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
 									<h4 class="panel-title">
-										<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">How I can help you</a>
+										<a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">How I can help you</a>
 									</h4>
 								</div><!--.panel-heading-->
-								<div id="hcihy{{ mentornum }}" class="panel-collapse" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-									<div class="panel-body">
-										<ul>
-										{% for how in mentor.help %}
-											<li>{{ how }}</li>
-										{% endfor %}
-										</ul>
-									</div><!--.panel-body-->
+								<div id="hcihy{{ mentornum }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
+									<ul class="list-group">
+									{% for how in mentor.help %}
+										<li class="list-group-item">{{ how }}</li>
+									{% endfor %}
+									</ul>
 								</div><!--.panel-collapse-->
 							</div><!--.panel-->
 						</div><!--.panel-group-->
