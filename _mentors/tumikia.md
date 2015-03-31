@@ -6,7 +6,7 @@ company: TWK Web & Print Design
 role: Owner
 link: twkwebandprintdesign.com
 help:
-  - Establish your online presence
+  - Establish your social media presence
   - Build a look-and-feel for your website
   - Teach you to manage your online presence
 social:
