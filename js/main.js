@@ -1,5 +1,20 @@
 $(document).ready(function (){
+  // smooth scrolling
+  $("#topnav li a[href^='#']").on('click', function(event) {
+    var target;
+    target = this.hash;
 
+    event.preventDefault();
+
+    var navOffset;
+    navOffset = $('#navbar').height();
+
+    return $('html, body').animate({
+      scrollTop: $(this.hash).offset().top - navOffset
+    }, 300, function() {
+      return window.history.pushState(null, null, target);
+    });
+  });
   // create a LatLng object containing the coordinate for the center of the map
   var latlng = new google.maps.LatLng(37.795665,-122.276998);
 

@@ -14,7 +14,7 @@
 		</div><!--.navbar-header-->
 
 		<div class="collapse navbar-collapse" id="navbar-collapse-main">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right" id="topnav">
 			{% for nav in site.data.navigation %}
 				<li><a href="#{{ nav.target }}">{{ nav.name }}</a></li>
 			{% endfor %}
