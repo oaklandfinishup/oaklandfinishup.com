@@ -22,7 +22,7 @@
 					<img src="/img/mentors/{{ mentor.photo }}">
 					<div class="caption">
 						<h3>{{ mentor.name }}</h3>
-						<h4 class="company"><small>{{ mentor.role }}, <a href="http://{{ mentor.link }}">{{ mentor.company }}</a></small></h4>
+						<h4 class="company"><small>{{ mentor.role }}, <a href="http://{{ mentor.link }}" target="_blank">{{ mentor.company }}</a></small></h4>
 						<ul>
 							{% for how in mentor.help %}
 								<li>{{ how }}</li>
