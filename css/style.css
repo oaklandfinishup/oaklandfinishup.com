@@ -26,7 +26,7 @@ html, body {
 }
 
 /* additional sections */
-.home, .sponsors, .schedule {
+.home, .schedule {
 	color: #f8f8f8;
 }
 
@@ -59,7 +59,7 @@ html, body {
 }
 
 
-#sponsors, #schedule {
+#schedule {
   background:
   	linear-gradient(
 		rgba(0,0,0,0.75),
