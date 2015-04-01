@@ -4,7 +4,7 @@ photo: placeholder-m.jpg
 area: Accounting & Business
 role: Accounting Consultant
 company: Business Plan Network
-link: businessplannetwork.com
+link: turneraccountingroup.com
 social:
   - name: twitter
     link: twitter.com/Consultant2012
