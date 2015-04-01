@@ -1,5 +1,5 @@
 ---
-name: Robert T. Speller, Jr.
+name: Robert T Speller, Jr
 photo: placeholder-m.jpg
 area: Accounting & Business
 role: Accounting Consultant
