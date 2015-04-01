@@ -10,6 +10,10 @@ social:
     link: twitter.com/scribblings
   - name: linkedin
     link: linkedin.com/in/yorick/en
+help:
+  - Define your product
+  - Finish your software project
+  - Prioritize your steps and goals
 ---
 
 As an entrepreneur, Yorick has founded and sold companies.  As a technological lead and innovator, he has guided several startups toward success. Yorick's success has come from solving the unsolvable by going where no-one thinks to go.
