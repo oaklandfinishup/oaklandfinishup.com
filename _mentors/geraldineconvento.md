@@ -1,14 +1,14 @@
 ---
 name: Geraldine Convento
 role: Founder
-company: Meet Geraldine
+company: MeetGeraldine
 link: meetgeraldine.com
 area: Branding & Marketing
 photo: geraldine.jpg
 help:
-  - Marketing your crowdfunding campaign
   - Defining your brand identity
   - Designing your web presence
+  - Planning your SEO strategy
 social:
   - name: twitter
     link: twitter.com/tweetgeraldine
