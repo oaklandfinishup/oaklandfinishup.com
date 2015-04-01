@@ -2,7 +2,7 @@
 name: Robert T Speller, Jr
 photo: placeholder-m.jpg
 area: Accounting & Business
-role: Accounting Consultant
+role: Consultant
 company: Turner Accounting Group
 link: turneraccountingroup.com
 social:
