@@ -6,9 +6,9 @@ company: CyberEdge Information Services
 link: bendelaney.com
 area: Startups & Nonprofits
 help:
-  - Setup 501(c)3 & Social Business
-  - Market your nonprofit
-  - Write & publish your book
+  - Finish your business plan
+  - Create a marketing plan
+  - Write, produce & publish your book
 social:
   - name: twitter
     link: www.twitter.com/BenDelaneyNow
