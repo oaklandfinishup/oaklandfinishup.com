@@ -6,15 +6,15 @@
                 <h2 class="section-heading">Sponsors (Helping us F'Up)</h2>
                 <p class="lead">With thanks for their generosity and kindness.</p>
             </div><!--.col-lg-5-->
-            {% for sponsor in site.data.sponsors %}
 			<div class="col-lg-7 col-sm-6">
+            {% for sponsor in site.data.sponsors %}
 				<div class="thumbnail sponsor">
 					<a href="http://{{ sponsor.url }}" target="_blank">
 						<img src="/img/sponsors/{{ sponsor.logo }}">
 					</a>
 				</div><!--.thumbnail-->
-			</div>
             {% endfor %}
+			</div>
         </div><!--.row-->
 
     </div><!--.container-->
