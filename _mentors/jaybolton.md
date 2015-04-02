@@ -8,6 +8,10 @@ photo: jay.jpg
 social:
   - name: linkedin
     link: linkedin.com/in/jayrbolton/en
+help:
+  - Software Development, esp. web-apps and server-side.
+  - Product design & UX.
+  - Starting a startup.
 ---
 
 A former EMT, film crew grip, and classics major, Jay found his passion in programming.
