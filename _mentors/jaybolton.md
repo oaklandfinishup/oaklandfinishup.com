@@ -9,7 +9,7 @@ social:
   - name: linkedin
     link: linkedin.com/in/jayrbolton/en
 help:
-  - Software Development, esp. web-apps and server-side.
+  - Software dev. (esp, web-apps)
   - Product design & UX.
   - Starting a startup.
 ---
