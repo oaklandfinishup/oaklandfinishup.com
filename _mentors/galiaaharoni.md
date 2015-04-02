@@ -6,9 +6,9 @@ company: HG Business Law
 link: hgbusinesslaw.com
 role: Co-Founder
 help:
-  - Intellectual property protection
-  - Contracts & Agreements
-  - Legal setup for your business or startup
+  - Intellectual property protection.
+  - Contracts and agreements.
+  - Legal framework for your startup.
 social:
   - name: twitter
     link: twitter.com/HGbusinesslaw
