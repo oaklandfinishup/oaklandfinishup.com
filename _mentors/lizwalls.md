@@ -9,9 +9,9 @@ social:
   - name: linkedin
     link: linkedin.com/pub/elizabeth-walls/12/806/620/en
 help:
-  - Bring a new technology to market.
-  - Identify &amp; characterize target markets.
-  - Create a technology adoption plan.
+  - Create go-to-market strategies.
+  - Find/characterize target markets.
+  - Technology adoption planning.
 
 ---
 Liz Walls has a passion for the outdoors.  Her educational and career focus has been around renewable & sustainable energy and specifically wind resources.  More specifically, on assessing and optimizing wind resource usage.
