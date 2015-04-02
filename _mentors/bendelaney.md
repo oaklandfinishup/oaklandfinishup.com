@@ -8,7 +8,7 @@ area: Startups & Nonprofits
 help:
   - Finish your business plan
   - Create a marketing plan
-  - Write, produce & publish your book
+  - Write/produce/publish your book
 social:
   - name: twitter
     link: www.twitter.com/BenDelaneyNow
