@@ -10,3 +10,5 @@
   target: sponsors
 - name: Register
   target: register
+- name: Contact
+  target: contact
