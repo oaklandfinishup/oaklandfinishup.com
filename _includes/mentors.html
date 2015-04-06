@@ -26,8 +26,8 @@
 										<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#bio{{ mentornum }}" aria-expanded="true" aria-controls="bio{{ mentornum }}">Bio</a>
 										<span class="text-right">
 										{% for soc in mentor.social  %}
-											<a href="http://{{ soc.link }}" target="_blank">
-												<i class="fa fa-{{ soc.name }}"></i>
+										<a href="http://{{ soc.link }}" class="{{ soc.name }}" target="_blank">
+											<i class="fa fa-{{ soc.name }}{% if soc.name == "linkedin" %}-square{% endif %}"></i>
 											</a>
 										{% endfor %}
 										</span>
