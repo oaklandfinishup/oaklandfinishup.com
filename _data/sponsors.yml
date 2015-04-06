@@ -1,3 +1,7 @@
+- name: Basecamp
+  logo: basecamp.png
+  url: basecamp.com
+
 - name: The Port Workspaces
   logo: theport.png
   url: portworkspaces.com
