@@ -4,7 +4,7 @@
             <div class="col-lg-5 col-sm-12 list-group highlevel">
 				<h2>How F'Up Works</h2>
 				{% for how in site.data.howitworks %}
-				<a href="#schedule" class="list-group-item">
+				<a href="#schedule" class="smoothie list-group-item">
 					<h4 class="list-group-item-heading">Step {{ forloop.index }}: {{ how.item }}</h4>
 					{% for detail in how.details %}
 						<p class="list-group-item-text">{{ detail }}</p>
@@ -17,129 +17,31 @@
 				<h2>When to F'Up</h2>
 				<div role="tabpanel">
 					<ul class="nav nav-tabs nav-justified" role="tablist">
-						<li role="presentation" class="active">
-							<a href="#friday" aria-controls="friday" role="tab" data-toggle="tab">
-								<span><time datetime="2015-04-17">Friday</time></span>
+					{% for sched in site.posts reversed %}
+						<li role="presentation" {% if forloop.first %} class="active"{% endif %}>
+							{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+							<a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
+								<span><time datetime="{{ sched.date }}">{{ day | capitalize }}</time></span>
 							</a>
 						</li>
-						<li role="presentation">
-							<a href="#saturday" aria-controls="saturday" role="tab" data-toggle="tab">
-								<span><time datetime="2015-04-18">Saturday</time></span>
-							</a>
-						</li>
-						<li role="presentation">
-							<a href="#sunday" aria-controls="sunday" role="tab" data-toggle="tab">
-								<span><time datetime="2015-04-19">Sunday</time></span>
-							</a>
-						</li>
+					{% endfor %}
 					</ul>
 
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="friday">
+					{% for sched in site.posts reversed %}
+						{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+						<div role="tabpanel" {% if forloop.first %}class="tab-pane active"{% else %}class="tab-pane"{% endif %} id="{{ day }}">
 							<div class="list-group">
+							{% for event in sched.schedule %}
 								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-17T18:30:00-08:00">
-										6:00pm
-									</time>
-									<h4 class="list-group-item-heading">
-										Eat, Meet & Greet
-									</h4>
-									<p class="list-group-item-text">
-										Register, be received, and then mix &amp; mingle over drinks.
-									</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-17T19:30:00-08:00">
-										7:30pm
-									</time>
-									<h4 class="list-group-item-heading">
-										Mentor Pitch
-									</h4>
-									<p class="list-group-item-text">
-										The mentors will "pitch" how they can help you.
-									</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-17T20:00:00-08:00">
-										8:00pm
-									</time>
-									<h4 class="list-group-item-heading">
-										F'Up Pitch
-									</h4>
-									<p class="list-group-item-text">
-										"Pitch" your project and what you need to <strong>finish up</strong>.
-									</p>
-								</div>
-							</div>
-						</div><!--/#friday-->
-						<div role="tabpanel" class="tab-pane" id="saturday">
-							<div class="list-group">
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T08:00:00-08:00">8:00am</time>
-									<h4 class="list-group-item-heading">Breakfast</h4>
-									<p class="list-group-item-text">Fuel up. You'll need it.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T10:00:00-08:00">10:00am</time>
-									<h4 class="list-group-item-heading">Mentoring &amp; Roadmap</h4>
-									<p class="list-group-item-text">A mentor will help you and 4 other teams map your weekend work.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T12:00:00-08:00">noon</time>
-									<h4 class="list-group-item-heading">Lunch</h4>
-									<p class="list-group-item-text">Refuel with a quick lunch.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T13:30:00-08:00">1:30pm</time>
-									<h4 class="list-group-item-heading">Sprint</h4>
-									<p class="list-group-item-text">Heads down and go!</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T15:30:00-08:00">3:30pm</time>
-									<h4 class="list-group-item-heading">Recess / Break</h4>
-									<p class="list-group-item-text">Rest your eyes, rest your mind, rest your body. Take a break!</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T16:30:00-08:00">4:30pm</time>
-									<h4 class="list-group-item-heading">Sprint</h4>
-									<p class="list-group-item-text">Work your butt off. Inspire those around you.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T18:30:00-08:00">6:30pm</time>
-									<h4 class="list-group-item-heading">Your own pace</h4>
-									<p class="list-group-item-text">Saturday night's alright for...co-working with your peers.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-18T22:00:00-08:00">10:00pm</time>
-									<h4 class="list-group-item-heading">Overnight Marathon</h4>
-									<p class="list-group-item-text">Pull an all-nighter, burn the midnight oil: we'll light your candle.</p>
-								</div>
-							</div>
-						</div><!--/#saturday-->
-						<div role="tabpanel" class="tab-pane" id="sunday">
-							<div class="list-group">
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-19T08:00:00-08:00">8:00am</time>
-									<h4 class="list-group-item-heading">Sprint</h4>
-									<p class="list-group-item-text">Hit the ground running on the last day.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-19T11:00:00-08:00">11:00am</time>
-									<h4 class="list-group-item-heading">Working Brunch</h4>
-									<p class="list-group-item-text">Fuel up while you work.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-19T14:30:00-08:00">2:30pm</time>
-									<h4 class="list-group-item-heading">Show &amp; Tell</h4>
-									<p class="list-group-item-text">Show off your work. Cheer as others show off their progress.</p>
-								</div>
-								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-19T16:00:00-08:00">4:00pm</time>
-									<h4 class="list-group-item-heading">Happy Hour</h4>
-									<p class="list-group-item-text"><strong>Finish Up</strong> the weekend with a toast to your success.</p>
-								</div>
-							</div>
-						</div><!--/#sunday-->
+									<time class="bg-info" datetime="2015-04-17T18:30:00-08:00">{{ event.time | date:"%I:%M %p" }}</time>
+									<h4 class="list-group-item-heading">{{ event.title }}</h4>
+									<p class="list-group-item-text">{{ event.description }}</p>
+								</div><!--.list-group-item-->
+							{% endfor %}
+							</div><!--.list-group-->
+						</div><!--/#{{ day }}-->
+					{% endfor %}
 					</div><!--.tab-content-->
 				</div><!--.tabpanel-->
 			</div><!--right-half-->
