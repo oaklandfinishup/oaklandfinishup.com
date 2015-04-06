@@ -10,15 +10,12 @@
         	</div>
     	</div><!--.row-->
 
+		<div class="row">
 		{% for mentor in site.collections.mentors.docs %}
 		{% assign mentornum = forloop.index %}
-		{% assign remainder = mentornum | modulo:4 %}
-		{% if remainder == 1 %}
-		<div class="row">
-		{% endif %}
-			<div class="col-sm-4 col-md-3 col-lg-3">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<div class="thumbnail mentor">
-					<img src="/img/mentors/{{ mentor.photo }}">
+					<img class="img-thumbnail" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
 					<div class="caption">
 						<h3><small><strong>{{ mentor.name }}</strong></small></h3>
 						<h5 class="company text-right"><small>{{ mentor.role }}, <a href="http://{{ mentor.link }}" target="_blank">{{ mentor.company }}</a></small></h5>
@@ -42,7 +39,7 @@
 									</div><!--.panel-body -->
 								</div><!--.panel-collapse-->
 							</div><!--.panel-->
-							<div class="panel panel-default">
+							<div class="panel panel-danger">
 								<div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
 									<h5 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">How I can help you</a>
@@ -59,12 +56,11 @@
 						</div><!--.panel-group-->
 					</div><!--.caption-->
 				</div><!--.thumbnail-->
-			</div><!--.col-sm-4-->
-		{% if remainder == 0 %}
-		</div><!--.row-->
-		{% endif %}
+			</div><!--.col-sm-6-->
 		{% endfor %}
+		</div><!--.row-->
+		<div class="row">
 		<p class="text-center lead"><strong>They're ready! <a class="smoothie" href="#register">Are you?</strong></a></p>
-		</div>
+		</div><!--.row-->
 	</div><!--.container-->
 </section><!--/#mentors-->
