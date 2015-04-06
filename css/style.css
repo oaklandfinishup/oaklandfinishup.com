@@ -138,3 +138,6 @@ span.text-right {
 	cursor: default;
 }
 
+.img-thumbnail {
+	border: 2px solid transparent;
+}
