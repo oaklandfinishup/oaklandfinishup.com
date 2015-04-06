@@ -21,7 +21,7 @@
 						<li role="presentation" {% if forloop.first %} class="active"{% endif %}>
 							{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
 							<a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
-								<span><time datetime="{{ sched.date }}">{{ day | capitalize }}</time></span>
+								<span><time datetime="{{ sched.date | date:"%F" }}">{{ day | capitalize }}</time></span>
 							</a>
 						</li>
 					{% endfor %}
@@ -34,7 +34,7 @@
 							<div class="list-group">
 							{% for event in sched.schedule %}
 								<div class="list-group-item">
-									<time class="bg-info" datetime="2015-04-17T18:30:00-08:00">{{ event.time | date:"%I:%M %p" }}</time>
+									<time class="bg-info" datetime="{{ event.time | date_to_xmlschema }}">{{ event.time | date:"%I:%M %p" }}</time>
 									<h4 class="list-group-item-heading">{{ event.title }}</h4>
 									<p class="list-group-item-text">{{ event.description }}</p>
 								</div><!--.list-group-item-->
