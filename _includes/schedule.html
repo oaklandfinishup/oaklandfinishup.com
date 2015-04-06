@@ -30,7 +30,7 @@
 					<div class="tab-content">
 					{% for sched in site.posts reversed %}
 						{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-						<div role="tabpanel" {% if forloop.first %}class="tab-pane active"{% else %}class="tab-pane"{% endif %} id="{{ day }}">
+						<div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
 							<div class="list-group">
 							{% for event in sched.schedule %}
 								<div class="list-group-item">
