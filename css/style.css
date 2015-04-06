@@ -26,7 +26,7 @@ html, body {
 }
 
 /* additional sections */
-.home, .schedule {
+.home, .highlevel {
 	color: #f8f8f8;
 }
 
@@ -121,4 +121,15 @@ span > time {
 
 span.text-right {
 	float: right;
+}
+
+#hidden_iframe {
+	display: none;
+}
+
+.fup48 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
 }
