@@ -6,9 +6,9 @@ link: meetgeraldine.com
 area: Branding & Marketing
 photo: geraldine.jpg
 help:
-  - Defining your brand identity
-  - Designing your web presence
-  - Planning your SEO strategy
+  - Define your brand identity
+  - Design your web presence
+  - Plan your SEO strategy
 social:
   - name: twitter
     link: twitter.com/tweetgeraldine
