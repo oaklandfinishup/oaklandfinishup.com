@@ -26,7 +26,7 @@ html, body {
 }
 
 /* additional sections */
-.home, .highlevel {
+.home, .schedule h2 {
 	color: #f8f8f8;
 }
 
@@ -133,3 +133,8 @@ span.text-right {
 	font-style: italic;
 	font-weight: bold;
 }
+
+#schedule a.list-group-item {
+	cursor: default;
+}
+
