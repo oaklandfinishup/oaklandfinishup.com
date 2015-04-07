@@ -10,11 +10,11 @@
         	</div>
     	</div><!--.row-->
 
-		<div class="row">
+		<div class="row" id="mentor-gallery">
 		{% for mentor in site.collections.mentors.docs %}
 		{% assign mentornum = forloop.index %}
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="thumbnail mentor">
+			<div class="col-sm-6 col-md-4 col-lg-3 mentor">
+				<div class="thumbnail">
 					<img class="img-thumbnail" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
 					<div class="caption">
 						<h3><small><strong>{{ mentor.name }}</strong></small></h3>
