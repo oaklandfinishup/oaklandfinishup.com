@@ -8,6 +8,8 @@ photo: jay.jpg
 social:
   - name: linkedin
     link: linkedin.com/in/jayrbolton/en
+  - name: twitter
+    link: twitter.com/commitchange
 help:
   - Software dev. (esp, web-apps)
   - Product design & UX.
