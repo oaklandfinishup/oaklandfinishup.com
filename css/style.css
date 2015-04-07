@@ -110,7 +110,7 @@ footer .glyphicon:hover {
 	height: 65px;
 }
 
-.thumbnail.mentor > img {
+.mentor > .thumbnail > img {
 	height: 250px;
 }
 
