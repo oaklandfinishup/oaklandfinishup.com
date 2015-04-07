@@ -1,5 +1,5 @@
 - name: Basecamp
-  logo: basecamp.png
+  logo: basecamp.svg
   url: basecamp.com
 
 - name: The Port Workspaces
@@ -7,7 +7,7 @@
   url: portworkspaces.com
 
 - name: CommitChange
-  logo: commitchange.png
+  logo: commitchange.svg
   url: commitchange.com
 
 - name: The D/Style Network
