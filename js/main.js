@@ -18,6 +18,7 @@ $(document).ready(function (){
   });
 
   // Shuffle the mentor gallery
+  // see: http://stackoverflow.com/a/9641564/1968883
   var parent = document.getElementById("mentor-gallery");
   var divs = parent.children;
   var frag = document.createDocumentFragment();
