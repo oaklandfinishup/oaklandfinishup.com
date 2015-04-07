@@ -6,6 +6,8 @@ role: Co-Founder & Engineering
 company: Cancalia
 link: cancalia.com
 social:
+  - name: twitter
+    link: twitter.com/cancalia
   - name: linkedin
     link: linkedin.com/pub/elizabeth-walls/12/806/620/en
 help:
