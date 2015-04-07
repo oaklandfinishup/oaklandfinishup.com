@@ -6,6 +6,8 @@ link: commitchange.com
 area: Software & Technology
 photo: jay.jpg
 social:
+  - name: twitter
+    link: twitter.com/commitchange
   - name: linkedin
     link: linkedin.com/in/jayrbolton/en
 help:
