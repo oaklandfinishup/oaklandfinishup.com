@@ -7,7 +7,7 @@ role: Business Development
 link: bit.ly/integrateit
 help:
   - Develop your sales strategy
-  - Launch and promote your tech product
+  - Launch & promote your tech product
   - Plan your marketing communication
 social:
   - name: twitter
