@@ -7,8 +7,8 @@ role: Business Development
 link: bit.ly/integrateit
 help:
   - Develop your sales strategy
-  - Marketing your tech product
-  - Plan your Sales strategy
+  - Launch and promote your tech product
+  - Plan your marketing communication
 social:
   - name: twitter
     link: twitter.com/julfirefly
