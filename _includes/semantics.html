@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+[{
+	"@context" : "http://schema.org",
+	"@type" : "BusinessEvent",
+	"name" : "{{ site.title }}",
+	"url" : "{{ site.url }}",
+	"startDate" : "2015-04-17T18:00",
+	"endDate" : "2015-04-19T18:00",
+	"location" : {
+		"@type" : "Place",
+		"name" : "The Port Workspaces",
+		"address" : "101 Broadway, Oakland, CA",
+		"sameAs" : "http://portworkspaces.com"
+	},
+	"offers" : {
+		"url" : "http://www.eventbrite.com/e/oakland-finish-up-weekend-tickets-16176347892"
+	},
+	"performer" : [
+		{% for mentor in site.collections.mentors.docs %}
+		{
+			"@type" : "Person",
+			"image" : "/img/mentors/{{ mentor.photo }}",
+			"name" : "{{ mentor.name }}",
+			"sameAs" : "http://{{ mentor.link }}",
+		}
+		{% endfor %}
+	]
+}]
+</script>
