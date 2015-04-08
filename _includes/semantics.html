@@ -5,7 +5,7 @@
 	"name" : "{{ site.title }}",
 	"url" : "{{ site.url }}",
 	"startDate" : "2015-04-17T18:00",
-	"endDate" : "2015-04-19T18:00",
+	"duration" : "P2D",
 	"location" : {
 		"@type" : "Place",
 		"name" : "The Port Workspaces",
@@ -21,9 +21,20 @@
 			"@type" : "Person",
 			"image" : "/img/mentors/{{ mentor.photo }}",
 			"name" : "{{ mentor.name }}",
-			"sameAs" : "http://{{ mentor.link }}",
-		}
+			"url" : "http://{{ mentor.link }}",
+		}{% unless forloop.last %},{% endunless %}
 		{% endfor %}
+	],
+	"organizer" : [
+		{
+			"@type" : "Person",
+			"name" : "Aurice Guyton"
+		},
+		{
+			"@type" : "Person",
+			"name" : "Seemant Kulleen",
+			"sameAs" : "http://seemantk.com",
+		}
 	]
 }]
 </script>
