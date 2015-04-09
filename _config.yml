@@ -4,5 +4,8 @@ timezone: US/Pacific
 url: http://oaklandfup.com
 
 collections:
-    mentors:
-        output: true
+    - mentors
+  
+
+gems:
+  - jekyll-sitemap
