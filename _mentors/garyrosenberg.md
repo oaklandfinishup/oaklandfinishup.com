@@ -6,7 +6,7 @@ role: CEO
 company: American Ventures
 link: americanventuresllc.net
 help:
-  - Kickstart your crowdfunding campaign
+  - Start your crowdfunding campaign
   - Develop your Business Plan
   - Design your marketing campaign
 social: 
