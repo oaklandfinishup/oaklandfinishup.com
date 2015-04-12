@@ -55,17 +55,12 @@ html, body {
 */
 
 #schedule {
-  background-color: white;
-}
-
-
-#schedule {
   background:
   	linear-gradient(
 		rgba(0,0,0,0.75),
 		rgba(0,0,0,0.75)
 	),
-    url(/img/finishrun.jpg) no-repeat center center fixed;
+    url(/img/home-office.jpg) no-repeat center center fixed;
 }
 
 
