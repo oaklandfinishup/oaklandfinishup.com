@@ -18,7 +18,11 @@
             </div><!--left-half-->
 
 			<div class="col-lg-7 col-sm-12">
-				<h2>When to F'Up</h2>
+			{% for section in site.collections.sections.docs %}
+			{% if section.name == "schedule" %}
+				<h2>{{ section.title }}</h2>
+			{% endif %}
+			{% endfor %}
 				<div role="tabpanel">
 					<ul class="nav nav-tabs nav-justified" role="tablist">
 					{% for sched in site.collections.schedule.docs %}
