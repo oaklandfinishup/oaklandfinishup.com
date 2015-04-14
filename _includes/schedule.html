@@ -21,8 +21,6 @@
 			{% for section in site.collections.sections.docs %}
 			{% if section.name == "schedule" %}
 				<h2>{{ section.title }}</h2>
-			{% endif %}
-			{% endfor %}
 				<div role="tabpanel">
 					<ul class="nav nav-tabs nav-justified" role="tablist">
 					{% for sched in site.collections.schedule.docs %}
@@ -53,8 +51,12 @@
 					{% endfor %}
 					</div><!--.tab-content-->
 				</div><!--.tabpanel-->
+				{% assign tagline = section.tagline %}
+			{% endif %}
+			{% endfor %}
 			</div><!--right-half-->
 		</div><!--.row-->
+		<h3 class="text-center">{{ tagline }}</h3>
 	</div><!--container-->
 </section><!--.content-section-a-->
 
