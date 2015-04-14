@@ -3,7 +3,7 @@
 		<div class="row">
             <div class="col-lg-5 col-sm-12 list-group highlevel">
 				<h2>How F'Up Works</h2>
-				{% for how in site.data.howitworks %}
+				{% for how in site.collections.howitworks.docs[0].steps %}
 				<a href="#schedule" class="smoothie list-group-item">
 					<h4 class="list-group-item-heading">Step {{ forloop.index }}: {{ how.item }}</h4>
 					{% for detail in how.details %}
