@@ -16,4 +16,4 @@ For 48 hours, get expertise, mentorship, inspiration & focus to get things done 
   - Write the final chapter of your bestseller
   - Release & ship your mobile app
 
-Get coached, guided and inspired by [successful finishers](#mentors) in technology, government, business and non-profits. Get the help you need to **finish up**.
+Get coached, guided and inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business and non-profits. Get the help you need to **finish up**.
