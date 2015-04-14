@@ -1,15 +1,19 @@
 <section class="pad-section" id="gratitude">
 	<div class="container">
+	{% for section in site.collections.sections.docs %}
+	{% if section.name == "thanks" %}
 		<div class="row">
 			<div class="col-lg-6 col-sm-12" id="inspiration">
-				<h2>Other <strong>F'Up</strong>s</h2>
+				<h2>{{ section.title }}</h2>
 				<ul style="list-unstyled">
-				{% for ty in site.data.thanks %}
+  				{% for ty in section.previous %}
 					<li><a href="http://{{ ty.link }}">{{ ty.name }}</a></li>
 				{% endfor %}
 				</ul>
-			</div>
-		</div>
-	</div>
+			</div><!--/#inspiration-->
+		</div><!--.row-->
+	{% endif %}
+	{% endfor %}
+	</div><!--.container-->
 </section>
 
