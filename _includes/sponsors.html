@@ -7,9 +7,9 @@
             </div><!--.col-lg-5-->
 			<div class="col-lg-7 col-sm-6">
             {% for sponsor in site.data.sponsors %}
-				<div class="thumbnail sponsor">
+				<div class="thumbnail sponsor {{ sponsor.type }}">
 					<a href="http://{{ sponsor.url }}" target="_blank">
-						<img src="/img/sponsors/{{ sponsor.logo }}">
+						<img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
 					</a>
 				</div><!--.thumbnail-->
             {% endfor %}
