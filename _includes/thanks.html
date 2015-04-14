@@ -5,9 +5,11 @@
 		<div class="row">
 			<div class="col-lg-6 col-sm-12" id="inspiration">
 				<h2>{{ section.title }}</h2>
-				<ul style="list-unstyled">
+				<ul style="list-group">
   				{% for ty in section.previous %}
-					<li><a href="http://{{ ty.link }}">{{ ty.name }}</a></li>
+					<li class="list-group-item">
+						<a href="http://{{ ty.link }}">{{ ty.name }}</a>
+					</li>
 				{% endfor %}
 				</ul>
 			</div><!--/#inspiration-->
