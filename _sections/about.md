@@ -2,6 +2,10 @@
 name: about
 title: "F'up Weekend: Finish Up. Get Done."
 subtitle: "Success = 1% idea + 99% execution"
+image: {
+  file: "PortWorkers.jpg",
+  alt: "Finish up with mentors and collaborators."
+}
 ---
 Is your project stalled? Or are you *almost there* but not quite?
 

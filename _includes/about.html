@@ -8,14 +8,15 @@
             	<h2>{{ section.title }}</h2>
 				<span class="lead">{{ section.content }}</span>
             </div>
-		{% endif %}
-		{% endfor %}
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
 				<!--
+				{{ section.image.file }}
           
 				-->
-                <img class="img-responsive" src="img/PortWorkers.jpg" alt="Finish your work around 50 other teams finishing theirs">
+                <img class="img-responsive" src="img/{{ section.image.file }}" alt="{{ section.image.alt }}">
             </div>
+		{% endif %}
+		{% endfor %}
         </div><!--.row-->
     </div><!--.container -->
 </section><!--.pad-section#about-->
