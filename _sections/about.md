@@ -1,6 +1,6 @@
 ---
 name: about
-title: "F'up Weekend: Finish Up. Get Done."
+title: "48 Hours: Finish Up. Get Done."
 subtitle: {
 	quote: "Whenever I am asked what is the missing link between a promising businessperson and a successful one, mentoring comes to mind.",
 	author: "Richard Branson, Founder & CEO (The Virgin Group)",
