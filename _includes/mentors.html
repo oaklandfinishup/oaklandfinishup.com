@@ -2,11 +2,13 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-lg-12 col-sm-12 text-center">
+			{% for section in site.collections.sections.docs %}
+			{% if section.name == "mentors" %}
             	<div class="clearfix"></div>
-            	<h2 class="section-heading">Mentors (Helping You F'Up)</h2>
-				<p class="lead">They won't do the work for you.  That would be <em>only</em> the next best thing.</p>
-				<p class="lead">They'll do better than that.  They'll guide you, check your thinking, tweak your strategy, and tune your way to success.</p>
-				<p class="lead">They're there to <a class="smoothie" href="#schedule">help you <strong>finish up</strong></a>.</p>
+            	<h2 class="section-heading">{{ section.title }}</h2>
+				<span class="lead">{{ section.content }}</span>
+			{% endif %}
+			{% endfor %}
         	</div>
     	</div><!--.row-->
 
