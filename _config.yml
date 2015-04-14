@@ -1,9 +1,14 @@
 title: Oakland F'Up Weekend (Oakland Finish Up Weekend)
 tagline: It's easy to start shit.  Let's finish it.
-timezone: US/Pacific
 url: http://oaklandfup.com
+location: Jack London Square, Oakland, CA
+dates: April 17-19, 2015
+
+
+timezone: US/Pacific
 
 collections:
+    - sections
     - mentors
     - schedule
     - howitworks

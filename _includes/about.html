@@ -1,24 +1,15 @@
 <section class="jumbotron" id="about">
     <div class="container">
         <div class="row">
+		{% for section in site.collections.sections.docs %}
+		{% if section.name == "about" %}
             <div class="about col-lg-6 col-sm-push-6 col-sm-6">
-				<h5 class="text-center">Success = 1% idea + 99% execution</h5>
-            	<h2>F'Up Weekend: Finish Up. Get Done.</h2>
-				<p class="lead">Is your project stalled? Or are you <em>almost there</em> but not quite?</p>
-                <p class="lead">For 48 hours, get expertise, mentorship, inspiration &amp; focus to get things done and <strong>finish up</strong>.</p>
-				<ul class="lead">
-					<li>Revise &amp; target your sales &amp; marketing plans</li>
-					<li>Clean up your legal contracts</li>
-					<li>Kickstart your crowdfunding campaign</li>
-					<li>Set up your <em>Quickbooks</em> records</li>
-					<li>Fire up your non-profit's business plan</li>
-					<li>Strategize your growth plan</li>
-					<li>Write the final chapter of your bestseller</li>
-					<li>Release &amp; ship your mobile app</li>
-				</ul>
-
-				<p class="lead">Get coached, guided and inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business and non-profits. Get the help you need to <strong>finish up</strong>.</p>
+				<h5 class="text-center">{{ section.subtitle }}</h5>
+            	<h2>{{ section.title }}</h2>
+				<span class="lead">{{ section.content }}</span>
             </div>
+		{% endif %}
+		{% endfor %}
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
 				<!--
           
