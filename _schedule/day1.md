@@ -1,13 +1,13 @@
 ---
+date: 2015-04-17
 schedule:
   - title: Eat, Meet & Greet
-    time: 2015-04-17 18:00
+    start: "18:00"
     description: Register, share jokes and a drink.
   - title: Mentor Pitch
-    time: 2015-05-17 19:30
+    start: "19:30"
     description: Mentors introduce themselves & how they can help.
   - title: F'Up Pitch
-    time: 2015-04-17 20:00
+    start: "20:00"
     description: Pitch your project and what you need to finish up.
 ---
-

@@ -5,6 +5,7 @@ url: http://oaklandfup.com
 
 collections:
     - mentors
+    - schedule
   
 
 gems:

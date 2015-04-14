@@ -1,24 +1,25 @@
 ---
+date: 2015-04-18
 schedule:
-  - time: 2015-04-18 08:00
+  - start: "08:00"
     title: Breakfast
     description: Fuel up, you'll need it.
-  - time: 2015-04-18 10:00
+  - start: "10:00"
     title: Mentoring & Guidance
     description: Group & Individual mentoring sessions.
-  - time: 2015-04-18 12:00
+  - start: "12:00"
     title: Basecamp Lunch
     description: Refuel with a lunch sponsored by Basecamp
-  - time: 2015-04-18 14:00
+  - start: "14:00"
     title: Coached Sprint
     description: Finish Mentoring. Heads Down & Work.
-  - time: 2015-04-18 17:00
+  - start: "17:00"
     title: Recess / Break
     description: Rest your eyes, mind & body. Take a break.
-  - time: 2015-04-18 18:00
+  - start: "18:00"
     title: Night Sprint
     description: Work late. Inspire those around you.
-  - time: 2015-04-18 22:30
+  - start: "22:30"
     title: Overnight Marathon
     description: Burn the midnight oil. We'll light the candle.
 ---

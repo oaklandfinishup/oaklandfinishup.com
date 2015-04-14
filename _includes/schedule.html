@@ -17,7 +17,7 @@
 				<h2>When to F'Up</h2>
 				<div role="tabpanel">
 					<ul class="nav nav-tabs nav-justified" role="tablist">
-					{% for sched in site.posts reversed %}
+					{% for sched in site.collections.schedule.docs %}
 						<li role="presentation" {% if forloop.first %} class="active"{% endif %}>
 							{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
 							<a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
@@ -28,13 +28,14 @@
 					</ul>
 
 					<div class="tab-content">
-					{% for sched in site.posts reversed %}
+					{% for sched in site.collections.schedule.docs %}
 						{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
 						<div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
 							<div class="list-group">
 							{% for event in sched.schedule %}
 								<div class="list-group-item">
-									<time class="bg-info" datetime="{{ event.time | date_to_xmlschema }}">{{ event.time | date:"%I:%M %p" }}</time>
+									{% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
+									<time class="bg-info" datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
 									<h4 class="list-group-item-heading">{{ event.title }}</h4>
 									<p class="list-group-item-text">{{ event.description }}</p>
 								</div><!--.list-group-item-->
