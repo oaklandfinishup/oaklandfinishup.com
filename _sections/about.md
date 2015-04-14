@@ -1,23 +1,28 @@
 ---
 name: about
 title: "F'up Weekend: Finish Up. Get Done."
-subtitle: "Success = 1% idea + 99% execution"
+subtitle: {
+	quote: "Whenever I am asked what is the missing link between a promising businessperson and a successful one, mentoring comes to mind.",
+	author: "Richard Branson, Founder & CEO (The Virgin Group)",
+	source: "Richard's Blog @ Virgin",
+	url: "http://www.virgin.com/richard-branson/the-importance-of-mentoring"
+}
 image: {
   file: "PortWorkers.jpg",
   alt: "Finish up with mentors and collaborators."
 }
----
-Is your project stalled? Or are you *almost there* but not quite?
-
-For 48 hours, get expertise, mentorship, inspiration & focus to get things done and **finish up**.
-
+jump: 'For 48 hours, get coached, guided &amp; inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business &amp; non-profits.'
+examples:
   - Revise & target your sales & marketing plans
   - Clean up your legal contracts
   - Kickstart your crowdfunding campaign
-  - Set up your *Quickbooks* records
+  - Set up your <em>Quickbooks</em> records
   - Fire up your non-profit's business plan
   - Strategize your growth plan
   - Write the final chapter of your bestseller
   - Release & ship your mobile app
 
-Get coached, guided and inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business and non-profits. Get the help you need to **finish up**.
+---
+Is your project stalled? Or *almost there* but not quite?
+
+

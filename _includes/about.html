@@ -1,19 +1,33 @@
 <section class="jumbotron" id="about">
     <div class="container">
+	{% for section in site.collections.sections.docs %}
+	{% if section.name == "about" %}
+		<div class="row">
+        	<h2 class="text-center">{{ section.title }}</h2>
+			<blockquote>
+				<span class="text-muted">{{ section.subtitle.quote }}</span>
+				<footer class="text-right">{{ section.subtitle.author }}, <cite title="{{ section.subtitle.source }}"><a target="_blank" href="section.subtitle.url">{{ section.subtitle.source }}</a></cite></footer>
+		</div><!--.row-->
         <div class="row">
-		{% for section in site.collections.sections.docs %}
-		{% if section.name == "about" %}
             <div class="about col-lg-6 col-sm-push-6 col-sm-6">
-				<h5 class="text-center">{{ section.subtitle }}</h5>
-            	<h2>{{ section.title }}</h2>
-				<span class="lead">{{ section.content }}</span>
+				<span class="lead">
+					<ul class="list-group">
+					{% for example in section.examples %}
+						<li class="list-group-item">{{ example }}</li>
+					{% endfor %}
+					</ul>
+					{{ section.content }}
+				</span>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/{{ section.image.file }}" alt="{{ section.image.alt }}">
             </div>
-		{% endif %}
-		{% endfor %}
         </div><!--.row-->
+		<div class="row">
+			<p class="lead text-center">{{ section.jump }}</p>
+		</div><!--.row-->
+	{% endif %}
+	{% endfor %}
     </div><!--.container -->
 </section><!--.pad-section#about-->
 
