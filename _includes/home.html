@@ -1,37 +1,38 @@
 <header class="home pad-section" id="home">
-{% for section in site.collections.sections.docs %}
-{% if section.name == "home" %}
-	<div class="text-vcenter text-center">
-		{% for subtitle in section.subtitles %}
-        <h2>{{ subtitle }}</h2>
-		{% endfor %}
-        <h1>{{ section.title }}</h1>
-        <h3>{{ section.tagline }}</h3>
-		<h2>
-			<a class="btn btn-danger btn-lg smoothie" href="#about" role="button">
-				<strong>
-					{{ section.button }}
-				</strong>
-			</a>
-		</h2>
+	<div class="container text-center text-vcenter">
+	{% for section in site.collections.sections.docs %}
+	{% if section.name == "home" %}
+			{% for subtitle in section.subtitles %}
+        	<h2>{{ subtitle }}</h2>
+			{% endfor %}
+        	<h1>{{ section.title }}</h1>
+        	<h3>{{ section.tagline }}</h3>
+			<h2>
+				<a class="btn btn-danger btn-lg smoothie" href="#about" role="button">
+					<strong>{{ section.button }}</strong>
+				</a>
+			</h2>
 
-        <div class="col-md-6 col-sm-12">
-            <h2>
-				<a class="smoothie" href="#register">
-					<i class="fa fa-huge fa-map-marker"></i>
-				</a>
-			</h2>
-            <h3>{{ site.location }}</h3>
-        </div><!--.col-md-6 col-sm-12-->
-        <div class="col-md-6 col-sm-12">
-            <h2>
-				<a class="smoothie" href="#schedule">
-					<i class="fa fa-huge fa-calendar"></i>
-				</a>
-			</h2>
-            <h3>{{ site.dates }}</h3>
-        </div><!--.col-md-6 col-sm-12-->
-    </div>
-{% endif %}
-{% endfor %}
+        	<div class="col-md-6 col-sm-12">
+            	<h2>
+					<a class="smoothie" href="#register">
+						<i class="fa fa-huge fa-map-marker"></i>
+					</a>
+				</h2>
+				{% assign loc = site.data.conference.location %}
+            	<h3>{{ loc.neighborhood }}, {{ loc.city }}, {{ loc.state }}</h3>
+        	</div><!--.col-md-6 col-sm-12-->
+        	<div class="col-md-6 col-sm-12">
+            	<h2>
+					<a class="smoothie" href="#schedule">
+						<i class="fa fa-huge fa-calendar"></i>
+					</a>
+				</h2>
+				{% assign dates = site.data.conference.dates %}
+				<h3><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d, %Y" }}</time></h3>
+        	</div><!--.col-md-6 col-sm-12-->
+    	</div>
+	{% endif %}
+	{% endfor %}
+	</div><!--.container-->
 </header><!--.home-->
