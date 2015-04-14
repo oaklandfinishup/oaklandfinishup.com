@@ -1,6 +1,7 @@
 ---
 name: mentors
 title: "Mentors (Helping You F'Up)"
+note: Individual mentors are in the \_mentors directory
 ---
 They won't do the work for you.  That would be *only* the next best thing.
 
