@@ -1,52 +1,31 @@
 <section class="pad-section" id="register">
     <div class="container">
-		<div class="register">
-        	<div class="row">
-            	<div class="col-lg-6">
-                	<h2>Get to F'Up</h2>
-					<p class="lead">Ready to get across the finish line?"</p>
-				</div><!--.col-lg-6-->
-				<div class="col-lg-6 text-right">
-					<h4><time datetime="2015-04-17T18:00:00-08:00">April 17th</time> - <time datetime="2015-04-19T18:00:00-08:00">19th</time></h4>
-					<div class="vcard">
-						<h4><span class="fn org">The Port Workspaces</span> @ <span class="street-address">101 Broadway</span></h4>
-						<h4><span class="extended-address">Jack London Square</span>, <span class="locality">Oakland</span>, <span class="region">CA</span></h4>
-					</div><!--.vcard-->
-            	</div><!--.col-lg-6-->
-			</div><!--.row-->
+        <div class="row register">
+            <div class="col-lg-6">
+                <h2>Get to F'Up</h2>
+				<p class="lead">Ready to finish up?</p>
+				{% assign conf = site.data.conference %}
+				{% assign loc = conf.location %}
+				{% assign dates = conf.dates %}
+			</div><!--.col-lg-6-->
+			<div class="col-lg-6 text-right">
+				<h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
+				<div class="vcard">
+					<h4><span class="fn org">{{ loc.venue }}</span> @ <span class="street-address">{{ loc.address }}</span></h4>
+					<h4><span class="extended-address">{{ loc.neighborhood }}</span>, <span class="locality">{{ loc.city }}</span>, <span class="region">{{ loc.state }}</span></h4>
+				</div><!--.vcard-->
+            </div><!--.col-lg-6-->
+		</div><!--.row-->
 
-			<div class="row">
-				<p class="lead text-center">Register for Oakland F'Up Weekend</p>
-				<iframe
-					src="//eventbrite.com/tickets-external?eid=16176347892&ref=etckt"
-					frameborder="0"
-					height="100%" width="100%"
-					vspace="0" hspace="0"
-					marginheight="5" marginwidth="5"
-					scrolling="auto"
-					allowtransparency="true">
-				</iframe>
-				<!--
-				<div>
-					<a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">
-						Online event registration
-					</a>
-					<span style="color:#ddd;"> for </span>
-					<a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/oakland-finished-up-weekend-tickets-16176347892?ref=etckt">
-						Oakland Finish Up Weekend
-					</a>
-					<span style="color:#ddd;">powered by</span>
-					<a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">
-						Eventbrite
-					</a>
-				</div>
-				-->
-        	</div><!--.row-->
-    </div><!--.container-->
+		<div class="row">
+			<iframe src="{{ conf.tickets }}"
+				frameborder="0"
+				height="100%" width="100%"
+				vspace="0" hspace="0"
+				marginheight="5" marginwidth="5"
+				scrolling="auto"
+				allowtransparency="true">
+			</iframe>
+        </div><!--.row-->
+	</div><!--.container-->
 </section><!--.banner#register-->
-
-<!--
-<section id="google_map">
-	<h2>Get to F'Up</h2>
-</section>-->
-<!--/#google-map-->
