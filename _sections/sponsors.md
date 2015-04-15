@@ -12,19 +12,24 @@ sponsors:
     url: portworkspaces.com
     type: headliner
   
-  - name: Overland Country Bar & Grill
-    logo: overland.jpg
-    url: overlandoakland.com
+  - name: The D/Style Network
+    logo: dstyle.svg
+    url: dstylenetwork.com
     type: other
   
+  - name: The Food Node
+    logo: foodnode.svg
+    url: thefoodnode.com
+    type: other
+
   - name: CommitChange
     logo: commitchange.svg
     url: commitchange.com
     type: other
   
-  - name: The D/Style Network
-    logo: dstyle.svg
-    url: dstylenetwork.com
+  - name: Overland Country Bar & Grill
+    logo: overland.jpg
+    url: overlandoakland.com
     type: other
   
   - name: Authentic Bagel Company
