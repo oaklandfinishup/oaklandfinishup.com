@@ -4,14 +4,14 @@ photo: gary-pro.jpg
 area: Business Strategy
 role: CEO
 company: American Ventures
-link: americanventuresllc.net
+url: "http://americanventuresllc.net"
 help:
   - Start your crowdfunding campaign
   - Develop your Business Plan
   - Design your marketing campaign
 social: 
   - name: linkedin
-    link: www.linkedin.com/pub/gary-rosenberg/20/2b1/195/en
+    url: "http://www.linkedin.com/pub/gary-rosenberg/20/2b1/195/en"
 ---
 
 Gary has created success in a wide and diverse career, helping

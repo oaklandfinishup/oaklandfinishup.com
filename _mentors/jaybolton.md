@@ -1,15 +1,15 @@
 ---
 name: Jay Bolton
+photo: jay.jpg
+area: Software & Technology
 role: CTO
 company: CommitChange
-link: commitchange.com
-area: Software & Technology
-photo: jay.jpg
+url: "http://commitchange.com"
 social:
   - name: twitter
-    link: twitter.com/commitchange
+    url: "http://twitter.com/commitchange"
   - name: linkedin
-    link: linkedin.com/in/jayrbolton/en
+    url: "http://linkedin.com/in/jayrbolton/en"
 help:
   - Software dev. (esp, web-apps)
   - Product design & UX.

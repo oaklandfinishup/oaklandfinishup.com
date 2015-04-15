@@ -4,12 +4,12 @@ photo: lizwalls.jpg
 area: Problem Solving
 role: Co-Founder & Engineering
 company: Cancalia
-link: cancalia.com
+url: "http://cancalia.com"
 social:
   - name: twitter
-    link: twitter.com/cancalia
+    url: "http://twitter.com/cancalia"
   - name: linkedin
-    link: linkedin.com/pub/elizabeth-walls/12/806/620/en
+    url: "http://linkedin.com/pub/elizabeth-walls/12/806/620/en"
 help:
   - Create go-to-market strategies.
   - Find/characterize target markets.

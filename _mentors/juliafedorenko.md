@@ -2,18 +2,18 @@
 name: Julia Fedorenko
 photo: juliafedorenko.jpg
 area: Product & Strategy
-company: Cookstream
 role: Business Development
-link: bit.ly/integrateit
+company: Cookstream
+url: "http://bit.ly/integrateit"
 help:
   - Develop your sales strategy
   - Launch & promote your tech product
   - Plan your marketing communication
 social:
   - name: twitter
-    link: twitter.com/julfirefly
+    url: "http://twitter.com/julfirefly"
   - name: linkedin
-    link: linkedin.com/in/jfedorenko
+    url: "http://linkedin.com/in/jfedorenko"
 ---
 
 Julia started her career in retail, and found her niche in sales & marketing.  She has gravitated toward product marketing in the IT industry, but has experience in channel development, marketing communications and international marketing.
