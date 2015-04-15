@@ -1,0 +1,9 @@
+{% assign subsection = site.collections.quotations.docs[0] %}
+{% for quote in subsection.quotes %}
+{% if quote.section == name %}
+<blockquote>
+	<span class="text-muted">{{ quote.quote }}</span>
+	<footer>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></footer>
+</blockquote>
+{% endif %}
+{% endfor %}

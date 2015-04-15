@@ -8,6 +8,7 @@ collections:
   - sections
   - mentors
   - schedule
+  - quotations
   
 gems:
   - jekyll-sitemap
