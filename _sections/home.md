@@ -1,10 +1,10 @@
 ---
 name: home
-title: "Oakland F'Up Weekend"
+title: "Finish Up Weekend"
 subtitles:
  - 48 hours
  - 12 mentors
  - 1 weekend
-tagline: Anyone can start up. Successful people&hellip;
-button: "Finish Up."
+tagline: "Anyone can start. Successful people finish."
+button: "Join Us"
 ---
