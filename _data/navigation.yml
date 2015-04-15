@@ -6,9 +6,9 @@
   target: mentors
 - name: Schedule
   target: schedule
-- name: Sponsors
-  target: sponsors
 - name: Register
   target: register
+- name: Sponsors
+  target: sponsors
 - name: Contact
   target: contact
