@@ -1,18 +1,19 @@
 <section class="pad-section" id="register">
     <div class="container">
-		<div class="row">
+		<div class="row text-center">
             <h2>Get to F'Up</h2>
 			{% assign name = "register" %}
 			{% include quote.html %}
 		</div><!--.row-->
+
+		{% assign conf = site.data.conference %}
+		{% assign loc = conf.location %}
+		{% assign dates = conf.dates %}
         <div class="row register">
             <div class="col-lg-6">
-				{% assign conf = site.data.conference %}
-				{% assign loc = conf.location %}
-				{% assign dates = conf.dates %}
+				<h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
 			</div><!--.col-lg-6-->
 			<div class="col-lg-6 text-right">
-				<h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
 				<div class="vcard">
 					<h4><span class="fn org">{{ loc.venue }}</span> @ <span class="street-address">{{ loc.address }}</span></h4>
 					<h4><span class="extended-address">{{ loc.neighborhood }}</span>, <span class="locality">{{ loc.city }}</span>, <span class="region">{{ loc.state }}</span></h4>
