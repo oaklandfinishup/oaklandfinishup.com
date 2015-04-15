@@ -1,9 +1,12 @@
 <section class="pad-section" id="register">
     <div class="container">
+		<div class="row">
+            <h2>Get to F'Up</h2>
+			{% assign name = "register" %}
+			{% include quote.html %}
+		</div><!--.row-->
         <div class="row register">
             <div class="col-lg-6">
-                <h2>Get to F'Up</h2>
-				<p class="lead">Ready to finish up?</p>
 				{% assign conf = site.data.conference %}
 				{% assign loc = conf.location %}
 				{% assign dates = conf.dates %}
