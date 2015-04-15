@@ -9,7 +9,7 @@ schedule:
     description: Group & Individual mentoring sessions.
   - start: "12:00"
     title: Basecamp Lunch
-    description: Get refueled with a yummy meal.
+    description: Get refueled with a yummy meal thanks to 37Signals.
   - start: "14:00"
     title: Coached Sprint
     description: Finish Mentoring. Heads Down & Work.
