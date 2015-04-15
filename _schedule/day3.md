@@ -5,11 +5,11 @@ schedule:
     title: Sprint
     description: Hit the ground running
   - start: "11:00"
-    title: Working Brunch
-    description: Fuel up while you work.
+    title: Brunch
+    description: Get fueled up as you race to the finish.
   - start: "15:30"
     title: Show & Tell
-    description: Show off your work.  Cheer others' progress.
+    description: Show off your work. Cheer your friends.
   - start: "17:00"
     title: Happy Hour
     description: Toast to your success.
