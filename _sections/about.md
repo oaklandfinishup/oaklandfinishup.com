@@ -8,7 +8,7 @@ subtitle: {
 	url: "http://www.virgin.com/richard-branson/the-importance-of-mentoring"
 }
 image: {
-  file: "PortWorkers.jpg",
+  file: "port-coworking.jpg",
   alt: "Finish up with mentors and collaborators."
 }
 jump: 'For 48 hours, get coached, guided &amp; inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business &amp; non-profits.'
@@ -23,6 +23,6 @@ examples:
   - Release & ship your mobile app
 
 ---
-Is your project stalled? Or *almost there* but not quite?
+Is your project stalled? Or *almost there* but not quite?  What could you finish with a bit of guidance and mentorship?
 
 

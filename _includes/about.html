@@ -8,16 +8,16 @@
 				<span class="text-muted">{{ section.subtitle.quote }}</span>
 				<footer class="text-right">{{ section.subtitle.author }}, <cite title="{{ section.subtitle.source }}"><a target="_blank" href="section.subtitle.url">{{ section.subtitle.source }}</a></cite></footer>
 		</div><!--.row-->
-        <div class="row">
+        <div class="row lead text-center">
+			{{ section.content }}
+		</div>
+		<div class="row">
             <div class="about col-lg-6 col-sm-push-6 col-sm-6">
-				<span class="lead">
-					<ul class="list-group">
-					{% for example in section.examples %}
-						<li class="list-group-item">{{ example }}</li>
-					{% endfor %}
-					</ul>
-					{{ section.content }}
-				</span>
+				<ul class="list-group lead">
+				{% for example in section.examples %}
+					<li class="list-group-item">{{ example }}</li>
+				{% endfor %}
+				</ul>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/{{ section.image.file }}" alt="{{ section.image.alt }}">
