@@ -1,68 +1,27 @@
 <section class="pad-section" id="mentors">
 	<div class="container">
+	{% for section in site.collections.sections.docs %}
+	{% if section.name == "mentors" %}
     	<div class="row">
         	<div class="col-lg-12 col-sm-12 text-center">
-			{% for section in site.collections.sections.docs %}
-			{% if section.name == "mentors" %}
             	<div class="clearfix"></div>
             	<h2 class="section-heading">{{ section.title }}</h2>
+				{% assign name = section.name %}
+				{% include quote.html %}
 				<span class="lead">{{ section.content }}</span>
-			{% endif %}
-			{% endfor %}
         	</div>
     	</div><!--.row-->
 
 		<div class="row" id="mentor-gallery">
 		{% for mentor in site.collections.mentors.docs %}
-		{% assign mentornum = forloop.index %}
-			<div class="col-sm-6 col-md-4 col-lg-3 mentor">
-				<div class="thumbnail">
-					<img class="img-thumbnail" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
-					<div class="caption">
-						<h3><small><strong>{{ mentor.name }}</strong></small></h3>
-						<h5 class="company text-right"><small>{{ mentor.role }}, <a href="http://{{ mentor.link }}" target="_blank">{{ mentor.company }}</a></small></h5>
-						<div class="panel-group" id="accordion{{ mentornum }}" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="social{{ mentornum }}">
-									<h5 class="panel-title">
-										<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#bio{{ mentornum }}" aria-expanded="true" aria-controls="bio{{ mentornum }}">Bio</a>
-										<span class="text-right">
-										{% for soc in mentor.social  %}
-										<a href="http://{{ soc.link }}" class="{{ soc.name }}" target="_blank">
-											<i class="fa fa-{{ soc.name }}{% if soc.name == "linkedin" %}-square{% endif %}"></i>
-											</a>
-										{% endfor %}
-										</span>
-									</h5>
-								</div><!--.panel-heading-->
-								<div id="bio{{ mentornum }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-									<div class="panel-body">
-										{{ mentor.output }}
-									</div><!--.panel-body -->
-								</div><!--.panel-collapse-->
-							</div><!--.panel-->
-							<div class="panel panel-danger">
-								<div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
-									<h5 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">How I can help you</a>
-									</h5>
-								</div><!--.panel-heading-->
-								<div id="hcihy{{ mentornum }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-									<ul class="list-group">
-									{% for how in mentor.help %}
-										<li class="list-group-item"><small>{{ how }}</small></li>
-									{% endfor %}
-									</ul>
-								</div><!--.panel-collapse-->
-							</div><!--.panel-->
-						</div><!--.panel-group-->
-					</div><!--.caption-->
-				</div><!--.thumbnail-->
-			</div><!--.col-sm-6-->
+			{% assign mentornum = forloop.index %}
+			{% include mentor-card.html %}
 		{% endfor %}
 		</div><!--.row-->
-		<div class="row">
-		<p class="text-center lead"><strong>They're ready! <a class="smoothie" href="#schedule">Are you?</strong></a></p>
+		<div class="row text-center">
+			<p class="lead">{{ section.jump }}</p>
 		</div><!--.row-->
+	{% endif %}
+	{% endfor %}
 	</div><!--.container-->
 </section><!--/#mentors-->
