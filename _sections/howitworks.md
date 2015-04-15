@@ -1,6 +1,6 @@
 ---
 name: howitworks
-title: "How F'Up Works"
+title: "How"
 steps:
   - item: Gather your unfinished projects.
     details: Bring your project that needs to get past that last ten.
