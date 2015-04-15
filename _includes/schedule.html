@@ -1,62 +1,24 @@
 <section class="pad-section schedule" id="schedule">
 	<div class="container">
+	{% for section in site.collections.sections.docs %}
+	{% if section.name == "schedule" %}
+		<div class="row text-center">
+			<h2>How &amp; When to F'Up</h2>
+			{% assign name = section.name %}
+			{% include quote.html %}
+		</div><!--.row-->
 		<div class="row">
-            <div class="col-lg-5 col-sm-12 list-group highlevel">
-			{% for section in site.collections.sections.docs %}
-			{% if section.name == "howitworks" %}
-				<h2>{{ section.title }}</h2>
-				{% for how in section.steps %}
-				<a href="#schedule" class="smoothie list-group-item">
-					<h4 class="list-group-item-heading">Step {{ forloop.index }}: {{ how.item }}</h4>
-					{% for detail in how.details %}
-						<p class="list-group-item-text">{{ detail }}</p>
-					{% endfor %}
-				</a>
-				{% endfor %}
-			{% endif %}
-			{% endfor %}
+            <div class="col-lg-5 col-sm-12 left-half">
+				{% include howitworks.html %}
             </div><!--left-half-->
 
-			<div class="col-lg-7 col-sm-12">
-			{% for section in site.collections.sections.docs %}
-			{% if section.name == "schedule" %}
-				<h2>{{ section.title }}</h2>
-				<div role="tabpanel">
-					<ul class="nav nav-tabs nav-justified" role="tablist">
-					{% for sched in site.collections.schedule.docs %}
-						<li role="presentation" {% if forloop.first %} class="active"{% endif %}>
-							{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-							<a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
-								<span><time datetime="{{ sched.date | date:"%F" }}">{{ day | capitalize }}</time></span>
-							</a>
-						</li>
-					{% endfor %}
-					</ul>
-
-					<div class="tab-content">
-					{% for sched in site.collections.schedule.docs %}
-						{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-						<div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
-							<div class="list-group">
-							{% for event in sched.schedule %}
-								<div class="list-group-item">
-									{% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
-									<time class="bg-info" datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
-									<h4 class="list-group-item-heading">{{ event.title }}</h4>
-									<p class="list-group-item-text">{{ event.description }}</p>
-								</div><!--.list-group-item-->
-							{% endfor %}
-							</div><!--.list-group-->
-						</div><!--/#{{ day }}-->
-					{% endfor %}
-					</div><!--.tab-content-->
-				</div><!--.tabpanel-->
-				{% assign tagline = section.tagline %}
-			{% endif %}
-			{% endfor %}
+			<div class="col-lg-7 col-sm-12 right-half">
+				{% include schedule-day.html %}
 			</div><!--right-half-->
 		</div><!--.row-->
-		<h3 class="text-center">{{ tagline }}</h3>
+		<h3 class="text-center">{{ section.jump }}</h3>
+	{% endif %}
+	{% endfor %}
 	</div><!--container-->
 </section><!--.content-section-a-->
 
