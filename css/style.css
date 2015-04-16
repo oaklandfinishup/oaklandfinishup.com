@@ -145,6 +145,10 @@ blockquote {
 	border: 0;
 }
 
+blockquote > footer {
+	text-align: right;
+}
+
 .schedule blockquote > .text-muted {
 	color: #d5d5d5;
 }
