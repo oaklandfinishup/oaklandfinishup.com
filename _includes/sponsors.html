@@ -1,25 +1,25 @@
 <section class="jumbotron" id="sponsors">
     <div class="container">
-	{% for section in site.collections.sections.docs %}
-	{% if section.name == "sponsors" %}
+    {% for section in site.collections.sections.docs %}
+    {% if section.name == "sponsors" %}
         <div class="row">
             <div class="sponsors col-lg-5 col-sm-6">
                 <h2 class="section-heading">{{ section.title }}</h2>
                 <p class="lead">{{ section.content }}</p>
             </div><!--.col-lg-5-->
-			<div class="col-lg-7 col-sm-6">
+            <div class="col-lg-7 col-sm-6">
             {% for sponsor in section.sponsors %}
-				<div class="thumbnail sponsor {{ sponsor.type }}">
-					<a href="http://{{ sponsor.url }}" target="_blank">
-						<img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
-					</a>
-				</div><!--.thumbnail-->
+                <div class="thumbnail sponsor {{ sponsor.type }}">
+                    <a href="http://{{ sponsor.url }}" target="_blank">
+                        <img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                    </a>
+                </div><!--.thumbnail-->
             {% endfor %}
-			</div>
-			<h3 class="text-center">Want to <a class="smoothie" href="#contact">help us f'up</a>?</h3>
+            </div>
+            <h3 class="text-center">Want to <a class="smoothie" href="#contact">help us f'up</a>?</h3>
         </div><!--.row-->
-	{% endif %}
-	{% endfor %}
+    {% endif %}
+    {% endfor %}
     </div><!--.container-->
 </section><!--/#sponsors-->
 
