@@ -2,9 +2,13 @@
 	<div class="container">
 	{% for section in site.collections.sections.docs %}
 	{% if section.name == "thanks" %}
+		<div class="row text-center">
+			<h2>{{ section.title }}</h2>
+			{% assign name = section.name %}
+			{% include quote.html %}
+		</div>
 		<div class="row">
 			<div class="col-lg-6 col-sm-12" id="inspiration">
-				<h2>{{ section.title }}</h2>
 				<ul style="list-group">
   				{% for ty in section.previous %}
 					<li class="list-group-item">

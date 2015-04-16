@@ -4,9 +4,8 @@
 	{% if section.name == "about" %}
 		<div class="row">
         	<h2 class="text-center">{{ section.title }}</h2>
-			<blockquote>
-				<span class="text-muted">{{ section.subtitle.quote }}</span>
-				<footer class="text-right">{{ section.subtitle.author }}, <cite title="{{ section.subtitle.source }}"><a target="_blank" href="section.subtitle.url">{{ section.subtitle.source }}</a></cite></footer>
+			{% assign name = section.name %}
+			{% include quote.html %}
 		</div><!--.row-->
         <div class="row lead text-center">
 			{{ section.content }}
