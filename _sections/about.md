@@ -1,12 +1,6 @@
 ---
 name: about
 title: "48 Hours: Finish Up. Get Done."
-subtitle: {
-	quote: "Whenever I am asked what is the missing link between a promising businessperson and a successful one, mentoring comes to mind.",
-	author: "Richard Branson, Founder & CEO (The Virgin Group)",
-	source: "Richard's Blog @ Virgin",
-	url: "http://www.virgin.com/richard-branson/the-importance-of-mentoring"
-}
 image: {
   file: "port-coworking.jpg",
   alt: "Finish up with mentors and collaborators."
