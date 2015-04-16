@@ -2,7 +2,7 @@
 date: 2015-04-19
 schedule:
   - start: "08:00"
-    title: Sprint
+    title: Breakfast & Sprint
     description: Hit the ground running
   - start: "12:00"
     title: Basecamp Lunch
