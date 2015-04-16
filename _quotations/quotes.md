@@ -15,4 +15,8 @@ quotes:
     author: "Yoda"
     source: The Empire Strikes Back
     url: "http://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back"
+  - section: sponsors
+    quote: “It is impossible to feel grateful and depressed in the same moment.”
+    author: "Naomi Williams"
+    source: Inc.com
 ---

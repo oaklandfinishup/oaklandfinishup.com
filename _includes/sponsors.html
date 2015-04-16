@@ -3,9 +3,13 @@
     {% for section in site.collections.sections.docs %}
     {% if section.name == "sponsors" %}
         <div class="row">
+                <h2 class="text-center">{{ section.title }}</h2>
+				{% assign name = section.name %}
+				{% include quote.html %}
+		</div><!--.row-->
+		<div class="row">
             <div class="sponsors col-lg-5 col-sm-6">
-                <h2 class="section-heading">{{ section.title }}</h2>
-                <p class="lead">{{ section.content }}</p>
+                <span class="lead">{{ section.content }}</span>
             </div><!--.col-lg-5-->
             <div class="col-lg-7 col-sm-6">
             {% for sponsor in section.sponsors %}
