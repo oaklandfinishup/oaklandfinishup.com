@@ -10,7 +10,9 @@
 							{{ nav.name }}
 						</a>
 					</li>
-                    <li class="footer-menu-divider">&sdot;</li>
+					{% unless forloop.last %}
+                    	<li class="footer-menu-divider">&sdot;</li>
+					{% endunless %}
 				{% endfor %}
                 </ul>
                 <p class="copyright text-muted small">Copyright &copy;2015 Aurice Guyton &amp; Seemant Kulleen. All Rights Reserved.</p>
