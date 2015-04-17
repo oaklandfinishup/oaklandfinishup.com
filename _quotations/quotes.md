@@ -30,7 +30,7 @@ quotes:
     source: TED
     url: "https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen"
   - section: thanks
-    quote: "On the other hand, human beings, who are almost unique in having the ability to learn from the experience of others, are also remarkable for their apparent disinclination to do so."
+    quote: "Human beings, who are almost unique in having the ability to learn from the experience of others, are also remarkable for their apparent disinclination to do so."
     author: "Douglas Adams"
     source: Last Chance to See
     url: "http://amzn.com/0345371984"
