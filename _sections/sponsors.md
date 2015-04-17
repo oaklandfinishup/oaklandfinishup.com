@@ -13,7 +13,7 @@ sponsors:
     type: headliner
   
   - name: Overland Country Bar & Grill
-    logo: overland.jpg
+    logo: overland.svg
     url: overlandoakland.com
     type: other
   
