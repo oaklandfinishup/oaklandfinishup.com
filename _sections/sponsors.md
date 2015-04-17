@@ -42,4 +42,4 @@ sponsors:
     url: abagelcompany.com
     type: other
 ---
-With thanks for their generosity and kindness.
+With immeasurable thanks to 37Signals and local Oakland entrepreneurs for making this event possible.
