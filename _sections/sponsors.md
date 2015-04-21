@@ -17,14 +17,14 @@ sponsors:
     url: overlandoakland.com
     type: other
   
-  - name: CommitChange
-    logo: commitchange.svg
-    url: commitchange.com
+  - name: Bakesale Betty
+    logo: bakesalebetty.gif
+    url: bakesalebetty
     type: headliner 
   
-  - name: The D/Style Network
+  - name: Coder Camps
     logo: dstyle.svg
-    url: dstylenetwork.com
+    url: codercamps.com
     type: headliner
   
   - name: Beer Revolution
