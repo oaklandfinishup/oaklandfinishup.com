@@ -23,7 +23,7 @@ sponsors:
     type: headliner 
   
   - name: Coder Camps
-    logo: dstyle.svg
+    logo: codercamps.png
     url: codercamps.com
     type: headliner
   
