@@ -35,26 +35,9 @@
 	<!-- Navigation -->
 	{% include topnav.html %}
 
-    <!-- Home -->
-	{% include home.html %}
-
-	<!-- About -->
-	{% include about.html %}
-
-	<!-- Mentors -->
-	{% include mentors.html %}
-
-	<!-- Schedule -->
-	{% include schedule.html %}
-
-	<!-- Register -->
-	{% include register.html %}
-
-	<!-- Sponsors -->
-	{% include sponsors.html %}
-
-	<!-- Contact Us -->
-	{% include contact.html %}
+	{% for item in site.data.navigation %}
+	{% include {{ item.target }}.html %}
+	{% endfor %}
 
 	<!-- Thanks -->
 	{% include thanks.html %}
