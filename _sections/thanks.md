@@ -1,13 +1,9 @@
 ---
 name: thanks
-title: Other F'Ups
-previous: 
-  - name: FU Weekend
-    link: fuweekend.com
-  
-  - name: FU Houston
-    link: fuhouston.com
-  
-  - name: StartUp Weekend
-    link: sfedu.startupweekend.org
+title: Thanks and Inspiration
+images:
+ - name: "Oakland Skyline - Lake Merritt"
+   author: Daniel Ramirez
+   license: "<a href='http://creativecommons.org/licenses/by/2.0'>CC BY 2.0</a>"
+   url: "https://commons.wikimedia.org/wiki/File%3AOakland_Skyline_-_Lake_Merritt.jpg"
 ---
