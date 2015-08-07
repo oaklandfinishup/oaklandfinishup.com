@@ -1,12 +1,12 @@
 location: {
     venue: The Port Workspaces,
-    address: 101 Broadway,
-    neighborhood: Jack London Square,
+    address: Kaiser Mall,
+    neighborhood: Lake Merritt,
     city: Oakland,
     state: CA,
 }
 dates: {
-    start: "2015-04-17 18:00",
-    end: "2015-04-19 18:00"
+    start: "2015-10-16 18:00",
+    end: "2015-10-18 18:00"
 }
-tickets: "http://eventbrite.com/tickets-external?eid=16176347892&ref=etckt"
+tickets:
