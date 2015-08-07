@@ -1,10 +1,8 @@
 ---
 name: home
-title: "Finish Up Weekend"
+title: Oakland Finish Up Weekend
 subtitles:
- - 48 hours
- - 12 mentors
- - 1 weekend
-tagline: "Anyone can start. Successful people finish."
-button: "Join Us"
+ - This fall, jump start your start-up.
+tagline: Get Mentored. Get Stuff Done. Finish Up.
+button: Join Us
 ---
