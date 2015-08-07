@@ -8,15 +8,14 @@
 			{% include quote.html %}
 		</div>
 		<div class="row">
-			<div class="col-lg-6 col-sm-12" id="inspiration">
-				<ul style="list-group">
-  				{% for ty in section.previous %}
-					<li class="list-group-item">
-						<a href="http://{{ ty.link }}">{{ ty.name }}</a>
-					</li>
+			<div class="col-lg-6 col-sm-12" id="thanks">
+				<h4>Image Attributions</h4>
+				<ul class="list-group">
+				{% for img in section.images %}
+				<li class="list-group-item"><a href="{{ img.url }}">{{ img.name }}</a> by {{ img.author }} released under {{ img.license }}</li>
 				{% endfor %}
 				</ul>
-			</div><!--/#inspiration-->
+			</div><!--/#thanks-->
 		</div><!--.row-->
 	{% endif %}
 	{% endfor %}
