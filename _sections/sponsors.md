@@ -2,6 +2,11 @@
 name: sponsors
 title: "Sponsors (Helping Us F'Up)"
 sponsors:
+  - name: The Port Workspaces
+    logo: theport.svg
+    url: portworkspaces.com
+    type: headliner
+priors:
   - name: Basecamp
     logo: basecamp.svg
     url: basecamp.com
@@ -42,4 +47,4 @@ sponsors:
     url: abagelcompany.com
     type: other
 ---
-With immeasurable thanks to 37Signals and local Oakland entrepreneurs for making this event possible.
+With immeasurable thanks to The Port Workspaces and local Oakland entrepreneurs for making this event possible.
