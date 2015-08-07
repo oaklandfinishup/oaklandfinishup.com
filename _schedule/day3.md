@@ -1,5 +1,5 @@
 ---
-date: 2015-04-19
+date: 2015-10-18
 schedule:
   - start: "08:00"
     title: Breakfast & Sprint
