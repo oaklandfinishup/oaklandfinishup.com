@@ -3,14 +3,14 @@ name: howitworks
 title: "How"
 steps:
   - item: Gather your unfinished projects.
-    details: Bring your project that needs to get past that last ten.
+    details: Bring the projects you need to finish up.
   
   - item: Register for F'Up Weekend.
     details:
       - Tell us about your projects & where you're stuck.
-      - Each mentor will be matched with up to 5 teams.
+      - This helps our mentors do their homework.
   
-  - item: Attend F'Up Weekend (April 17-19).
+  - item: Attend F'Up Weekend (October 16-18).
     details:
       - Work individually and in groups with your mentor.
       - WORK YOUR BUTT OFF!
