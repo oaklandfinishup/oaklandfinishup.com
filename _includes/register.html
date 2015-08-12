@@ -1,37 +1,35 @@
 <section class="pad-section" id="register">
     <div class="container">
-		<div class="row text-center">
-            <h2>Get to F'Up</h2>
-			{% assign name = "register" %}
-			{% include quote.html %}
-		</div><!--.row-->
+    <div class="row text-center">
+        <h2>Buy Your Tickets</h2>
+        {% assign name = "register" %}
+        {% include quote.html %}
+    </div><!--.row-->
 
-		{% assign conf = site.data.conference %}
-		{% assign loc = conf.location %}
-		{% assign dates = conf.dates %}
+    {% assign conf = site.data.conference %}
+    {% assign loc = conf.location %}
+    {% assign dates = conf.dates %}
         <div class="row register">
             <div class="col-lg-6">
-				<h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
-			</div><!--.col-lg-6-->
-			<div class="col-lg-6 text-right">
-				<div class="vcard">
-					<h4><span class="fn org">{{ loc.venue }}</span> @ <span class="street-address">{{ loc.address }}</span></h4>
-					<h4><span class="extended-address">{{ loc.neighborhood }}</span>, <span class="locality">{{ loc.city }}</span>, <span class="region">{{ loc.state }}</span></h4>
-				</div><!--.vcard-->
+        <h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
+      </div><!--.col-lg-6-->
+      <div class="col-lg-6 text-right">
+        <div class="vcard">
+          <h4><span class="fn org">{{ loc.venue }}</span> @ <span class="street-address">{{ loc.address }}</span></h4>
+          <h4><span class="extended-address">{{ loc.neighborhood }}</span>, <span class="locality">{{ loc.city }}</span>, <span class="region">{{ loc.state }}</span></h4>
+        </div><!--.vcard-->
             </div><!--.col-lg-6-->
-		</div><!--.row-->
-
-		<div class="row">
-			<!--
-			<iframe src="{{ conf.tickets }}"
-				frameborder="0"
-				height="100%" width="100%"
-				vspace="0" hspace="0"
-				marginheight="5" marginwidth="5"
-				scrolling="auto"
-				allowtransparency="true">
-			</iframe>
-			-->
     </div><!--.row-->
-	</div><!--.container-->
+
+    <div class="row">
+      <iframe src="{{ conf.tickets }}"
+        frameborder="0"
+        height="100%" width="100%"
+        vspace="0" hspace="0"
+        marginheight="5" marginwidth="5"
+        scrolling="auto"
+        allowtransparency="true">
+      </iframe>
+    </div><!--.row-->
+  </div><!--.container-->
 </section><!--.banner#register-->
