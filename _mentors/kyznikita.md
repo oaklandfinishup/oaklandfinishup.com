@@ -2,7 +2,7 @@
 name: Nikita Kuznetsov
 photo: nikita.jpg
 area: Web Technology & UX
-role: Developer
+role: Founder & Developer
 company: Jadeless
 url: "http://jadeless.com"
 social:
