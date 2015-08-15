@@ -12,7 +12,7 @@
 				<h4>Image Attributions</h4>
 				<ul class="list-group">
 				{% for img in section.images %}
-				<li class="list-group-item"><a href="{{ img.url }}">{{ img.name }}</a> by {{ img.author }} released under {{ img.license }}</li>
+				<li class="list-group-item"><a target="_blank" href="{{ img.urlphoto }}">{{ img.name }}</a> by <a target="_blank" href="{{ img.urlauthor }}">{{ img.author }}</a> released under {{ img.license }}</li>
 				{% endfor %}
 				</ul>
 			</div><!--/#thanks-->
