@@ -4,15 +4,15 @@ photo: geraldine.jpg
 area: Branding & Marketing
 role: Founder
 company: MeetGeraldine
-url: "http://meetgeraldine.com"
+website: "http://meetgeraldine.com"
 help:
   - Define your brand identity
   - Design your web presence
   - Plan your SEO strategy
 social:
   - name: twitter
-    url: "http://twitter.com/tweetgeraldine"
+    website: "http://twitter.com/tweetgeraldine"
   - name: linkedin
-    url: "http://linkedin.com/in/geraldineconventodigital/en"
+    website: "http://linkedin.com/in/geraldineconventodigital/en"
 ---
 Geraldine is the principal of Meet Geraldine where she leads her team through through web development, graphic design and search engine optimization projects. Geraldine's success in the corporate world and working within small organizations led to her understanding of the importance of structure, timelines and completing specific tasks to contribute to larger business objectives. All of which have informed her outlook of what’s possible in the realms of business: anything

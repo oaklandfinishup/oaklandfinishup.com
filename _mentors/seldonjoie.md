@@ -3,7 +3,7 @@ name: Joie Seldon
 photo: joieseldon.jpg
 role: Founder & Principal
 company: Joie Seldon, M.A.
-url: "http://joieseldon.com"
+website: "http://joieseldon.com"
 area: Crisis Management
 help:
   - Prioritize & organize your project.
@@ -11,9 +11,9 @@ help:
   - Optimize your team's output.
 social:
   - name: twitter
-    url: "http://twitter.com/JoieSeldon"
+    website: "http://twitter.com/JoieSeldon"
   - name: linkedin
-    url: "http://linkedin.com/in/joieseldon/en"
+    website: "http://linkedin.com/in/joieseldon/en"
 ---
 Joie coaches and empowers project managers, entrepreneurs, and company leaders to identify and quickly solve problems while reducing personal & team stress.
 

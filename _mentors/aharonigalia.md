@@ -4,16 +4,16 @@ photo: galia.jpg
 area: Legal & HR
 role: Co-Founder
 company: HG Business Law 
-url: "http://hgbusinesslaw.com"
+website: "http://hgbusinesslaw.com"
 help:
   - Intellectual property protection.
   - Contracts and agreements.
   - Legal framework for your startup.
 social:
   - name: twitter
-    url: "http://twitter.com/HGbusinesslaw"
+    website: "http://twitter.com/HGbusinesslaw"
   - name: linkedin
-    url: "http://linkedin.com/pub/galia-aharoni/17/a44/60a/en"
+    website: "http://linkedin.com/pub/galia-aharoni/17/a44/60a/en"
 ---
 
 Galia is licensed to practice law in two states, and has served at private law firms in both California and Louisiana. She also served as the business development attorney for a large legal publisher in Northern California.

@@ -4,12 +4,12 @@ photo: yorick-blue.jpg
 area: Technology & Business
 role: CTO
 company: ISSIO Solutions, Inc.
-url: "http://about.me/yorickphoenix"
+website: "http://about.me/yorickphoenix"
 social:
   - name: twitter
-    url: "http://twitter.com/scribblings"
+    website: "http://twitter.com/scribblings"
   - name: linkedin
-    url: "http://linkedin.com/in/yorick/en"
+    website: "http://linkedin.com/in/yorick/en"
 help:
   - Define your product
   - Finish your software project

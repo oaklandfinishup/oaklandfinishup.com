@@ -4,10 +4,10 @@ photo: nikita.jpg
 area: Web Technology & UX
 role: Founder & Developer
 company: Jadeless
-url: "http://jadeless.com"
+website: "http://jadeless.com"
 social:
   - name: linkedin
-    url: "https://www.linkedin.com/in/nikitak"
+    website: "https://www.linkedin.com/in/nikitak"
 help:
   - Find creative technical solutions to stalled development projects.
   - Design and deployment of web applications

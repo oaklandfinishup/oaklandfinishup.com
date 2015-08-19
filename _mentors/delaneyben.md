@@ -3,13 +3,13 @@ name: Ben Delaney
 photo: bendelaney.jpg
 role: CEO
 company: CyberEdge Information Services
-url: "http://bendelaney.com"
+website: "http://bendelaney.com"
 area: Startups & Nonprofits
 social:
   - name: twitter
-    url: "http://www.twitter.com/BenDelaneyNow"
+    website: "http://www.twitter.com/BenDelaneyNow"
   - name: linkedin
-    url: "http://www.linkedin.com/in/bendelaney/en"
+    website: "http://www.linkedin.com/in/bendelaney/en"
 help:
   - Finish your business plan
   - Create a marketing plan
