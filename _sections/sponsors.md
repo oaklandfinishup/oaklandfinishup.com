@@ -1,6 +1,6 @@
 ---
 name: sponsors
-title: "Sponsors (Helping Us F'Up)"
+title: "Sponsors (Helping Us Finish Up)"
 sponsors:
   - name: The Port Workspaces
     logo: theport.svg
