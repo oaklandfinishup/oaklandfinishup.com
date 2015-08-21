@@ -1,5 +1,4 @@
-{% assign subsection = site.collections.quotations.docs[0] %}
-{% for quote in subsection.quotes %}
+{% for quote in site.data.quotes %}
 {% if quote.section == name %}
 <blockquote>
 	<span class="text-muted">{{ quote.quote }}</span>
