@@ -36,8 +36,8 @@
 	<!-- Navigation -->
 	{% include topnav.html %}
 
-	{% for item in site.data.navigation %}
-	{% include {{ item.target }}.html %}
+	{% for section in site.data.layout %}
+	{% include {{ section }}.html %}
 	{% endfor %}
 
 	<!-- Thanks -->
