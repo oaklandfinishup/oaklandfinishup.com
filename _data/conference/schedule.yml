@@ -1,0 +1,47 @@
+---
+start: 2015-10-16T18:00-07:00
+end: 2015-10-18T18:00-07:00
+daily:
+  - day1:
+    - title: Eats, Meets & Greets
+      start: "18:00"
+      description: Register, meet entrepreneurs.  Greet the mentors.
+    - title: Mentors Pitch
+      start: "19:30"
+      description: Mentors introduce themselves & how they can help you.
+    - title: Mentors Meet You
+      start: "20:00"
+      description: 2 minutes to introduce yourself, your projects and where you're seeking guidance.
+  - day2:
+    - start: "08:00"
+      title: Breakfast
+      description: Fuel up. You'll need it.
+    - start: "9:00"
+      title: Meet the Mentors
+      description: Interactive introductions with the mentors.
+    - start: "9:45"
+      title: Session Sign Ups
+      description: Sign-up for individual coaching sessions.
+    - start: "10:00"
+      title: Mentoring Sprints
+      description: "Spend half an hour of 1:1 time with your mentor."
+    - start: "12:30"
+      title: Lunch
+      description: We'll re-fuel you.
+    - start: "18:30"
+      title: Dinner
+      description: Eat, review your day, and work independently.
+  - day3:
+    - start: "08:00"
+      title: Breakfast & Sprint
+      description: Hit the ground running
+    - start: "12:00"
+      title: Lunch
+      description: Refuel for your final lap.
+    - start: "15:30"
+      title: Show & Tell
+      description: Show off your work. Cheer your friends.
+    - start: "17:00"
+      title: Happy Hour
+      description: Toast to your success.
+---
