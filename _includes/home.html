@@ -2,37 +2,25 @@
     <div class="container text-center text-vcenter">
     {% for section in site.collections.sections.docs %}
     {% if section.name == "home" %}
-            {% for subtitle in section.subtitles %}
-            <h2>{{ subtitle }}</h2>
-            {% endfor %}
-            <h1>{{ section.title }}</h1>
-            <h3>{{ section.tagline }}</h3>
-            <h2>
-                <a class="btn btn-danger btn-lg smoothie" href="#about" role="button">
-                    <strong>{{ section.button }}</strong>
-                </a>
-            </h2>
+      {% for subtitle in section.subtitles %}
+        <h2>{{ subtitle }}</h2>
+      {% endfor %}
+        <h1>{{ section.title }}</h1>
+        <h3>{{ section.tagline }}</h3>
+        <h2><a class="btn btn-danger btn-lg smoothie" href="#about" role="button"><strong>{{ section.button }}</strong></a></h2>
 
-            <div class="col-md-6 col-sm-12">
-                <h2>
-                    <a class="smoothie icon" href="#register">
-                        <i class="fa fa-huge fa-map-marker"></i>
-                    </a>
-                </h2>
-                {% assign loc = site.data.conference.location %}
-        <h3>{{ loc.venue }} @ {{ loc.address }}</h3>
-                <h4>{{ loc.neighborhood }}, {{ loc.city }}</h4>
-            </div><!--.col-md-6 col-sm-12-->
-            <div class="col-md-6 col-sm-12">
-                <h2>
-                    <a class="smoothie icon" href="#schedule">
-                        <i class="fa fa-huge fa-calendar"></i>
-                    </a>
-                </h2>
-                {% assign dates = site.data.conference.dates %}
-                <h3><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d, %Y" }}</time></h3>
-            </div><!--.col-md-6 col-sm-12-->
-        </div>
+        <div class="col-md-6 col-sm-12">
+            <h2><a class="smoothie icon" href="#register"><i class="fa fa-huge fa-map-marker"></i></a></h2>
+          {% assign venue = site.data.conference.venue %}
+            <h3>{{ venue.location }} @ {{ venue.address }}</h3>
+            <h4>{{ venue.neighborhood }}, {{ venue.city }}</h4>
+        </div><!--.col-md-6 col-sm-12-->
+        <div class="col-md-6 col-sm-12">
+            <h2><a class="smoothie icon" href="#schedule"><i class="fa fa-huge fa-calendar"></i></a></h2>
+            {% assign startdate = site.data.conference.schedule.start %}
+            {% assign enddate = site.data.conference.schedule.end %}
+            <h3><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d, %Y" }}</time></h3>
+        </div><!--.col-md-6 col-sm-12-->
     {% endif %}
     {% endfor %}
     </div><!--.container-->
