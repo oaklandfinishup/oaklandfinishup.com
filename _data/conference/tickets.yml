@@ -1,0 +1,16 @@
+---
+url: "http://www.eventbrite.com/tickets-external?eid=18063889580&ref=etckt"
+tickets:
+  - category: Early Bird
+    price: 154.74
+    availability: LimitedAvailability
+  - category: General Admission
+    price: 205.99
+    availability: LimitedAvailability
+  - category: Late Bird
+    price: 257.24
+    availability: LimitedAvailability
+  - category: Friday Only
+    price: 26.62
+    availability: InStock
+---
