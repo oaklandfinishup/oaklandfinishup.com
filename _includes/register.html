@@ -6,23 +6,23 @@
         {% include quote.html %}
     </div><!--.row-->
 
-    {% assign conf = site.data.conference %}
-    {% assign loc = conf.location %}
-    {% assign dates = conf.dates %}
-        <div class="row register">
-            <div class="col-lg-6">
-        <h4><time datetime="{{ dates.start | date_to_xmlschema }}">{{ dates.start | date:"%B %d" }}</time> - <time datetime="{{ dates.end | date_to_xmlschema }}">{{ dates.end | date:"%d" }}</time></h4>
+    {% assign startdate = site.data.conference.schedule.start %}
+    {% assign enddate = site.data.conference.schedule.end %}
+    <div class="row register">
+        <div class="col-lg-6">
+            <h4><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d" }}</time></h4>
       </div><!--.col-lg-6-->
       <div class="col-lg-6 text-right">
         <div class="vcard">
-          <h4><span class="fn org">{{ loc.venue }}</span> @ <span class="street-address">{{ loc.address }}</span></h4>
-          <h4><span class="extended-address">{{ loc.neighborhood }}</span>, <span class="locality">{{ loc.city }}</span>, <span class="region">{{ loc.state }}</span></h4>
+          {% assign venue = site.data.conference.venue %}
+          <h4><span class="fn org">{{ venue.location }}</span> @ <span class="street-address">{{ venue.address }}</span></h4>
+          <h4><span class="extended-address">{{ venue.neighborhood }}</span>, <span class="locality">{{ venue.city }}</span>, <span class="region">{{ venue.state }}</span></h4>
         </div><!--.vcard-->
             </div><!--.col-lg-6-->
     </div><!--.row-->
 
     <div class="row">
-      <iframe src="{{ conf.tickets }}"
+      <iframe src="{{ site.data.conference.tickets.url }}"
         frameborder="0"
         height="100%" width="100%"
         vspace="0" hspace="0"
