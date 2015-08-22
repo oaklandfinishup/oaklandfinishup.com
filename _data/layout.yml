@@ -1,14 +1,9 @@
-- name: Home
-  target: home
-- name: About
-  target: about
-- name: Mentors
-  target: mentors
-- name: Schedule
-  target: schedule
-- name: Register
-  target: register
-- name: Sponsors
-  target: sponsors
-- name: Contact
-  target: contact
+---
+- home
+- about
+- mentors
+- schedule
+- register
+- sponsors
+- contact
+---
