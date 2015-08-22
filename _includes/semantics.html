@@ -4,7 +4,7 @@
   ,  "@type" : "BusinessEvent"
   , "name" : "{{ site.title }}"
   , "url" : "{{ site.url }}"
-  , "startDate" : "{{ site.data.conference.venue.start }}"
+  , "startDate" : "{{ site.data.conference.schedule.start }}"
   , "duration" : "P2D"
   , "location" : {
         "@type" : "Place"
@@ -18,10 +18,17 @@
           , "addressCountry": "US"
         }
     }
-  , "offers" : {
-          "@type": "Offer"
-        , "url" : "{{ site.data.conference.venue.tickets }}"
-    }
+  , "offers" : [
+    {% for offer in site.data.conference.tickets.tickets %}
+    {
+        "@type": "Offer"
+      , "url" : "{{ site.data.conference.tickets.url }}"
+      , "category": "{{ offer.category }}"
+      , "price": "{{ offer.price }}"
+      , "priceCurrency": "USD"
+      , "availability": "{{ offer.availability }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   , "performer" : [
     {% for mentor in site.collections.mentors.docs %}
     {
