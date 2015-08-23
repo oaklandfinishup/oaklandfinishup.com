@@ -13,7 +13,8 @@
     	</div><!--.row-->
 
 		<div class="row" id="mentor-gallery">
-		{% for mentor in site.collections.mentors.docs %}
+		{% for roll in site.data.mentors %}
+			{% assign mentor = roll[1] %}
 			{% assign mentornum = forloop.index %}
 			{% include mentor-card.html %}
 		{% endfor %}
