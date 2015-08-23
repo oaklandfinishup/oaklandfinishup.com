@@ -1,7 +1,7 @@
+{% for section in site.collections.sections.docs %}
+{% if section.name == "thanks" %}
 <section class="jumbotron" id="gratitude">
 	<div class="container">
-	{% for section in site.collections.sections.docs %}
-	{% if section.name == "thanks" %}
 		<div class="row text-center">
 			<h2>{{ section.title }}</h2>
 			{% assign name = section.name %}
@@ -17,8 +17,8 @@
 				</ul>
 			</div><!--/#thanks-->
 		</div><!--.row-->
-	{% endif %}
-	{% endfor %}
 	</div><!--.container-->
 </section>
+{% endif %}
+{% endfor %}
 

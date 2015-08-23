@@ -1,7 +1,7 @@
+{% for section in site.collections.sections.docs %}
+{% if section.name == "about" %}
 <section class="jumbotron" id="about">
     <div class="container">
-	{% for section in site.collections.sections.docs %}
-	{% if section.name == "about" %}
 		<div class="row">
         	<h2 class="text-center">{{ section.title }}</h2>
 			{% assign name = section.name %}
@@ -25,8 +25,8 @@
 		<div class="row">
 			<p class="lead text-center">{{ section.jump }}</p>
 		</div><!--.row-->
-	{% endif %}
-	{% endfor %}
     </div><!--.container -->
 </section><!--.pad-section#about-->
+{% endif %}
+{% endfor %}
 

@@ -1,6 +1,6 @@
-<div class="list-group">
 {% for subsection in site.collections.sections.docs %}
 {% if subsection.name == "howitworks" %}
+<div class="list-group">
 	<h3 class="text-center">{{ subsection.title }}</h3>
 	{% for how in subsection.steps %}
 	<a href="#schedule" class="smoothie list-group-item">
@@ -10,6 +10,6 @@
 	{% endfor %}
 	</a>
 	{% endfor %}
+</div><!--.list-group-->
 {% endif %}
 {% endfor %}
-</div><!--.list-group-->

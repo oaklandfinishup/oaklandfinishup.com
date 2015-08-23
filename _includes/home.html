@@ -1,7 +1,7 @@
-<header class="home pad-section" id="home">
+{% for section in site.collections.sections.docs %}
+{% if section.name == "home" %}
+<section class="home pad-section" id="home">
     <div class="container text-center text-vcenter">
-    {% for section in site.collections.sections.docs %}
-    {% if section.name == "home" %}
       {% for subtitle in section.subtitles %}
         <h2>{{ subtitle }}</h2>
       {% endfor %}
@@ -21,7 +21,7 @@
             {% assign enddate = site.data.conference.schedule.end %}
             <h3><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d, %Y" }}</time></h3>
         </div><!--.col-md-6 col-sm-12-->
-    {% endif %}
-    {% endfor %}
     </div><!--.container-->
-</header><!--.home-->
+</section><!--.home-->
+{% endif %}
+{% endfor %}
