@@ -6,7 +6,8 @@ timezone: US/Pacific
 
 collections:
   - sections
-  - mentors
-  
+
+google-analytics: UA-61672521-1 
+
 gems:
   - jekyll-sitemap
