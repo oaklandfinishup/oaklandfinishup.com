@@ -2,29 +2,29 @@
 {% if section.name == "about" %}
 <section class="jumbotron" id="about">
     <div class="container">
-		<div class="row">
-        	<h2 class="text-center">{{ section.title }}</h2>
-			{% assign name = section.name %}
-			{% include quote.html %}
-		</div><!--.row-->
+        <div class="row">
+            <h2 class="text-center">{{ section.title }}</h2>
+            {% assign name = section.name %}
+            {% include quote.html %}
+        </div><!--.row-->
         <div class="row lead text-center">
-			{{ section.content }}
-		</div>
-		<div class="row">
+            {{ section.content }}
+        </div>
+        <div class="row">
             <div class="about col-lg-6 col-sm-push-6 col-sm-6">
-				<ul class="list-group lead">
-				{% for example in section.examples %}
-					<li class="list-group-item">{{ example }}</li>
-				{% endfor %}
-				</ul>
+                <ul class="list-group lead">
+                  {% for example in section.examples %}
+                    <li class="list-group-item">{{ example }}</li>
+                  {% endfor %}
+                </ul>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/{{ section.image.file }}" alt="{{ section.image.alt }}">
             </div>
         </div><!--.row-->
-		<div class="row">
-			<p class="lead text-center">{{ section.jump }}</p>
-		</div><!--.row-->
+        <div class="row">
+            <p class="lead text-center">{{ section.jump }}</p>
+        </div><!--.row-->
     </div><!--.container -->
 </section><!--.pad-section#about-->
 {% endif %}
