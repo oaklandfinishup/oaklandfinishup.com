@@ -19,35 +19,36 @@
         }
     }
   , "offers" : [
-    {% for offer in site.data.conference.tickets.tickets %}
-    {
-        "@type": "Offer"
-      , "url" : "{{ site.data.conference.tickets.url }}"
-      , "category": "{{ offer.category }}"
-      , "price": "{{ offer.price }}"
-      , "priceCurrency": "USD"
-      , "availability": "{{ offer.availability }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    	{% for offer in site.data.conference.tickets.tickets %}
+    	{
+        	"@type": "Offer"
+      	, "url" : "{{ site.data.conference.tickets.url }}"
+      	, "category": "{{ offer.category }}"
+      	, "price": "{{ offer.price }}"
+      	, "priceCurrency": "USD"
+      	, "availability": "{{ offer.availability }}"
+    	}{% unless forloop.last %},{% endunless %}
+    	{% endfor %}
+		]
   , "performers" : [
-    {% for roll in site.data.mentors %}
-    {% assign mentor = roll[1] %}
-    {
-        "@type" : "Person"
-      , "image" : "/img/mentors/{{ mentor.photo }}"
-      , "name" : "{{ mentor.name }}"
-      , "url" : "{{ mentor.website }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-  , "organizer" : [
-    {% for owner in site.data.conference.organizers %}
-    {
-        "@type" : "Person"
-      , "name" : "{{ owner.name }}"
-      , "sameAs": "{{ owner.website }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
+    	{% for roll in site.data.mentors %}
+    	{% assign mentor = roll[1] %}
+    	{
+        	"@type" : "Person"
+      	, "image" : "/img/mentors/{{ mentor.photo }}"
+      	, "name" : "{{ mentor.name }}"
+      	, "url" : "{{ mentor.website }}"
+    	}{% unless forloop.last %},{% endunless %}
+    	{% endfor %}
+  	]
+  , "organizers" : [
+    	{% for owner in site.data.conference.organizers %}
+    	{
+        	"@type" : "Person"
+      	, "name" : "{{ owner.name }}"
+      	, "sameAs": "{{ owner.website }}"
+    	}{% unless forloop.last %},{% endunless %}
+    	{% endfor %}
+  	]
 }]
 </script>
