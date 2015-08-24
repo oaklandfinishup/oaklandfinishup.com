@@ -11,7 +11,7 @@
         {% endfor %}
       </ul>
       <p class="copyright text-muted small">
-			{{ site.title }} is copyright &copy;{{ site.time | date:"%Y" }} {% for org in site.data.conference.organizers %}{% unless forloop.first %} &amp; {% endunless %}<a href="{{ org.website }}" target="_blank">{{ org.name }}</a>{% endfor %}. All Rights Reserved.
+			{{ site.title }} is copyright &copy;{{ site.time | date:"%Y" }} {% for org in site.data.conference.organizers %}{% unless forloop.first %} &amp; {% endunless %}<span class="vcard"><a class="url fn" href="{{ org.website }}" target="_blank">{{ org.name }}</a></span>{% endfor %}. All Rights Reserved.
 			</p>
     </div>
   </div>

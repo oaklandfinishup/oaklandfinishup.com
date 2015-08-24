@@ -1,9 +1,9 @@
 <div class="col-sm-4 col-md-4 col-lg-3 mentor">
-  <div class="thumbnail">
-    <img class="img-thumbnail" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
+  <div class="thumbnail vcard">
+    <img class="img-thumbnail photo" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
     <div class="caption">
-      <h3><small><strong>{{ mentor.name }}</strong></small></h3>
-      <h5 class="company text-right"><small>{{ mentor.role }}, <a href="{{ mentor.website }}" target="_blank">{{ mentor.company }}</a></small></h5>
+      <h3 class="fn"><small><strong>{{ mentor.name }}</strong></small></h3>
+      <h5 class="company text-right"><small>{{ mentor.role }}, <a class="url" href="{{ mentor.website }}" target="_blank">{{ mentor.company }}</a></small></h5>
       <div class="panel-group" id="accordion{{ mentornum }}" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="social{{ mentornum }}">
@@ -20,7 +20,7 @@
             </h5>
           </div><!--.panel-heading-->
           <div id="bio{{ mentornum }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-            <div class="panel-body">
+            <div class="panel-body note">
               {% assign bio = mentor.bio | markdownify %}
               {{ bio }}
             </div><!--.panel-body -->
