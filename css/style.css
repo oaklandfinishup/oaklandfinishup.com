@@ -31,7 +31,7 @@ html, body {
 }
 
 .home h1 {
-	font-size: 5em;
+  font-size: 5em;
 }
 
 .home h1, .home h2, .home h3, .home h4 {
@@ -40,6 +40,9 @@ html, body {
   mix-blend-mode: difference;
 }
 
+h2.unblend {
+  mix-blend-mode: hard-light;
+}
 .home .icon {
   color: #d9534f;
 }
