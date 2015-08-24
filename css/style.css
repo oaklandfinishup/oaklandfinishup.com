@@ -27,37 +27,212 @@ html, body {
 
 /* additional sections */
 .home, .schedule h2, .schedule h3 {
-	color: #f8f8f8;
+  color: yellow;
 }
 
-.home > h1 {
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+.home h1 {
 	font-size: 5em;
 }
 
-.home .icon {
-	color: #d9534f;
+.home h1, .home h2, .home h3, .home h4 {
+  /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+  color: yellow;
+  mix-blend-mode: difference;
 }
 
-#home {
-  background:
-  	linear-gradient(
-		rgba(0,0,0,0.45),
-		rgba(0,0,0,0.45)
-	),
-    url(/img/home.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.home .icon {
+  color: #d9534f;
+}
+
+.pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  animation: slideShow 24s linear infinite 0s;
+  -o-animation: slideShow 24s linear infinite 0s;
+  -moz-animation: slideShow 24s linear infinite 0s;
+  -webkit-animation: slideShow 24s linear infinite 0s;
+}
+
+.pic-1 {
+  opacity: 1;
+  background: url(/img/slideshow/sales-strategy.jpg) no-repeat center center;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-2 {
+  animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  background: url(/img/slideshow/food-node.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-3 {
+  animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  background: url(/img/slideshow/marketing-strategy.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-4 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  background: url(/img/slideshow/business-strategy.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-5 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  background: url(/img/slideshow/tristan_opt.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-6 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  background: url(/img/slideshow/web-strategy.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+
+
+@keyframes
+slideShow {
+     0% {
+    opacity: 0;
+    transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes
+slideShow {
+     0% {
+    opacity: 0;
+    -o-transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    -o-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -o-transform: scale(1);
+  }
+}
+
+@-moz-keyframes
+slideShow {
+     0% {
+    opacity: 0;
+    -moz-transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes
+slideShow {
+     0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
 }
 
 #schedule {
   background:
-  	linear-gradient(
-		rgba(0,0,0,0.75),
-		rgba(0,0,0,0.75)
-	),
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)
+  ),
     url(/img/home-office.jpg) no-repeat center center fixed;
 }
 
@@ -79,15 +254,15 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	background-image: url(/img/sponsors/portpirate.png) center;
+  background-image: url(/img/sponsors/portpirate.png) center;
 }
 
 .list-group-item > time {
-	float: right;
-	margin-right: 1.5rem;
-	padding: 0 1.5rem;
-	font-size: 1.6rem;
-	line-height: 4rem;
+  float: right;
+  margin-right: 1.5rem;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
 }
 
 #google_map {
@@ -99,63 +274,64 @@ html, body {
 footer {
   padding: 20px 0;
 }
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
-}
-footer .glyphicon:hover {
-  color: #306d9f;
-}
 
 .thumbnail.sponsor > a> img {
-	height: 65px;
+  height: 65px;
 }
 
 .mentor > .thumbnail > img {
-	height: 250px;
+  height: 250px;
 }
 
 span > time {
-	font-weight: bold;
-	font-size: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 span.text-right {
-	float: right;
+  float: right;
 }
 
 .fup48 {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	text-align: center;
-	font-style: italic;
-	font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
 #schedule a.list-group-item {
-	cursor: default;
+  cursor: default;
 }
 
 .img-thumbnail {
-	border: 2px solid transparent;
+  border: 2px solid transparent;
 }
 
 a.linkedin {
-	color: #0077b5;
+  color: #0077b5;
 }
 
 a.twitter {
-	color: #55acee;
+  color: #55acee;
+}
+
+a.google-plus {
+  color: #d34836;
+}
+
+a.facebook {
+  color: #3b5998;
 }
 
 blockquote {
-	text-align: center;
-	border: 0;
+  text-align: center;
+  border: 0;
 }
 
 blockquote > footer {
-	text-align: right;
+  text-align: right;
 }
 
 .schedule blockquote > .text-muted {
-	color: #d5d5d5;
+  color: #d5d5d5;
 }
