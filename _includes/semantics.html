@@ -30,7 +30,8 @@
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   , "performer" : [
-    {% for mentor in site.collections.mentors.docs %}
+    {% for roll in site.data.mentors %}
+    {% assign mentor = roll[1] %}
     {
         "@type" : "Person"
       , "image" : "/img/mentors/{{ mentor.photo }}"
