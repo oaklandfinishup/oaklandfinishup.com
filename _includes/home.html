@@ -1,21 +1,22 @@
 {% for section in site.collections.sections.docs %}
 {% if section.name == "home" %}
 <section class="home pad-section text-vcenter" id="home">
-  	<div class="pic-wrapper">
-      	<figure class="pic-1"></figure>
-      	<figure class="pic-2"></figure>
-      	<figure class="pic-3"></figure>
-      	<figure class="pic-4"></figure>
-      	<figure class="pic-5"></figure>
-      	<figure class="pic-6"></figure>
-  	</div><!--.pic-wrapper-->
-		<div class="clearfix"></div>
-  		{% for subtitle in section.subtitles %}
-    		<h2>{{ subtitle }}</h2>
-  		{% endfor %}
-    		<h1>{{ section.title }}</h1>
-    		<h3>{{ section.tagline }}</h3>
-    		<h2 class="unblend"><a class="btn btn-danger btn-lg smoothie" href="#about" role="button"><strong>{{ section.button }}</strong></a></h2>
+    <div class="pic-wrapper">
+        <figure class="pic-1"></figure>
+        <figure class="pic-2"></figure>
+        <figure class="pic-3"></figure>
+        <figure class="pic-4"></figure>
+        <figure class="pic-5"></figure>
+        <figure class="pic-6"></figure>
+        <figure class="pic-7"></figure>
+    </div><!--.pic-wrapper-->
+    <div class="clearfix"></div>
+      {% for subtitle in section.subtitles %}
+        <h2>{{ subtitle }}</h2>
+      {% endfor %}
+        <h1>{{ section.title }}</h1>
+        <h3>{{ section.tagline }}</h3>
+        <h2 class="unblend"><a class="btn btn-danger btn-lg smoothie" href="#about" role="button"><strong>{{ section.button }}</strong></a></h2>
 
     <div class="col-md-6 col-sm-12">
         <h2><a class="smoothie icon" href="#register"><i class="fa fa-huge fa-map-marker"></i></a></h2>
