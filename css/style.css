@@ -27,14 +27,14 @@ html, body {
 
 /* additional sections */
 .home, .schedule h2, .schedule h3 {
-  color: yellow;
+  color: black;
 }
 
 .home h1 {
   font-size: 5em;
 }
 
-.home h1, .home h2, .home h3, .home h4 {
+.home h1 {
   /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
   color: darkgray;
   mix-blend-mode: difference;
@@ -62,15 +62,15 @@ figure {
   height: 100%;
   opacity: 0;
 
-  animation: slideShow 24s linear infinite 0s;
-  -o-animation: slideShow 24s linear infinite 0s;
-  -moz-animation: slideShow 24s linear infinite 0s;
-  -webkit-animation: slideShow 24s linear infinite 0s;
+  animation: slideShow 40s linear infinite 0s;
+  -o-animation: slideShow 40s linear infinite 0s;
+  -moz-animation: slideShow 40s linear infinite 0s;
+  -webkit-animation: slideShow 40s linear infinite 0s;
 }
 
 .pic-1 {
   opacity: 1;
-  background: url(/img/slideshow/sales-strategy.jpg) no-repeat center center;
+  background: url(/img/Oakland_Skyline_-_Lake_Merritt.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -82,7 +82,7 @@ figure {
   -o-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -webkit-animation-delay: 6s;
-  background: url(/img/slideshow/food-node.jpg) no-repeat center center;
+  background: url(/img/slideshow/sales-strategy.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -94,7 +94,7 @@ figure {
   -o-animation-delay: 12s;
   -moz-animation-delay: 12s;
   -webkit-animation-delay: 12s;
-  background: url(/img/slideshow/marketing-strategy.jpg) no-repeat center center;
+  background: url(/img/slideshow/food-node.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -106,7 +106,7 @@ figure {
   -o-animation-delay: 18s;
   -moz-animation-delay: 18s;
   -webkit-animation-delay: 18s;
-  background: url(/img/slideshow/business-strategy.jpg) no-repeat center center;
+  background: url(/img/slideshow/marketing-strategy.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -114,11 +114,11 @@ figure {
 }
 
 .pic-5 {
-  animation-delay: 18s;
-  -o-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  -webkit-animation-delay: 18s;
-  background: url(/img/slideshow/tristan_opt.jpg) no-repeat center center;
+  animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -webkit-animation-delay: 24s;
+  background: url(/img/slideshow/business-strategy.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -126,10 +126,22 @@ figure {
 }
 
 .pic-6 {
-  animation-delay: 18s;
-  -o-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  -webkit-animation-delay: 18s;
+  animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -webkit-animation-delay: 30s;
+  background: url(/img/slideshow/tristan_opt.jpg) no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.pic-7 {
+  animation-delay: 36s;
+  -o-animation-delay: 36s;
+  -moz-animation-delay: 36s;
+  -webkit-animation-delay: 36s;
   background: url(/img/slideshow/web-strategy.jpg) no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
@@ -239,6 +251,9 @@ slideShow {
     url(/img/home-office.jpg) no-repeat center center fixed;
 }
 
+#home {
+	background: url(/img/Oakland_Skyline_-_Lake_Merritt.jpg);
+}
 
 #home, #about, #schedule {
   display: table;
