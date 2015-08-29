@@ -1,8 +1,10 @@
 {% for quote in site.data.website.quotes %}
 {% if quote.section == name %}
 <blockquote>
-	<span class="text-muted">{{ quote.quote }}</span>
-	<footer>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></footer>
+{% if forloop.index == 3 %}<div class="box_cont">{% endif %}
+	<h2 class="text-muted">{{ quote.quote }}</h2>
+	<h3>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></h3>
+{% if forloop.index == 3 %}</div>{% endif %}
 </blockquote>
 {% endif %}
 {% endfor %}
