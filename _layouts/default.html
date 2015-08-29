@@ -1,7 +1,5 @@
 <!DOCTYPE html
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +25,10 @@
 
 	<!-- Semantic markup -->
 	{% include semantics.html %}
+    
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
 
 	<style>
 		{% include style.css %}
@@ -49,6 +51,73 @@
 
 	<!-- JavaScripts -->
 	{% include javascripts.html %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    
+    
+  <!-- Syntax Highlighter -->
+  <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+    
+    
+	<script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+    
+    
+ <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+		animationSpeed:1500,
+		slideshowSpeed:5000,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+	  $('.quote_slider').flexslider({
+        animation: "slide",
+		controlNav: false,
+		animationSpeed:1500,
+		slideshowSpeed:5000,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+    
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 <h3 class="text-center">{{ section.title }}</h3>
+    
+<h3 class="text-center">{{ section.title }}</h3>
 <div role="tabpanel">
   <ul class="nav nav-tabs nav-justified" role="tablist">
     {% for sched in site.data.conference.schedule.daily %}
@@ -29,3 +31,29 @@
     {% endfor %}
   </div><!--.tab-content-->
 </div><!--.tabpanel-->
+
+{% for sched in site.data.conference.schedule.daily %}
+{% capture day %}{{ sched.date | date: "%B %d, %Y" }}{% endcapture %}
+<!--<div class="row">
+	<div class="col-lg-12 col-sm-12">
+    	<h3>{{ day | capitalize }}</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+    {% for event in sched.schedule %}
+    {% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
+    <div class="event_ed clearfix">
+        <div class="time_bs pull-right">
+        	<time datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
+        </div>
+        <div class="scr_bs pull-left">
+        	<h4>{{ event.title }}</h4>
+        	<p>{{ event.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    
+    </div>
+</div>-->
+{% endfor %}
