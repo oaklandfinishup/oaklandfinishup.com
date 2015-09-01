@@ -13,7 +13,7 @@
               {% assign socials = mentor.social | sort: 'name' %}
               {% for soc in socials %}
               <a href="{{ soc.profile }}" class="{{ soc.name }}" target="_blank">
-                <i class="fa fa-{{ soc.name }}-square"></i>
+                <i class="fa fa-lg fa-{{ soc.name }}-square"></i>
                 </a>
               {% endfor %}
               </span>
