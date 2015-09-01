@@ -1,0 +1,31 @@
+<h3 class="text-center">{{ section.title }}</h3>
+<div role="tabpanel">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    {% for sched in site.data.conference.schedule.daily %}
+    {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+      <li role="presentation" {% if forloop.first %} class="active"{% endif %}>
+          <a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
+              <span><time datetime="{{ sched.date | date:"%F" | date_to_xmlschema }}">{{ day | capitalize }}</time></span>
+          </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="tab-content">
+    {% for sched in site.data.conference.schedule.daily %}
+    {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+      <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
+          <div class="list-group">
+            {% for event in sched.schedule %}
+            {% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
+              <div class="list-group-item">
+                  <time class="bg-info" datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
+                  <h4 class="list-group-item-heading">{{ event.title }}</h4>
+                  <p class="list-group-item-text">{{ event.description }}</p>
+              </div><!--.list-group-item-->
+            {% endfor %}
+          </div><!--.list-group-->
+      </div><!--/#{{ day }}-->
+    {% endfor %}
+  </div><!--.tab-content-->
+</div><!--.tabpanel-->

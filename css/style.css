@@ -307,6 +307,7 @@ slideShow {
   padding: 0 1.5rem;
   font-size: 1.6rem;
   line-height: 4rem;
+  color:#FFF;
 }
 
 #google_map {
@@ -335,7 +336,7 @@ span > time {
 span.text-right {
   float: right;
 }
-#gratitude{background-color:#CCC;}
+
 
 .fup48 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -440,7 +441,8 @@ blockquote > footer {
 .box_cont h2 {font-style:italic; padding-top:30px;}
 .box_cont h2:before {content:'"';}
 .box_cont h2:after {content:'"';}
-.list-group-item{border:1px solid #F90;}
+#group-item{border:1px solid #F90;}
+#group-items{border:1px solid  #CCC;}
 .bg-info{background-color:#F90;}
 .nav-tabs.nav-justified > li a{ color:#333;-webkit-transition-property:background-color;/*safari*/
                                                                     -webkit-transition-duration:1s;
@@ -449,3 +451,5 @@ blockquote > footer {
 .nav-tabs.nav-justified > li a:hover{background-color:#F90;color:#FFF}		
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {border-color:#f90;}
 																
+#about{background-color:#FFF;}
+.col-lg-12 col-sm-12 right-ha

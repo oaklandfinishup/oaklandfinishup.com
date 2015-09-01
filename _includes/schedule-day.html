@@ -20,7 +20,7 @@
           <div class="list-group">
             {% for event in sched.schedule %}
             {% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
-              <div class="list-group-item">
+              <div class="list-group-item" id="group-item">
                   <time class="bg-info" datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
                   <h4 class="list-group-item-heading">{{ event.title }}</h4>
                   <p class="list-group-item-text">{{ event.description }}</p>

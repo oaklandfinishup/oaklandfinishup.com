@@ -1,43 +1,47 @@
 {% for section in site.collections.sections.docs %}
 {% if section.name == "home" %}
 
-<section class="home pad-section" >
-    <div class="pic-wrapper">
-    	
-        	
-            </div>
-            
-
-        <section class="slider">
+<section class="home pad-section" >            
+	<section class="slider">
         <div class="flexslider">
-        
-          <ul class="slides">
-            <li><div id="slide1" class="slide-item">
-          <div class="tagsf">
-            	<p><font color="#333333">Oakland Finish Up Weekend</font></p>
-  	    	     <div>
-      {% for subtitle in section.subtitles %}
-        <h2><font color="#333333">{{ subtitle }}</font></h2>
-      {% endfor %}
-     
-        <h3><font color="#FFFFFF">{{ section.tagline }}</font></h3>
-       
-    <div class="col-md-6 col-sm-12">
-        <h2><a class="smoothie icon" href="#register"><i class="fa fa-huge fa-map-marker"></i></a></h2>
-      {% assign venue = site.data.conference.venue %}
-        <h3><font color="#FFFFFF">{{ venue.location }} @ {{ venue.address }}</font></h3>
-        <h4><font color="#FFFFFF">{{ venue.neighborhood }}, {{ venue.city }}</font></h4>
-    </div>
-    </div>
-    <div class="col-md-6 col-sm-12">
-        <h2><a class="smoothie icon" href="#schedule"><i class="fa fa-huge fa-calendar"></i></a></h2>
-        {% assign startdate = site.data.conference.schedule.start %}
-        {% assign enddate = site.data.conference.schedule.end %}
-        <h3><font color="#FFFFFF"><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d, %Y" }}</time></font></h3>
-    </div>
+        	<ul class="slides">
+            	<li>
+                	<div id="slide1" class="slide-item">
+          				<div class="tagsf">
+            				<p><font color="#333333">Oakland Finish Up Weekend</font></p>
+  	    	     		<div>
+      					{% for subtitle in section.subtitles %}
+        					<h2><font color="#333333">{{ subtitle }}</font></h2>
+      					{% endfor %}
+     					<h3><font color="#FFFFFF">{{ section.tagline }}</font></h3>
+       					
+    				</div>
+               		<div class="row">
+                        <div class="col-md-5 col-sm-12">
+                            <h2><a class="smoothie icon" href="#register"><i class="fa fa-huge fa-map-marker"></i></a></h2>
+                            {% assign venue = site.data.conference.venue %}
+                            <h3><font color="#FFFFFF">{{ venue.location }} @ {{ venue.address }}</font></h3>
+                            <h4><font color="#FFFFFF">{{ venue.neighborhood }}, {{ venue.city }}</font></h4>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <h2>
+                                <a class="btn btn-danger btn-lg smoothie" href="#about" role="button"><strong>{{ section.button }}</strong></a>
+                            </h2>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <h2><a class="smoothie icon" href="#schedule"><i class="fa fa-huge fa-calendar"></i></a></h2>
+                            {% assign startdate = site.data.conference.schedule.start %}
+                            {% assign enddate = site.data.conference.schedule.end %}
+                            <h3>
+                                <font color="#FFFFFF">
+                                    <time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time>
+                                    -
+                                    <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d, %Y" }}</time>
+                                </font>
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-             <h2 class="unblend"><a class="btn btn-danger btn-lg smoothie" href="#about" role="button"><strong>{{ section.button }}</strong></a></h2>
-
   	    		</li>
   	    		<li>
   	    	   <div id="slide2" class="slide-item">

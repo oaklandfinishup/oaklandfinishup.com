@@ -3,7 +3,11 @@
 <blockquote>
 {% if forloop.index == 3 %}<div class="box_cont">{% endif %}
 	<h2 class="text-muted">{{ quote.quote }}</h2>
+    {% if forloop.index == 3 %}
 	<h3>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></h3>
+    {% else %}
+    <footer>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></footer>
+    {% endif %}
 {% if forloop.index == 3 %}</div>{% endif %}
 </blockquote>
 {% endif %}
