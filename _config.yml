@@ -1,11 +1,13 @@
 title: Oakland Finish Up Weekend
-tagline: Success comes with mentorship.
+tagline: Be Amazed. Be Amazing.
 url: http://oaklandfinishup.com
 
 timezone: US/Pacific
 
 collections:
   - sections
+
+exclude: [bower_components,node_modules,javascripts,stylesheets,README*,params.json]
 
 google-analytics: UA-61672521-1 
 
