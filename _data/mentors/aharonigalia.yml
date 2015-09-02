@@ -2,14 +2,6 @@
 name: Galia Aharoni
 status: active
 photo: galia.jpg
-area: Legal & HR
-role: Co-Founder
-company: Aharoni Business Law 
-website: "http://aharonibusinesslaw.com"
-help:
-  - Protect your Intellectual Property.
-  - Verify contracts & agreements.
-  - With your legal framework.
 social:
   - name: twitter
     profile: "http://twitter.com/AharoniBizLaw"
@@ -19,6 +11,16 @@ social:
     profile: "https://www.facebook.com/aharonibusinesslaw"
   - name: yelp
     profile: "http://www.yelp.com/biz/aharoni-business-law-pc-oakland"
+area: Legal & HR
+role: Co-Founder
+company: Aharoni Business Law 
+website: "http://aharonibusinesslaw.com"
+
+help:
+  - Protect your Intellectual Property.
+  - Verify contracts & agreements.
+  - With your legal framework.
+
 bio: "<p>Galia is licensed to practice law in two states, and has served at private law firms in both California and Louisiana. She also served as the business development attorney for a large legal publisher in Northern California.</p>
 <p>These days, Galia walks the walk as the founder of Aharoni Business Law, focused around helping people turn their entrepreneurial dreams into reality.</p>"
 ---
