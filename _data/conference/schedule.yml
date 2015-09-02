@@ -4,22 +4,22 @@ end: 2015-10-18T18:00
 daily:
   - date: 2015-10-16
     schedule:
-    - title: Eats, Meets & Greets
+    - title: Eat, Drink & Chat.
       start: "18:00"
-      description: Register, meet entrepreneurs.  Greet the mentors.
-    - title: Mentors Pitch
+      description: Register. Break bread. Break ice.
+    - title: Meet the Mentors
       start: "19:30"
-      description: Mentors introduce themselves & how they can help you.
-    - title: Mentors Meet You
+      description: Mentors pitch their skills to you.
+    - title: Greet the Mentees
       start: "20:00"
-      description: 2 minutes to introduce yourself, your projects and where you're seeking guidance.
+      description: 2 minutes to introduce yourself, your projects and what you need to <strong>finish up</strong>.
   - date: 2015-10-17
     schedule:
     - start: "08:00"
       title: Breakfast
-      description: Fuel up. You'll need it.
+      description: We'll fuel you up. You'll need it.
     - start: "9:00"
-      title: Meet the Mentors
+      title: Mentors Introduction
       description: Interactive introductions with the mentors.
     - start: "9:45"
       title: Session Sign Ups
@@ -36,11 +36,11 @@ daily:
   - date: 2015-10-18
     schedule:
     - start: "08:00"
-      title: Breakfast & Sprint
+      title: Breakfast & Fast break
       description: Hit the ground running
     - start: "12:00"
       title: Lunch
-      description: Refuel for your final lap.
+      description: Refuel for the final lap.
     - start: "15:30"
       title: Show & Tell
       description: Show off your work. Cheer your friends.
