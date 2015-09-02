@@ -33,12 +33,14 @@
   , "performers" : [
     	{% for roll in site.data.mentors %}
     	{% assign mentor = roll[1] %}
+			{% if mentor.status == "active" %}
     	{
         	"@type" : "Person"
       	, "image" : "/img/mentors/{{ mentor.photo }}"
       	, "name" : "{{ mentor.name }}"
       	, "url" : "{{ mentor.website }}"
     	}{% unless forloop.last %},{% endunless %}
+			{% endif %}
     	{% endfor %}
   	]
   , "organizers" : [
