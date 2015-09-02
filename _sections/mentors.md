@@ -1,9 +1,9 @@
 ---
 name: mentors
 note: Individual mentors are in the \_mentors directory
-title: Meet Our Previous Mentors
+title: Meet Our Mentors
 jump: 'Your mentors will <a class="smoothie" href="#schedule">help you <strong>finish up</strong></a>.'
 ---
-They don't do the work for you.  That would be *only* the next best thing.
+Our mentors have successfully started and grown their non-profits, small businesses, government consultancies and private practices.
 
-They do better than that.  They guide you, check your thinking, tweak your strategy, and tune your way to success.
+Keep watching this space as we add more mentors every week.

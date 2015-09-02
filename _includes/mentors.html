@@ -16,8 +16,10 @@
     {% assign mentors = site.data.mentors | sort %}
     {% for roll in mentors %}
       {% assign mentor = roll[1] %}
-      {% assign mentornum = forloop.index %}
-      {% include mentor-card.html %}
+			{% if mentor.status == "active" %}
+      	{% assign mentornum = forloop.index %}
+      	{% include mentor-card.html %}
+			{% endif %}
     {% endfor %}
     </div><!--.row-->
     <div class="row text-center">
