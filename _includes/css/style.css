@@ -26,7 +26,7 @@ html, body {
 }
 
 /* additional sections */
-.home, .schedule h2, .schedule h3 {
+.home {
   color: black;
 }
 
@@ -45,6 +45,11 @@ html, body {
       rgba(0,0,0,0.75)
   ),
   url(/img/marketing-pitch.jpg) no-repeat center center fixed;
+}
+
+#schedule h2 {
+  color: white;
+  text-align: center;
 }
 
 #about, #schedule {
