@@ -4,10 +4,10 @@ end: 2015-10-18T18:00
 daily:
   - date: 2015-10-16
     schedule:
-    - title: Eat, Drink & Chat.
+    - title: Eat, Make & Break
       start: "18:00"
-      description: Register. Break bread. Break ice.
-    - title: Meet the Mentors
+      description: Register. Break ice. Make friends.
+    - title: Mentor Intros
       start: "19:30"
       description: Mentors pitch their skills to you.
     - title: Greet the Mentees
@@ -19,14 +19,14 @@ daily:
       title: Breakfast
       description: We'll fuel you up. You'll need it.
     - start: "9:00"
-      title: Mentors Introduction
+      title: Mentor (Re)intros
       description: Interactive introductions with the mentors.
     - start: "9:45"
       title: Session Sign Ups
       description: Sign-up for individual coaching sessions.
     - start: "10:00"
       title: Mentoring Sprints
-      description: "Spend half an hour of 1:1 time with your mentor."
+      description: Spend 1 on 1 time with your chosen mentors.
     - start: "12:30"
       title: Lunch
       description: We'll re-fuel you.
@@ -36,8 +36,11 @@ daily:
   - date: 2015-10-18
     schedule:
     - start: "08:00"
-      title: Breakfast & Fast break
+      title: Fast Breakfast
       description: Hit the ground running
+    - start: "08:30"
+      title: Mentoring Sprints
+      description: More 1 on 1 time with your chosen mentors.
     - start: "12:00"
       title: Lunch
       description: Refuel for the final lap.
