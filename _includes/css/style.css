@@ -41,10 +41,10 @@ html, body {
 #schedule {
   background:
   linear-gradient(
-  rgba(0,0,0,0.75),
-  rgba(0,0,0,0.75)
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.75)
   ),
-  url(/img/home-office.jpg) no-repeat center center fixed;
+  url(/img/marketing-pitch.jpg) no-repeat center center fixed;
 }
 
 #about, #schedule {
@@ -68,7 +68,7 @@ html, body {
 }
 
 .list-group-item > dd {
-	margin-top: 1.2em;
+  margin-top: 1.2em;
 }
 
 footer {
@@ -113,19 +113,10 @@ a.facebook {
   color: #3b5998;
 }
 
-blockquote {
-  text-align: center;
-  border: 0;
-}
-
 blockquote > footer {
   text-align: right;
 }
 
-.schedule blockquote > .text-muted {
-  color: #d5d5d5;
-}
-
 .carousel-caption {
-	background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
