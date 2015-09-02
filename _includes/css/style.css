@@ -1,1 +1,144 @@
-.pad-section img,body,html{width:100%}.fup48,.text-vcenter,blockquote{text-align:center}body,html{height:100%}.pad-section{padding:50px 0}.text-vcenter{display:table-cell;vertical-align:middle}.text-vcenter h1{font-size:4.5em;font-weight:700;margin:0;padding:0}.home,.schedule h2,.schedule h3{color:#000}.home h1{font-size:5em;color:#a9a9a9;mix-blend-mode:difference}h2.unblend{mix-blend-mode:hard-light}.home .icon{color:#d9534f}.pic-wrapper{position:absolute;width:100%;height:100%;overflow:hidden}#about,#google_map,#home,#schedule{height:100%;width:100%;position:relative}figure{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;animation:slideShow 40s linear infinite 0s;-o-animation:slideShow 40s linear infinite 0s;-moz-animation:slideShow 40s linear infinite 0s;-webkit-animation:slideShow 40s linear infinite 0s}.pic-1{opacity:1;background:url(/img/Oakland_Skyline_-_Lake_Merritt.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-2{animation-delay:6s;-o-animation-delay:6s;-moz-animation-delay:6s;-webkit-animation-delay:6s;background:url(/img/slideshow/sales-strategy.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-3{animation-delay:12s;-o-animation-delay:12s;-moz-animation-delay:12s;-webkit-animation-delay:12s;background:url(/img/slideshow/food-node.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-4{animation-delay:18s;-o-animation-delay:18s;-moz-animation-delay:18s;-webkit-animation-delay:18s;background:url(/img/slideshow/marketing-strategy.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-5{animation-delay:24s;-o-animation-delay:24s;-moz-animation-delay:24s;-webkit-animation-delay:24s;background:url(/img/slideshow/business-strategy.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-6{animation-delay:30s;-o-animation-delay:30s;-moz-animation-delay:30s;-webkit-animation-delay:30s;background:url(/img/slideshow/tristan_opt.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}.pic-7{animation-delay:36s;-o-animation-delay:36s;-moz-animation-delay:36s;-webkit-animation-delay:36s;background:url(/img/slideshow/web-strategy.jpg) center center no-repeat;background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover}@keyframes slideShow{0%,100%{opacity:0;transform:scale(1);-ms-transform:scale(1)}25%,5%{opacity:1}30%{opacity:0;transform:scale(1.1);-ms-transform:scale(1.1)}}@-o-keyframes slideShow{0%,100%{opacity:0;-o-transform:scale(1)}25%,5%{opacity:1}30%{opacity:0;-o-transform:scale(1.1)}}@-moz-keyframes slideShow{0%,100%{opacity:0;-moz-transform:scale(1)}25%,5%{opacity:1}30%{opacity:0;-moz-transform:scale(1.1)}}@-webkit-keyframes slideShow{0%,100%{opacity:0;-webkit-transform:scale(1)}25%,5%{opacity:1}30%{opacity:0;-webkit-transform:scale(1.1)}}#schedule{background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url(/img/home-office.jpg) center center no-repeat fixed}#home{background:url(/img/Oakland_Skyline_-_Lake_Merritt.jpg)}#about,#home,#schedule{display:table;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}#sponsors{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-image:url(/img/sponsors/portpirate.png) center}.list-group-item>time{float:right;margin-right:1.5rem;padding:0 1.5rem;font-size:1.6rem;line-height:4rem}footer{padding:20px 0}.thumbnail.sponsor>a>img{height:65px}.mentor>.thumbnail>img{height:250px}span>time{font-weight:700;font-size:2rem}span.text-right{float:right}.fup48{font-family:Georgia,"Times New Roman",Times,serif;font-style:italic;font-weight:700}#schedule a.list-group-item{cursor:default}.img-thumbnail{border:2px solid transparent}a.linkedin{color:#0077b5}a.twitter{color:#55acee}a.google-plus{color:#d34836}a.facebook{color:#3b5998}blockquote{border:0}blockquote>footer{text-align:right}.schedule blockquote>.text-muted{color:#d5d5d5}
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+.home, .schedule h2, .schedule h3 {
+  color: black;
+}
+
+.home h1 {
+  font-size: 5em;
+}
+
+.home .icon {
+  color: #d9534f;
+}
+
+#schedule {
+  background:
+  linear-gradient(
+  rgba(0,0,0,0.75),
+  rgba(0,0,0,0.75)
+  ),
+  url(/img/home-office.jpg) no-repeat center center fixed;
+}
+
+#about, #schedule {
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#sponsors {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/img/sponsors/portpirate.png) center;
+}
+
+.list-group-item > time {
+  float: right;
+  margin-right: 1.5rem;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+
+#google_map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+.thumbnail.sponsor > a> img {
+  height: 65px;
+}
+
+.mentor > .thumbnail > img {
+  height: 250px;
+}
+
+span > time {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+span.text-right {
+  float: right;
+}
+
+#schedule a.list-group-item {
+  cursor: default;
+}
+
+.img-thumbnail {
+  border: 2px solid transparent;
+}
+
+a.linkedin {
+  color: #0077b5;
+}
+
+a.twitter {
+  color: #55acee;
+}
+
+a.google-plus {
+  color: #d34836;
+}
+
+a.facebook {
+  color: #3b5998;
+}
+
+blockquote {
+  text-align: center;
+  border: 0;
+}
+
+blockquote > footer {
+  text-align: right;
+}
+
+.schedule blockquote > .text-muted {
+  color: #d5d5d5;
+}
+
+.carousel-caption {
+	background-color: rgba(0,0,0,0.8);
+}
