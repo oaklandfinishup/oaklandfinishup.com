@@ -1,12 +1,10 @@
 {% for section in site.collections.sections.docs %}
 {% if section.name == "about" %}
-<section class="jumbotron" id="about">
+{% assign name = section.name %}
+<section class="jumbotron" id="{{ name }}">
     <div class="container">
-        <div class="row">
-            <h2 class="text-center">{{ section.title }}</h2>
-            {% assign name = section.name %}
-            {% include quote.html %}
-        </div><!--.row-->
+        <h2 class="text-center">{{ section.title }}</h2>
+        {% include quote.html %}
         <div class="row lead text-center">
             {{ section.content }}
         </div>
@@ -25,8 +23,8 @@
         <div class="row">
             <p class="lead text-center">{{ section.jump }}</p>
         </div><!--.row-->
-    </div><!--.container -->
-</section><!--.pad-section#about-->
+    </div><!--.container-->
+</section><!--/#about-->
 {% endif %}
 {% endfor %}
 
