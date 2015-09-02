@@ -1,8 +1,14 @@
 {% for quote in site.data.website.quotes %}
 {% if quote.section == name %}
-<blockquote>
-	<span class="text-muted">{{ quote.quote }}</span>
-	<footer>{{ quote.author }}, <cite title="{{ quote.source }}"><a target="_blank" href="{{ quote.url }}">{{ quote.source }}</a></cite></footer>
-</blockquote>
+<div class="alert alert-success" role="alert">
+		<blockquote class="blockquote-reverse">
+			<p>{{ quote.quote }}</p>
+			<cite title="{{ quote.source }}">
+				&mdash; {{ quote.author }}, <a target="_blank" href="{{ quote.url }}">
+					{{ quote.source }}
+				</a>
+			</cite>
+		</blockquote>
+</div><!--.alert-->
 {% endif %}
 {% endfor %}
