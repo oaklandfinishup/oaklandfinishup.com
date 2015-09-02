@@ -1,6 +1,7 @@
 ---
 name: home
 subtitles:
- - This fall, jump start your start-up.
+ - Be amazed.
+ - Be Amazing.
 button: Join Us
 ---
