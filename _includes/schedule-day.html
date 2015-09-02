@@ -3,7 +3,7 @@
   <ul class="nav nav-tabs nav-justified" role="tablist">
     {% for sched in site.data.conference.schedule.daily %}
     {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-      <li role="presentation" {% if forloop.first %} class="active"{% endif %}>
+      <li role="presentation"{% if forloop.first %} class="active"{% endif %}>
           <a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
               <span><time datetime="{{ sched.date | date:"%F" | date_to_xmlschema }}">{{ day | capitalize }}</time></span>
           </a>
@@ -15,16 +15,21 @@
     {% for sched in site.data.conference.schedule.daily %}
     {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
       <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
-          <div class="list-group">
-            {% for event in sched.schedule %}
-            {% capture datetime %}{{ sched.date }} {{ event.start }}{% endcapture %}
+          <dl class="list-group dl-horizontal">
+          {% for event in sched.schedule %}
+            {% capture dt %}{{ sched.date }} {{ event.start }}{% endcapture %}
               <div class="list-group-item">
-                  <time class="bg-info" datetime="{{ datetime | date_to_xmlschema }}">{{ datetime | date:"%I:%M %p" }}</time>
-                  <h4 class="list-group-item-heading">{{ event.title }}</h4>
-                  <p class="list-group-item-text">{{ event.description }}</p>
+                  <dt class="list-group-item-heading">
+                    <h4 class="text-danger">{{ event.title }}</h4>
+                    <time class="text-info" datetime="{{ dt | date_to_xmlschema }}">
+                      {{ dt | date:"%I:%M %p" }}
+                    </time>
+                  </dt>
+
+                  <dd>{{ event.description }}</dd>
               </div><!--.list-group-item-->
             {% endfor %}
-          </div><!--.list-group-->
+          </dl><!--.list-group-->
       </div><!--/#{{ day }}-->
     {% endfor %}
   </div><!--.tab-content-->
