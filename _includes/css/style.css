@@ -67,18 +67,8 @@ html, body {
   background-image: url(/img/sponsors/portpirate.png) center;
 }
 
-.list-group-item > time {
-  float: right;
-  margin-right: 1.5rem;
-  padding: 0 1.5rem;
-  font-size: 1.6rem;
-  line-height: 4rem;
-}
-
-#google_map {
-  height: 100%;
-  width: 100%;
-  position: relative;
+.list-group-item > dd {
+	margin-top: 1.2em;
 }
 
 footer {
