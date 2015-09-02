@@ -1,19 +1,12 @@
 <section class="pad-section schedule" id="schedule">
-	<div class="container">
-		<div class="row text-center">
-			<h2>How &amp; When to Finish Up</h2>
-			{% assign name = "schedule" %}
-			{% include quote.html %}
-		</div><!--.row-->
-		<div class="row">
-            <div class="col-lg-5 col-sm-12 left-half">
-				{% include howitworks.html %}
-            </div><!--left-half-->
-
-			<div class="col-lg-7 col-sm-12 right-half">
-				{% include schedule-day.html %}
-			</div><!--right-half-->
-		</div><!--.row-->
-		<h3 class="text-center">{{ section.jump }}</h3>
-	</div><!--container-->
+  <div class="container">
+    {% assign name = "schedule" %}
+    {% include quote.html %}
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 right-half">
+        {% include schedule-day.html %}
+      </div><!--right-half-->
+    </div><!--.row-->
+    <h3 class="text-center">{{ section.jump }}</h3>
+  </div><!--container-->
 </section><!--.content-section-a-->
