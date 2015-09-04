@@ -73,7 +73,7 @@ daily:
       title: Mentoring Session 9
       description: 30 minute sessions with each mentor.
     - start: "14:15" 
-      finsih: "15:15"
+      finish: "15:15"
       title: Mentoring Session 10
       description: 30 minute sessions with each mentor.
     - start: "15:30"
