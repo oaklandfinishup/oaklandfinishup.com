@@ -12,6 +12,7 @@
       <div class="item{% if forloop.first %} active{% endif %}">
         <div class="fill" style="background-image:url('{{ slide.picture }}');"></div>
         <div class="carousel-caption">
+					{% if forloop.first %}
           <h1>{{ site.title }}</h1>
 					<div class="col-sm-12">
   					<div class="col-sm-6">
@@ -21,7 +22,7 @@
     					{% assign venue = site.data.conference.venue %}
       					<h4>{{ venue.location }} @ {{ venue.address }}</h4>
       					<h4>{{ venue.neighborhood }}, {{ venue.city }}</h4>
-  					</div><!--.col-md-6 col-sm-12-->
+  					</div><!--.col-sm-6-->
   					<div class="col-sm-6">
       					<h2><a class="smoothie icon" href="#schedule"><i class="fa fa-huge fa-calendar"></i></a></h2>
       					{% assign startdate = site.data.conference.schedule.start %}
@@ -29,6 +30,7 @@
       					<h3><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d, %Y" }}</time></h3>
   					</div><!--.col-md-6 col-sm-12-->
 					</div>
+					{% endif %}
         	<blockquote><em>"{{ slide.caption }}"</em></blockquote>
         </div>
       </div><!--.item-->
