@@ -7,11 +7,11 @@ daily:
     - title: Eat, Make & Break
       start: "18:00"
       finish: "21:00"
-      description: Register. Break ice. Make friends.
+      description: Meet fellow attendees, mentors, and get a head start on your ideas. We'll offer you a space filled with new ideas, product demos, fun games, and networking opportunities.  Bring your friends.
     - title: Mentor Intros
       start: "19:30"
       finish: "20:00"
-      description: Mentors pitch their skills to you.
+      description: Get to know each of the mentors.
     - title: Greet the Mentees
       start: "20:00"
       finish: "21:00"
