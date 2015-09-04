@@ -17,13 +17,13 @@
       <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
           <dl class="list-group dl-horizontal">
           {% for event in sched.schedule %}
-            {% capture dt %}{{ sched.date }} {{ event.start }}{% endcapture %}
+            {% capture start %}{{ sched.date }} {{ event.start }}{% endcapture %}
+            {% capture finish %}{{ sched.date }} {{ event.finish }}{% endcapture %}
               <div class="list-group-item">
                   <dt class="list-group-item-heading">
                     <h4 class="text-danger">{{ event.title }}</h4>
-                    <time class="text-info" datetime="{{ dt | date_to_xmlschema }}">
-                      {{ dt | date:"%I:%M %p" }}
-                    </time>
+                    <time class="text-info" datetime="{{ start | date_to_xmlschema }}">{{ start | date:"%I:%M %p" }}</time> -
+                    <time class="text-info" datetime="{{ finish | date_to_xmlschema }}">{{ finish | date:"%I:%M %p" }}</time>
                   </dt>
 
                   <dd>{{ event.description }}</dd>

@@ -6,48 +6,78 @@ daily:
     schedule:
     - title: Eat, Make & Break
       start: "18:00"
+      finish: "21:00"
       description: Register. Break ice. Make friends.
     - title: Mentor Intros
       start: "19:30"
+      finish: "20:00"
       description: Mentors pitch their skills to you.
     - title: Greet the Mentees
       start: "20:00"
-      description: 2 minutes to introduce yourself, your projects and what you need to <strong>finish up</strong>.
+      finish: "21:00"
+      description: 90 seconds to introduce yourself, your projects and what you need to <strong>finish up</strong>.
   - date: 2015-10-17
     schedule:
-    - start: "08:00"
-      title: Breakfast
+    - start: "8:00"
+      finish: "9:20"
+      title: Breakfast & Session Sign Ups
       description: We'll fuel you up. You'll need it.
-    - start: "9:00"
-      title: Mentor (Re)intros
-      description: Interactive introductions with the mentors.
-    - start: "9:45"
-      title: Session Sign Ups
-      description: Sign-up for individual coaching sessions.
-    - start: "10:00"
-      title: Mentoring Sprints
-      description: Spend 1 on 1 time with your chosen mentors.
+    - start: "9:30"
+      finish: "10:30"
+      title: Mentoring Session 1
+      description: 30 minute sessions with each mentor.
+    - start: "10:45"
+      finish: "11:45"
+      title: Mentoring Session 2
+      description: 30 minute sessions with each mentor.
+    - start: "12:00"
+      finish: "12:30"
+      title: Mentoring Session 3
+      description: 30 minute sessions with each mentor.
     - start: "12:30"
-      title: Lunch
-      description: We'll re-fuel you.
-    - start: "18:30"
-      title: Dinner
-      description: Eat, review your day, and work independently.
+      finish: "14:00"
+      title: Networking Lunch
+      description: Forget working lunches, chat it up with your friends.
+    - start: "14:00"
+      finish: "15:00"
+      title: Mentoring Session 4
+      description: 30 minute sessions with each mentor.
+    - start: "15:30"
+      finish: "16:30"
+      title: Mentoring Session 5
+      description: 30 minute sessions with each mentor.
   - date: 2015-10-18
     schedule:
     - start: "08:00"
+      finish: "9:00"
       title: Fast Breakfast
       description: Hit the ground running
-    - start: "08:30"
-      title: Mentoring Sprints
-      description: More 1 on 1 time with your chosen mentors.
+    - start: "8:30"
+      finish: "9:30"
+      title: Mentoring Session 6
+      description: 30 minute sessions with each mentor.
+    - start: "9:45"
+      finish: "10:45"
+      title: Mentoring Session 7
+      description: 30 minute sessions with each mentor.
+    - start: "11:00"
+      finish: "12:00"
+      title: Mentoring Session 8
+      description: 30 minute sessions with each mentor.
     - start: "12:00"
-      title: Lunch
-      description: Refuel for the final lap.
+      finish: "13:00"
+      title: Lunch Break
+      description: Refuel for the final push.
+    - start: "13:00"
+      finish: "14:00"
+      title: Mentoring Session 9
+      description: 30 minute sessions with each mentor.
+    - start: "14:15" 
+      finsih: "15:15"
+      title: Mentoring Session 10
+      description: 30 minute sessions with each mentor.
     - start: "15:30"
+      finish: "17:00"
       title: Show & Tell
-      description: Show off your work. Cheer your friends.
-    - start: "17:00"
-      title: Happy Hour
-      description: Toast to your success.
+      description: Show off your work. Cheer on your friends.
 ---
