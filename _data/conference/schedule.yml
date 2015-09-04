@@ -4,7 +4,7 @@ end: 2015-10-18T18:00
 daily:
   - date: 2015-10-16
     schedule:
-    - title: Eat, Make & Break
+    - title: Kick-off Meet & Greet
       start: "18:00"
       finish: "21:00"
       description: Meet fellow attendees, mentors, and get a head start on your ideas. We'll offer you a space filled with new ideas, product demos, fun games, and networking opportunities.  Bring your friends.
@@ -20,7 +20,7 @@ daily:
     schedule:
     - start: "8:00"
       finish: "9:20"
-      title: Breakfast & Session Sign Ups
+      title: Breakfast & Sign-Up
       description: We'll fuel you up. You'll need it.
     - start: "9:30"
       finish: "10:30"
