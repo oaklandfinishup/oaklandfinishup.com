@@ -5,22 +5,22 @@
     <div class="container">
         <h2 class="text-center">{{ section.title }}</h2>
         {% include quote.html %}
-        <div class="row lead text-center">
-            {{ section.content }}
-        </div>
+        <div class="row lead text-center">{{ section.content }}</div>
         <div class="row">
-            <div class="col-sm-6">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ section.youtube }}"></iframe>
-              </div>
+          <div class="col-sm-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                  src="//www.youtube.com/embed/{{ section.youtube }}">
+              </iframe>
             </div>
-            <div class="about col-sm-6">
-                <ul class="list-group lead">
-                  {% for example in section.examples %}
-                    <li class="list-group-item">{{ example }}</li>
-                  {% endfor %}
-                </ul>
-            </div>
+          </div>
+          <div class="about col-sm-6">
+              <ul class="list-group lead">
+                {% for example in section.examples %}
+                  <li class="list-group-item">{{ example }}</li>
+                {% endfor %}
+              </ul>
+          </div>
         </div><!--.row-->
         <div class="row">
             <p class="lead text-center">{{ section.jump }}</p>
