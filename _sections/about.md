@@ -1,7 +1,7 @@
 ---
 name: about
 title: 48 Hours. Be Amazed. Be Amazing.
-youtube: gh_NaVBu_u0
+youtube: gU2w56sK1iw
 jump: 'For 48 hours, get coached, guided &amp; inspired by <a class="smoothie" href="#mentors">successful finishers</a> in technology, government, business &amp; non-profits.'
 examples:
   - Revise & target your sales & marketing plans
