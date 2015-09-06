@@ -8,7 +8,7 @@
 
     {% assign startdate = site.data.conference.schedule.start %}
     {% assign enddate = site.data.conference.schedule.end %}
-    <div class="row register">
+    <div class="row">
         <div class="col-lg-6">
             <h4><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d" }}</time></h4>
       </div><!--.col-lg-6-->
@@ -21,7 +21,7 @@
             </div><!--.col-lg-6-->
     </div><!--.row-->
 
-    <div class="row">
+    <div class="row embed-iframe">
       <iframe src="{{ site.data.conference.tickets.url }}"
         frameborder="0"
         height="100%" width="100%"

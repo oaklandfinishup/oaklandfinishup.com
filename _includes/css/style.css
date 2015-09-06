@@ -52,7 +52,7 @@ html, body {
   text-align: center;
 }
 
-#about, #schedule {
+#about, #schedule, #register, #contact {
   display: table;
   height: 100%;
   position: relative;
@@ -63,6 +63,9 @@ html, body {
   background-size: cover;
 }
 
+.embed-iframe {
+	height: 100vh;
+}
 
 #sponsors {
   -webkit-background-size: cover;
