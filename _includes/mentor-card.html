@@ -29,13 +29,15 @@
         <div class="panel panel-danger">
           <div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
             <h5 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">I can help you</a>
+              <a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">I can help you to&hellip;</a>
             </h5>
           </div><!--.panel-heading-->
           <div id="hcihy{{ mentornum }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
             <ul class="list-group">
             {% for how in mentor.help %}
-              <li class="list-group-item"><small>{{ how }}</small></li>
+              <li class="list-group-item">
+									<small>&hellip;{{ how | downcase }}</small>
+							</li>
             {% endfor %}
             </ul>
           </div><!--.panel-collapse-->
