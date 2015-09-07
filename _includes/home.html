@@ -1,8 +1,8 @@
-<header id="carousel" class="carousel slide">
+<header id="home" class="carousel slide">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     {% for slide in site.data.website.slideshow %}
-      <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+      <li data-target="#home" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
     {% endfor %}
   </ol><!--.carousel-indicators-->
 
@@ -15,7 +15,7 @@
           {% if forloop.first %}
           <h1>{{ site.title }}</h1>
           <div class="col-sm-12">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <h2><a class="smoothie icon" href="#register">
                     <i class="fa fa-huge fa-map-marker"></i>
                 </a></h2>
@@ -23,7 +23,15 @@
                 <h4>{{ venue.location }} @ {{ venue.address }}</h4>
                 <h4>{{ venue.neighborhood }}, {{ venue.city }}</h4>
             </div><!--.col-sm-6-->
-            <div class="col-sm-6">
+            <div class="col-sm-4">
+                <a href="#register"
+                  class="smoothie btn btn-danger"
+                  role="button"
+                >
+                    <h3>Be Amazing</h3>
+                </a>
+            </div>
+            <div class="col-sm-4">
                 <h2><a class="smoothie icon" href="#schedule"><i class="fa fa-huge fa-calendar"></i></a></h2>
                 {% assign startdate = site.data.conference.schedule.start %}
                 {% assign enddate = site.data.conference.schedule.end %}
@@ -38,10 +46,10 @@
   </div><!--.carousel-inner-->
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel" data-slide="prev">
+  <a class="left carousel-control" href="#home" data-slide="prev">
       <span class="icon-prev"></span>
   </a>
-  <a class="right carousel-control" href="#carousel" data-slide="next">
+  <a class="right carousel-control" href="#home" data-slide="next">
       <span class="icon-next"></span>
   </a>
-</header><!--/#carousel-->
+</header><!--/#home-->
