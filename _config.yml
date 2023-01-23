@@ -9,7 +9,7 @@ collections:
 
 exclude: [bower_components,node_modules,javascripts,stylesheets,README*,params.json]
 
-google-analytics: UA-61672521-1 
+google-analytics: UA-61672521-1
 
 plugins:
   - jekyll-sitemap
