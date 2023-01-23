@@ -1,6 +1,5 @@
 _site
 *.swp
-Gemfile*
 node_modules
 bower_components
 
