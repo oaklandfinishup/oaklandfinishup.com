@@ -1,48 +1,48 @@
 <div class="col-sm-4 mentor">
-  <div class="thumbnail vcard">
-    <img class="img-thumbnail photo" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
-    <div class="caption">
-      <h3 class="fn"><small><strong>{{ mentor.name }}</strong></small></h3>
-      <h5 class="company text-right"><small>{{ mentor.role }}, <a class="url" href="{{ mentor.website }}" target="_blank">{{ mentor.company }}</a></small></h5>
-      <div class="panel-group" id="accordion{{ mentornum }}" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="social{{ mentornum }}">
-            <h5 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#bio{{ mentornum }}" aria-expanded="true" aria-controls="bio{{ mentornum }}">Bio</a>
-              <span class="text-right">
-              {% assign socials = mentor.social | sort: 'name' %}
-              {% for soc in socials %}
-              <a href="{{ soc.profile }}" class="{{ soc.name }}" target="_blank">
-                <i class="fa fa-lg fa-{{ soc.name }}-square"></i>
-                </a>
-              {% endfor %}
-              </span>
-            </h5>
-          </div><!--.panel-heading-->
-          <div id="bio{{ mentornum }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-            <div class="panel-body note">
-              {% assign bio = mentor.bio | markdownify %}
-              {{ bio }}
-            </div><!--.panel-body -->
-          </div><!--.panel-collapse-->
-        </div><!--.panel-->
-        <div class="panel panel-danger">
-          <div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
-            <h5 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">I can help you&hellip;</a>
-            </h5>
-          </div><!--.panel-heading-->
-          <div id="hcihy{{ mentornum }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
-            <ul class="list-group">
-            {% for how in mentor.help %}
-              <li class="list-group-item">
+	<div class="thumbnail vcard">
+		<img class="img-thumbnail photo" src="/img/mentors/{{ mentor.photo }}" alt="photo of {{ mentor.name }}">
+		<div class="caption">
+			<h3 class="fn"><small><strong>{{ mentor.name }}</strong></small></h3>
+			<h5 class="company text-right"><small>{{ mentor.role }}, <a class="url" href="{{ mentor.website }}" target="_blank">{{ mentor.company }}</a></small></h5>
+			<div class="panel-group" id="accordion{{ mentornum }}" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="social{{ mentornum }}">
+						<h5 class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#bio{{ mentornum }}" aria-expanded="true" aria-controls="bio{{ mentornum }}">Bio</a>
+							<span class="text-right">
+							{% assign socials = mentor.social | sort: 'name' %}
+							{% for soc in socials %}
+							<a href="{{ soc.profile }}" class="{{ soc.name }}" target="_blank">
+								<i class="fa fa-lg fa-{{ soc.name }}-square"></i>
+								</a>
+							{% endfor %}
+							</span>
+						</h5>
+					</div><!--.panel-heading-->
+					<div id="bio{{ mentornum }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
+						<div class="panel-body note">
+							{% assign bio = mentor.bio | markdownify %}
+							{{ bio }}
+						</div><!--.panel-body -->
+					</div><!--.panel-collapse-->
+				</div><!--.panel-->
+				<div class="panel panel-danger">
+					<div class="panel-heading" role="tab" id="wiify{{ mentornum }}">
+						<h5 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion{{ mentornum }}" href="#hcihy{{ mentornum }}" aria-expanded="true" aria-controls="hcihy{{ mentornum }}">I can help you&hellip;</a>
+						</h5>
+					</div><!--.panel-heading-->
+					<div id="hcihy{{ mentornum }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mentor{{ mentornum }}">
+						<ul class="list-group">
+						{% for how in mentor.help %}
+							<li class="list-group-item">
 									<small>&hellip;{{ how | downcase }}</small>
 							</li>
-            {% endfor %}
-            </ul>
-          </div><!--.panel-collapse-->
-        </div><!--.panel-->
-      </div><!--.panel-group-->
-    </div><!--.caption-->
-  </div><!--.thumbnail-->
+						{% endfor %}
+						</ul>
+					</div><!--.panel-collapse-->
+				</div><!--.panel-->
+			</div><!--.panel-group-->
+		</div><!--.caption-->
+	</div><!--.thumbnail-->
 </div><!--.mentor-->
