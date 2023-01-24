@@ -1,13 +1,11 @@
-<section class="pad-section schedule" id="schedule">
-  <div class="container">
-    {% assign name = "schedule" %}
+<section id="schedule">
+	<div>
+	{% assign name = "schedule" %}
 		<h2>Schedule</h2>
-    {% include quote.html %}
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 col-sm-12 right-half">
-        {% include schedule-day.html %}
-      </div><!--right-half-->
-    </div><!--.row-->
-    <h3 class="text-center">{{ section.jump }}</h3>
-  </div><!--container-->
-</section><!--.content-section-a-->
+		{% include quote.html %}
+		<div class="row">
+			{% include schedule-day.html %}
+		</div><!--.row-->
+		<h3>{{ section.jump }}</h3>
+	</div>
+</section><!--/#schedule-->
