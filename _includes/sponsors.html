@@ -1,30 +1,24 @@
 {% for section in site.sections %}
 {% if section.name == "sponsors" %}
-<section class="jumbotron" id="sponsors">
-    <div class="container">
-        <div class="row text-center">
-                <h2>{{ section.title }}</h2>
-                {% assign name = section.name %}
-                {% include quote.html %}
-                <span class="lead">{{ section.content }}</span>
-        </div><!--.row-->
-        <div class="row">
-        {% assign grouper = section.sponsors | group_by: "type" %}
-        {% for group in grouper %}
-            <div class="sponsors {{ group.name }} col-lg-6 col-sm-6">
-            {% assign sponsors = group.items %}
-            {% for sponsor in sponsors %}
-                <div class="thumbnail sponsor">
-                    <a href="http://{{ sponsor.url }}" target="_blank">
-                        <img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
-                    </a>
-                </div><!--.thumbnail-->
-            {% endfor %}
-            </div><!--.sponsors.{{ group.name }}-->
-        {% endfor %}
-            <h3 class="text-center">Want to <a class="smoothie" href="#contact">help us finish up</a>?</h3>
-        </div><!--.row-->
-    </div><!--.container-->
+{% assign name = section.name %}
+<section id="sponsors">
+	<h2>{{ section.title }}</h2>
+	{% include quote.html %}
+	<span>{{ section.content }}</span>
+{% assign grouper = section.sponsors | group_by: "type" %}
+{% for group in grouper %}
+	<div class="sponsors {{ group.name }}">
+	{% assign sponsors = group.items %}
+	{% for sponsor in sponsors %}
+		<div class="thumbnail sponsor">
+			<a href="http://{{ sponsor.url }}" target="_blank">
+				<img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+			</a>
+		</div><!--.thumbnail-->
+	{% endfor %}
+	</div><!--.sponsors.{{ group.name }}-->
+{% endfor %}
+	<h3>Want to <a href="#contact">help us finish up</a>?</h3>
 </section><!--/#sponsors-->
 {% endif %}
 {% endfor %}

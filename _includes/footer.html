@@ -1,20 +1,12 @@
-<!-- Footer -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <ul class="list-inline">
-        {% for nav in site.data.website.layout %}
-          <li><a class="smoothie" href="#{{ nav }}">{{ nav | capitalize }}</a></li>
-          {% unless forloop.last %}
-          <li class="footer-menu-divider">&sdot;</li>
-          {% endunless %}
-        {% endfor %}
-      </ul>
-      <p class="copyright text-muted small">
-			{{ site.title }} is copyright &copy;{{ site.time | date:"%Y" }} {% for org in site.data.conference.organizers %}{% unless forloop.first %} &amp; {% endunless %}<span class="vcard"><a class="url fn" href="{{ org.website }}" target="_blank">{{ org.name }}</a></span>{% endfor %}. All Rights Reserved.
-			</p>
-    </div>
-  </div>
+	<ul>
+	{% for nav in site.data.website.layout %}
+		<li><a href="#{{ nav }}">{{ nav | capitalize }}</a></li>
+	{% endfor %}
+	</ul>
+	<p class="copyright">
+		{{ site.title }} is copyright &copy;2015-{{ site.time | date:"%Y" }} {% for org in site.data.conference.organizers %}{% unless forloop.first %} &amp; {% endunless %}<span class="vcard"><a class="url fn" href="{{ org.website }}" target="_blank">{{ org.name }}</a></span>{% endfor %}. All Rights Reserved.
+	</p>
 </footer>
 
 

@@ -1,24 +1,22 @@
 {% for section in site.sections %}
 {% if section.name == "thanks" %}
-<section class="jumbotron" id="gratitude">
-	<div class="container">
-		<div class="row text-center">
-			<h2>{{ section.title }}</h2>
-			{% assign name = section.name %}
-			{% include quote.html %}
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-sm-12" id="thanks">
-				<h4>Image Attributions</h4>
-				<ul class="list-group">
-				{% for img in section.images %}
-				<li class="list-group-item"><a target="_blank" href="{{ img.urlphoto }}">{{ img.name }}</a> by <a target="_blank" href="{{ img.urlauthor }}">{{ img.author }}</a> released under {{ img.license }}</li>
-				{% endfor %}
-				</ul>
-			</div><!--/#thanks-->
-		</div><!--.row-->
-	</div><!--.container-->
-</section>
+{% assign name = section.name %}
+<section id="gratitude">
+	<h2>{{ section.title }}</h2>
+	{% include quote.html %}
+	<div id="thanks">
+		<h4>Image Attributions</h4>
+		<ul>
+		{% for img in section.images %}
+			<li>
+				<a target="_blank" href="{{ img.urlphoto }}">{{ img.name }}</a>
+				by
+				<a target="_blank" href="{{ img.urlauthor }}">{{ img.author }}</a>
+				released under {{ img.license }}</li>
+		{% endfor %}
+		</ul>
+	</div><!--/#thanks-->
+</section><!--/#{{ section.name }}-->
 {% endif %}
 {% endfor %}
 

@@ -1,15 +1,15 @@
 {% for subsection in site.sections %}
 {% if subsection.name == "howitworks" %}
-<div class="list-group">
-	<h3 class="text-center">{{ subsection.title }}</h3>
+<div>
+	<h3>{{ subsection.title }}</h3>
 	{% for how in subsection.steps %}
-	<a href="#schedule" class="smoothie list-group-item">
-		<h4 class="list-group-item-heading">Step {{ forloop.index }}: {{ how.item }}</h4>
+	<a href="#schedule">
+		<h4>Step {{ forloop.index }}: {{ how.item }}</h4>
 	{% for detail in how.details %}
-		<p class="list-group-item-text">{{ detail }}</p>
+		<p>{{ detail }}</p>
 	{% endfor %}
 	</a>
 	{% endfor %}
-</div><!--.list-group-->
+</div>
 {% endif %}
 {% endfor %}
