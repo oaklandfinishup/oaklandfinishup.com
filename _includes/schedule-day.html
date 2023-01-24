@@ -1,36 +1,36 @@
-<h3 class="text-center">{{ section.title }}</h3>
+<h3> section.title }}</h3>
 <div role="tabpanel">
-  <ul class="nav nav-tabs nav-justified" role="tablist">
-    {% for sched in site.data.conference.schedule.daily %}
-    {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-      <li role="presentation"{% if forloop.first %} class="active"{% endif %}>
-          <a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
-              <span><time datetime="{{ sched.date | date:"%F" | date_to_xmlschema }}">{{ day | capitalize }}</time></span>
-          </a>
-      </li>
-    {% endfor %}
-  </ul>
+	<ul class="nav nav-tabs nav-justified" role="tablist">
+	{% for sched in site.data.conference.schedule.daily %}
+	{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+		<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
+			<a href="#{{ day }}" aria-controls="{{ day }}" role="tab" data-toggle="tab">
+				<span><time datetime="{{ sched.date | date:"%F" | date_to_xmlschema }}">{{ day | capitalize }}</time></span>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
 
-  <div class="tab-content">
-    {% for sched in site.data.conference.schedule.daily %}
-    {% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
-      <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
-          <dl class="list-group dl-horizontal">
-          {% for event in sched.schedule %}
-            {% capture start %}{{ sched.date }} {{ event.start }}{% endcapture %}
-            {% capture finish %}{{ sched.date }} {{ event.finish }}{% endcapture %}
-              <div class="list-group-item">
-                  <dt class="list-group-item-heading">
-                    <h4 class="text-danger">{{ event.title }}</h4>
-                    <time class="text-info" datetime="{{ start | date_to_xmlschema }}">{{ start | date:"%I:%M %p" }}</time> -
-                    <time class="text-info" datetime="{{ finish | date_to_xmlschema }}">{{ finish | date:"%I:%M %p" }}</time>
-                  </dt>
+	<div class="tab-content">
+	{% for sched in site.data.conference.schedule.daily %}
+	{% capture day %}{{ sched.date | date: "%A" }}{% endcapture %}
+		<div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ day }}">
+			<dl class="list-group dl-horizontal">
+			{% for event in sched.schedule %}
+			{% capture start %}{{ sched.date }} {{ event.start }}{% endcapture %}
+			{% capture finish %}{{ sched.date }} {{ event.finish }}{% endcapture %}
+				<div class="list-group-item">
+					<dt class="list-group-item-heading">
+						<h4 class="text-danger">{{ event.title }}</h4>
+						<time class="text-info" datetime="{{ start | date_to_xmlschema }}">{{ start | date:"%I:%M %p" }}</time> -
+						<time class="text-info" datetime="{{ finish | date_to_xmlschema }}">{{ finish | date:"%I:%M %p" }}</time>
+					</dt>
 
-                  <dd>{{ event.description }}</dd>
-              </div><!--.list-group-item-->
-            {% endfor %}
-          </dl><!--.list-group-->
-      </div><!--/#{{ day }}-->
-    {% endfor %}
-  </div><!--.tab-content-->
+					<dd>{{ event.description }}</dd>
+				</div><!--.list-group-item-->
+			{% endfor %}
+			</dl><!--.list-group-->
+		</div><!--/#{{ day }}-->
+	{% endfor %}
+	</div><!--.tab-content-->
 </div><!--.tabpanel-->
