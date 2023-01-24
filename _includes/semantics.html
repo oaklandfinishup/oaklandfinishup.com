@@ -1,56 +1,56 @@
 <script type="application/ld+json">
 [{
-    "@context" : "http://schema.org"
-  , "@type" : "BusinessEvent"
-  , "name" : "{{ site.title }}"
-  , "url" : "{{ site.url }}"
-  , "startDate" : "{{ site.data.conference.schedule.start | date_to_xmlschema }}"
-  , "duration" : "P2D"
-  , "location" : {
-        "@type" : "Place"
-      , "name" : "{{ site.data.conference.venue.location }}"
-      , "sameAs" : "{{ site.data.conference.venue.website }}"
-      , "address" : {
-            "@type": "PostalAddress"
-          , "streetAddress": "{{ site.data.conference.venue.address }} @ {{ site.data.conference.venue.neighborhood }}"
-          , "addressLocality": "{{ site.data.conference.venue.city }}"
-          , "addressRegion": "{{ site.data.conference.venue.state }}"
-          , "addressCountry": "US"
-        }
-    }
-  , "offers" : [
-    	{% for offer in site.data.conference.tickets.tickets %}
-    	{
-        	"@type": "Offer"
-      	, "url" : "{{ site.data.conference.tickets.url }}"
-      	, "category": "{{ offer.category }}"
-      	, "price": "{{ offer.price }}"
-      	, "priceCurrency": "USD"
-      	, "availability": "{{ offer.availability }}"
-    	}{% unless forloop.last %},{% endunless %}
-    	{% endfor %}
-		]
-  , "performers" : [
-    	{% for roll in site.data.mentors %}
-    	{% assign mentor = roll[1] %}
-			{% if mentor.status == "active" %}
-    	{
-        	"@type" : "Person"
-      	, "image" : "/img/mentors/{{ mentor.photo }}"
-      	, "name" : "{{ mentor.name }}"
-      	, "url" : "{{ mentor.website }}"
-    	}{% unless forloop.last %},{% endunless %}
-			{% endif %}
-    	{% endfor %}
-  	]
-  , "organizers" : [
-    	{% for owner in site.data.conference.organizers %}
-    	{
-        	"@type" : "Person"
-      	, "name" : "{{ owner.name }}"
-      	, "sameAs": "{{ owner.website }}"
-    	}{% unless forloop.last %},{% endunless %}
-    	{% endfor %}
-  	]
+	"@context" : "http://schema.org"
+	, "@type" : "BusinessEvent"
+	, "name" : "{{ site.title }}"
+	, "url" : "{{ site.url }}"
+	, "startDate" : "{{ site.data.conference.schedule.start | date_to_xmlschema }}"
+	, "duration" : "P2D"
+	, "location" : {
+		"@type" : "Place"
+		, "name" : "{{ site.data.conference.venue.location }}"
+		, "sameAs" : "{{ site.data.conference.venue.website }}"
+		, "address" : {
+			"@type": "PostalAddress"
+			, "streetAddress": "{{ site.data.conference.venue.address }} @ {{ site.data.conference.venue.neighborhood }}"
+			, "addressLocality": "{{ site.data.conference.venue.city }}"
+			, "addressRegion": "{{ site.data.conference.venue.state }}"
+			, "addressCountry": "US"
+		}
+	}
+	, "offers" : [
+	{% for offer in site.data.conference.tickets.tickets %}
+		{
+			"@type": "Offer"
+			, "url" : "{{ site.data.conference.tickets.url }}"
+			, "category": "{{ offer.category }}"
+			, "price": "{{ offer.price }}"
+			, "priceCurrency": "USD"
+			, "availability": "{{ offer.availability }}"
+		}{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+	]
+	, "performers" : [
+	{% for roll in site.data.mentors %}
+	{% assign mentor = roll[1] %}
+	{% if mentor.status == "active" %}
+		{
+			"@type" : "Person"
+			, "image" : "/img/mentors/{{ mentor.photo }}"
+			, "name" : "{{ mentor.name }}"
+			, "url" : "{{ mentor.website }}"
+	}{% unless forloop.last %},{% endunless %}
+	{% endif %}
+	{% endfor %}
+	]
+	, "organizers" : [
+	{% for owner in site.data.conference.organizers %}
+		{
+			"@type" : "Person"
+			, "name" : "{{ owner.name }}"
+			, "sameAs": "{{ owner.website }}"
+		}{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+	]
 }]
 </script>
