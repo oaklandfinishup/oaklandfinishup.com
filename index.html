@@ -1,4 +1,51 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="{{ site.author }}">
+	<meta name="content" content="{{ site.description }}">
+	<meta name="description" content="{{ site.tagline}}">
+
+	<title>{{ site.title }}</title>
+
+	<!-- Semantic markup -->
+	{% include semantics.html %}
+
+	{% comment %}{% include newrelic.html %}{% endcomment %}
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+	<aside class="navbar">
+		<a href="#home">{{ site.title }}</a>
+
+		<nav role="navigation">
+			<ul class="navitems">
+			{% for nav in site.data.website.layout %}
+				<li><a href="#{{ nav }}">{{ nav | capitalize }}</a></li>
+			{% endfor %}
+			</ul>
+		</nav>
+	</aside><!--.navbar -->
+
+	<main>
+		{% for section in site.data.website.layout %}
+		{% include {{ section }}.html %}
+		{% endfor %}
+
+		<!-- Thanks -->
+		{% include thanks.html %}
+
+		<!-- Footnav -->
+		{% include footer.html %}
+	</main>
+</body>
+</html>
