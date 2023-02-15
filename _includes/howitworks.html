@@ -1,15 +1,12 @@
-{% for subsection in site.sections %}
-{% if subsection.name == "howitworks" %}
+{% assign subsection = site.sections | where: "name", "howitworks" %}
 <div>
 	<h3>{{ subsection.title }}</h3>
 	{% for how in subsection.steps %}
 	<a href="#schedule">
 		<h4>Step {{ forloop.index }}: {{ how.item }}</h4>
-	{% for detail in how.details %}
+		{% for detail in how.details %}
 		<p>{{ detail }}</p>
-	{% endfor %}
+		{% endfor %}
 	</a>
 	{% endfor %}
 </div>
-{% endif %}
-{% endfor %}

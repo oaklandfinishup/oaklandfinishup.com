@@ -1,5 +1,4 @@
-{% for section in site.sections %}
-{% if section.name == "mentors" %}
+{% assign section =  site.sections | where: "name", "mentor"  %}
 {% assign name = section.name %}
 <section id="mentors">
 	<h2>{{ section.title }}</h2>
@@ -18,5 +17,3 @@
 	</div><!--/#mentor-gallery-->
 	<p>{{ section.jump }}</p>
 </section><!--/#{{ section.name }}-->
-{% endif %}
-{% endfor %}

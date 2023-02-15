@@ -1,5 +1,4 @@
-{% for section in site.sections %}
-{% if section.name == "thanks" %}
+{% assign section = site.sections | where: "name", "thanks" %}
 {% assign name = section.name %}
 <section id="gratitude">
 	<h2>{{ section.title }}</h2>
@@ -17,6 +16,3 @@
 		</ul>
 	</div><!--/#thanks-->
 </section><!--/#{{ section.name }}-->
-{% endif %}
-{% endfor %}
-
