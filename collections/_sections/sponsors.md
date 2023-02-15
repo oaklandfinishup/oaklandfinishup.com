@@ -6,7 +6,7 @@ sponsors:
     logo: theport.svg
     url: portworkspaces.com
     type: headliner
-priors:
+
   - name: Basecamp
     logo: basecamp.svg
     url: basecamp.com
