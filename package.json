@@ -1,0 +1,33 @@
+{
+  "name": "oaklandfinishup",
+  "version": "1.0.0",
+  "description": "An unconference for small businesses in Oakland",
+  "main": "index.js",
+  "scripts": {
+    "sprite": "svg-sprite -d --dest=src src/icons/*.svg",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "rm -rf _site && eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oaklandfinishup/oaklandfinishup.com.git"
+  },
+  "keywords": [],
+  "author": "Seemant Kulleen <seemantk@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/oaklandfinishup/oaklandfinishup.com/issues"
+  },
+  "homepage": "https://oaklandfinishup.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-beta.2",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "bootstrap-icons": "^1.10.3",
+    "eleventy-sass": "^2.1.7",
+    "js-yaml": "^4.1.0",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-footnote": "^3.0.3",
+    "svg-sprite": "^2.0.2"
+  }
+}
