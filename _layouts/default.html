@@ -14,8 +14,6 @@ layout: compress
     <meta name="cf-2fa-verify" content="a4ab03b59dc14e5">
     <title>Oakland Finish Up Weekend</title>
 
-	{% include newrelic.html %}
-
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -25,31 +23,30 @@ layout: compress
     <link href="css/theme.css" rel="stylesheet" type="text/css">
     <link href="css/full-slider.css" rel="stylesheet" type="text/css">
     <!-- Semantic markup -->
-    {% include semantics.html %}
+    {% include "semantics.html" %}
 
     <style>
-        {% include css/style.css %}
+        {% include "css/style.css" %}
     </style>
 
-		{% include analytics.html %}
 </head>
 
 <body data-spy="scroll" data-target="#navbar-collapse-main">
   <!-- Navigation -->
-  {% include topnav.html %}
+  {% include "topnav.html" %}
 
-  {% for section in site.data.website.layout %}
-  {% include {{ section }}.html %}
+  {% for section in website.layout %}
+  {% include "{{ section }}.html" %}
   {% endfor %}
 
   <!-- Thanks -->
-  {% include thanks.html %}
+  {% include "thanks.html" %}
 
   <!-- Footnav -->
-  {% include footer.html %}
+  {% include "footer.html" %}
 
   <!-- JavaScripts -->
-  {% include javascripts.html %}
+  {% include "javascripts.html" %}
 </body>
 
 </html>
