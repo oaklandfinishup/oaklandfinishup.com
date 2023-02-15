@@ -1,4 +1,3 @@
----
 url: "http://www.eventbrite.com/tickets-external?eid=18063889580&ref=etckt"
 tickets:
   - category: Early Bird
@@ -13,4 +12,3 @@ tickets:
   - category: Friday Only
     price: 26.62
     availability: InStock
----
