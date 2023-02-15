@@ -1,17 +1,4 @@
 title: Oakland Finish Up Weekend
 tagline: Be Amazed. Be Amazing. Finish up.
 url: http://oaklandfinishup.com
-
 timezone: US/Pacific
-
-collections:
-  - sections
-
-collections_dir: collections
-
-exclude: [bower_components,node_modules,javascripts,stylesheets,README*,params.json]
-
-google-analytics: UA-61672521-1
-
-plugins:
-  - jekyll-sitemap
