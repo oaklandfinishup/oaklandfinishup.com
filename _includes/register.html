@@ -3,18 +3,18 @@
     <div class="row text-center">
         <h2>Buy Your Tickets</h2>
         {% assign name = "register" %}
-        {% include quote.html %}
+        {% include "quote.html" %}
     </div><!--.row-->
 
-    {% assign startdate = site.data.conference.schedule.start %}
-    {% assign enddate = site.data.conference.schedule.end %}
+    {% assign startdate = conference.schedule.start %}
+    {% assign enddate = conference.schedule.end %}
     <div class="row">
         <div class="col-lg-6">
             <h4><time datetime="{{ startdate | date_to_xmlschema }}">{{ startdate | date:"%B %d" }}</time> - <time datetime="{{ enddate | date_to_xmlschema }}">{{ enddate | date:"%d" }}</time></h4>
       </div><!--.col-lg-6-->
       <div class="col-lg-6 text-right">
         <div class="vcard">
-          {% assign venue = site.data.conference.venue %}
+          {% assign venue = conference.venue %}
           <h4><span class="fn org">{{ venue.location }}</span> @ <span class="street-address">{{ venue.address }}</span></h4>
           <h4><span class="extended-address">{{ venue.neighborhood }}</span>, <span class="locality">{{ venue.city }}</span>, <span class="region">{{ venue.state }}</span></h4>
         </div><!--.vcard-->
@@ -22,7 +22,7 @@
     </div><!--.row-->
 
     <div class="row embed-iframe">
-      <iframe src="{{ site.data.conference.tickets.url }}"
+      <iframe src="{{ conference.tickets.url }}"
         frameborder="0"
         height="100%" width="100%"
         vspace="0" hspace="0"
