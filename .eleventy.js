@@ -47,15 +47,17 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
 	// Pass the media assets through to _site
-	eleventyConfig.addPassthroughCopy('assets');
+	eleventyConfig.addPassthroughCopy('js');
+	eleventyConfig.addPassthroughCopy('css');
+	eleventyConfig.addPassthroughCopy('img');
+	eleventyConfig.addPassthroughCopy('images');
+	eleventyConfig.addPassthroughCopy('fonts');
 
 	// Pass the svg sprite into assets/fonts folder in _site
 	eleventyConfig.addPassthroughCopy({ "src/defs/svg/": "/assets/icons" })
 
 	// Pass robots.txt and CloudFlare headers through to _site's root
-	eleventyConfig.addPassthroughCopy({ static: "/" })
-
-
+	// eleventyConfig.addPassthroughCopy({ static: "/" })
 
 	return {
 		dir: {
@@ -64,7 +66,6 @@ module.exports = (eleventyConfig) => {
 		templateFormats: [
 			"html",
 			"md",
-			"liquid",
 		]
 	};
 };
