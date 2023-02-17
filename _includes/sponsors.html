@@ -5,15 +5,13 @@
         <div class="row text-center">
                 <h2>{{ section.title }}</h2>
                 {% assign name = section.name %}
-                {% include quote.html %}
+                {% include "quote.html" %}
                 <span class="lead">{{ section.content }}</span>
         </div><!--.row-->
         <div class="row">
-        {% assign grouper = section.sponsors | group_by: "type" %}
-        {% for group in grouper %}
-            <div class="sponsors {{ group.name }} col-lg-6 col-sm-6">
-            {% assign sponsors = group.items %}
-            {% for sponsor in sponsors %}
+        {% for sponsor_type in website.sponsors.sponsors %}
+            <div class="sponsors {{ sponsor_type }} col-lg-6 col-sm-6">
+            {% for sponsor in sponsor.sponsor_type %}
                 <div class="thumbnail sponsor">
                     <a href="http://{{ sponsor.url }}" target="_blank">
                         <img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
@@ -28,5 +26,3 @@
 </section><!--/#sponsors-->
 {% endif %}
 {% endfor %}
-
-
