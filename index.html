@@ -35,7 +35,7 @@ layout: compress
   <!-- Navigation -->
   {% include "topnav.html" %}
 
-  {% for section in website.layout %}
+  {% for section in website.content.layout %}
   {% include "{{ section }}.html" %}
   {% endfor %}
 
